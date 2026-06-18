@@ -1,0 +1,2718 @@
+{
+  "festival": "Waking Life 2026",
+  "days": [
+    "tue",
+    "wed",
+    "thu",
+    "fri",
+    "sat",
+    "sun",
+    "mon"
+  ],
+  "stages": {
+    "cochilo": {
+      "label": "Cochilo"
+    },
+    "floresta": {
+      "label": "Floresta"
+    },
+    "outro-lado": {
+      "label": "Outro lado"
+    },
+    "mimo": {
+      "label": "Mimo"
+    },
+    "praia": {
+      "label": "Praia"
+    },
+    "apuro": {
+      "label": "Apuro"
+    },
+    "moonscreen": {
+      "label": "Moonscreen"
+    },
+    "casa-marmelada": {
+      "label": "Casa marmelada"
+    },
+    "suna": {
+      "label": "Suna"
+    },
+    "tudo-bem": {
+      "label": "Tudo bem?"
+    },
+    "performances": {
+      "label": "(some) performances"
+    },
+    "camping": {
+      "label": "Creative camps"
+    },
+    "art-installation": {
+      "label": "Art installations"
+    }
+  },
+  "events": [
+    {
+      "id": "tue-1600-tudo-bem-knocking-on-the-door-of-tomorrow",
+      "artist": "Filipa",
+      "stage": "tudo-bem",
+      "day": "tue",
+      "start": "16:00",
+      "end": null,
+      "description": "Knocking on the Door of Tomorrow. Before the festival fully wakes, we knock. A small greeting to the land that's about to hold us, to let the air rearrange itself around us. The door is already open, we are guests here."
+    },
+    {
+      "id": "tue-1600-tudo-bem-the-thread-throughout",
+      "artist": "Yulfri & Anna from Avozinha",
+      "stage": "tudo-bem",
+      "day": "tue",
+      "start": "16:00",
+      "end": null,
+      "description": "The Thread Throughout. A landing, of sorts, though arrival is always a bit of a fiction. We come in carrying what we're carrying, and we put some of it down. Integration before, during, and after. Welcome home."
+    },
+    {
+      "id": "tue-1800-tudo-bem-bow-to-the-wow",
+      "artist": "Tudo Bem",
+      "stage": "tudo-bem",
+      "day": "tue",
+      "start": "18:00",
+      "end": null,
+      "description": "Bow to the Wow. Bow to the wow, bow to the brainbox, bow to the body, bow to whatever brought you here. The wow bows back. The wow is about to unfold. So begins the bowing."
+    },
+    {
+      "id": "tue-2000-tudo-bem-invisible-knots",
+      "artist": "Julim & Marcos",
+      "stage": "tudo-bem",
+      "day": "tue",
+      "start": "20:00",
+      "end": null,
+      "description": "Invisible Knots. No rope, no restraint, yet somehow you're held. Guided imagery leads the body through tension, surrender, and the delicious edge of the unseen. Bound by nothing, held by imagination."
+    },
+    {
+      "id": "camp-venga-bingo",
+      "artist": "Venga Bingo",
+      "stage": "camping",
+      "day": "tue",
+      "start": null,
+      "end": null,
+      "description": "You've never played bingo like this. A night full of drag, performances, sass, and punk, hosted by our iconic Venga Girls. Come for the game, stay for the drama, and win sexy prizes!",
+      "when": "Tuesday only"
+    },
+    {
+      "id": "wed-0900-tudo-bem-the-great-cosmic-guffaw",
+      "artist": "Charlie",
+      "stage": "tudo-bem",
+      "day": "wed",
+      "start": "09:00",
+      "end": null,
+      "description": "The Great Cosmic Guffaw. The cosmic joke slowly reveals itself: you are a sentient piece of stardust trying to remember you are actually the entire galaxy. The universe laughs at itself through you."
+    },
+    {
+      "id": "wed-1100-tudo-bem-somatised",
+      "artist": "Ollie",
+      "stage": "tudo-bem",
+      "day": "wed",
+      "start": "11:00",
+      "end": null,
+      "description": "Somatised. Touch is a language older than words. Here, we remember how to speak it."
+    },
+    {
+      "id": "wed-1300-tudo-bem-alone-together",
+      "artist": "Anna Eva",
+      "stage": "tudo-bem",
+      "day": "wed",
+      "start": "13:00",
+      "end": null,
+      "description": "Alone Together. Each of us is inside our own little universe. Somehow, this becomes a collective. We arrive as ourselves and begin there alone, together."
+    },
+    {
+      "id": "wed-1500-tudo-bem-quantum-boogie",
+      "artist": "Saida",
+      "stage": "tudo-bem",
+      "day": "wed",
+      "start": "15:00",
+      "end": null,
+      "description": "Quantum Boogie. Your body is a galaxy of restless atoms pretending to be still. Shake, swirl, and drift through movement where imagination meets physics. The groove was always microscopic."
+    },
+    {
+      "id": "wed-1700-tudo-bem-the-creature-we-are",
+      "artist": "Arturo & Julia",
+      "stage": "tudo-bem",
+      "day": "wed",
+      "start": "17:00",
+      "end": null,
+      "description": "The Creature We Are. A hundred bodies, one strange creature. We start as cells and end as something with paws and instincts. Come as you are and become something else."
+    },
+    {
+      "id": "wed-1930-apuro-the-funeral-of-the-normal",
+      "artist": "Aquatic Esc & Lawunda Richardson",
+      "stage": "apuro",
+      "day": "wed",
+      "start": "19:30",
+      "end": "21:00",
+      "description": "The Funeral of the Normal. We spit on the ashes of 'should.' A participatory un-becoming, composting the expected, resurrecting the shadow underneath sterile reality. Bring something to kill and something to grow."
+    },
+    {
+      "id": "wed-2100-cochilo-otto-landsberg-shin-hyo-jin",
+      "artist": "Otto Landsberg & Shin Hyo Jin",
+      "stage": "cochilo",
+      "day": "wed",
+      "start": "21:00",
+      "end": "21:45",
+      "description": "Afro-cubano chekerés amplifying the sounds of Cuban resilience. The jing: a deep Korean gong swallowing silence like an egg eating snake."
+    },
+    {
+      "id": "wed-2100-floresta-carmen-villain",
+      "artist": "Carmen Villain*",
+      "stage": "floresta",
+      "day": "wed",
+      "start": "21:00",
+      "end": "21:45",
+      "circled": true
+    },
+    {
+      "id": "wed-2100-praia-tristan-arp",
+      "artist": "Tristan Arp*",
+      "stage": "praia",
+      "day": "wed",
+      "start": "21:00",
+      "end": "22:00"
+    },
+    {
+      "id": "wed-2145-floresta-yentl",
+      "artist": "Yentl",
+      "stage": "floresta",
+      "day": "wed",
+      "start": "21:45",
+      "end": "01:00",
+      "circled": true
+    },
+    {
+      "id": "wed-2200-cochilo-mohammad-reza-mortazavi",
+      "artist": "Mohammad Reza Mortazavi",
+      "stage": "cochilo",
+      "day": "wed",
+      "start": "22:00",
+      "end": "23:00",
+      "description": "His fingers don't play the tombak and daf, they whisper to them, argue with them, bring to life unmapped cartographies. A metronome that dreams."
+    },
+    {
+      "id": "wed-2200-praia-party-smith",
+      "artist": "Party Smith",
+      "stage": "praia",
+      "day": "wed",
+      "start": "22:00",
+      "end": "01:00"
+    },
+    {
+      "id": "wed-2330-cochilo-nidia-valentina-magaletti",
+      "artist": "Nídia & Valentina Magaletti",
+      "stage": "cochilo",
+      "day": "wed",
+      "start": "23:30",
+      "end": "00:15",
+      "description": "Syncopated drums, marimba lines, warm synths. Dance music with pools of personality, swagger and soul."
+    },
+    {
+      "id": "wed-0045-cochilo-nkisi",
+      "artist": "Nkisi",
+      "stage": "cochilo",
+      "day": "wed",
+      "start": "00:45",
+      "end": "01:30",
+      "description": "'Music for Magic' ain't no metaphor, but a living technology for transformation. It's an insurgency against agreed-upon reality. Rhythms that rupture the mass hypnosis. Perceptual trapdoors swinging open."
+    },
+    {
+      "id": "wed-0100-floresta-magda-mike-servito",
+      "artist": "Magda & Mike Servito",
+      "stage": "floresta",
+      "day": "wed",
+      "start": "01:00",
+      "end": "04:00",
+      "circled": true
+    },
+    {
+      "id": "wed-0100-praia-dj-marcelle",
+      "artist": "Dj Marcelle",
+      "stage": "praia",
+      "day": "wed",
+      "start": "01:00",
+      "end": "04:00",
+      "circled": true
+    },
+    {
+      "id": "wed-0200-cochilo-hhy-the-kampala-unit",
+      "artist": "HHY & The Kampala Unit",
+      "stage": "cochilo",
+      "day": "wed",
+      "start": "02:00",
+      "end": "02:45",
+      "description": "Brass voltage. Mutant Electronics. Deep soundsystem pressure. Steam. Served Kampala hot. Tastes like nothing you've ever heard."
+    },
+    {
+      "id": "wed-0400-floresta-tina",
+      "artist": "Tina",
+      "stage": "floresta",
+      "day": "wed",
+      "start": "04:00",
+      "end": "07:00",
+      "circled": true
+    },
+    {
+      "id": "wed-0400-praia-kiss-nuka",
+      "artist": "Kiss Nuka*",
+      "stage": "praia",
+      "day": "wed",
+      "start": "04:00",
+      "end": "06:00"
+    },
+    {
+      "id": "wed-0700-floresta-mad-miran",
+      "artist": "mad miran",
+      "stage": "floresta",
+      "day": "wed",
+      "start": "07:00",
+      "end": "10:00",
+      "circled": true
+    },
+    {
+      "id": "art-bus-stop",
+      "artist": "Bus stop",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Sunburn Gaze. A lost urban artefact. A stage for the inspired. A space for social encounters and strange visions.. What happens in the bus stop, no one talks about. But the lights keep flickering as if something weird will happen tonight.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-call-your-grandma",
+      "artist": "Call your grandma",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "minipops. A side-quest where embracing old technology and forgotten traditions will surface questions that only your elders have an answer to.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-calma",
+      "artist": "CALMA",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Mopets off-grid. CALMA. If you are lucky you will find CALMA in the deep wilderness of the terrain.. a hidden space to rest your spirit & lounge in nature at daytime and catch performative surprises & light art at night...",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-casa-marmelada",
+      "artist": "casa marmelada",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "We are the stone house, you are the milk, drawn from the silence of granite and silk. A psychedelic picnic for the soul unfolds in the cottage no one can control. Casa Marmelada is open.. then not, a door that remembers what footsteps forgot. We lure you with stories, then send you along, you'll leave with a new tune, a different song. No beans will we spill, not a secret, nor clue just sneaky-peek knowing between us and you. So come to the edge of the nearly-unseen: the stone house is pouring from places between.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-chandeliers",
+      "artist": "Chandeliers",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Parker Heyl. Two kinetic Chandeliers inspired by the 1875 work of mathematician Harry Hart. They echo the complexity of digital imagery, yet these sculptures achieve a physical object aura by using purely analog and mechanical technologies.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-cold-sauna",
+      "artist": "Cold Sauna",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Service Continu. A sensory refuge, this 'cold sauna' extends the lake's cooling effect through a simple closed-loop water system. Lake water is pumped to create a gentle artificial rain, cooling the space. Filtered light, dampened sound, and reclaimed materials create a low-tech, reversible retreat for rest and reset.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-fugazmente",
+      "artist": "Fugazmente",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Guardians of Words. A curated sanctuary of textual spirituality and poetry with spirit. Join the Guardians of Words to explore the cosmos by peeking into new perspectives through the bewildering spell of language.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-kaaskade",
+      "artist": "KäasKäde",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "JeJoMaDe. A platform by the waterfront where people can chill, wonder and be pleasantly confused. A confusing mix of harbour & cheese, many options to hang & sit, swing, nibble & crawl.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-midsummer-mouramas",
+      "artist": "Midsummer Mouramas",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Cella Collective. These lakeside structures turn local ecology, geology and folklore, into spaces for contemplative bathing and soaking. These dwellings house the 'Enchanted Moura' and they invite you to enjoy the threshold between land and water, waiting and becoming.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-mimo-smellscape",
+      "artist": "Mimo Smellscape",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Vlenser. Scent slips past logic, straight into memory, into feeling - at Mimo, we follow this invisible thread. Locally gathered, constantly shifting, smell is our guide. No labels, no hierarchy - but sensation rewiring perception, dissolving limits, and pulling you deep into the olfactory subconscious.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-mudanca",
+      "artist": "Mudança",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Echo Studios. Mudança is inspired by butterfly evolution, structures across water reflect each phase. Visitors move through a living narrative. Strangers breathe together, less alone in change. Something shifts and loosens. We leave differently than we arrived, gently rearranged, not new, not whole.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-ovo",
+      "artist": "OvO",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Oliver Ellmers. Reimagining OvO as a darker, more minimal parametric sculpture. The design is generative in approach, using light, reflection and refraction to continuously reshape the space. It's intended as a calm but uncanny place to reset and drift through a more cinematic mood.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-pinata",
+      "artist": "Piñata",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Robin Jae. Here, blind violence is rewarded, for a piñata is completed by its destruction! These days the game is performed for thrills and rewards. Yet, if the piñata is made to be a demon, or a spirit, its destruction becomes a symbolic gesture. O' brave warrior, your prize awaits... Come! Conquer! Liberate spirit!",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-www",
+      "artist": "WWW - WakingLife Wide Web",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "ARAS, Coletivo Giria, Louise. A participatory crochet installation developed through workshops involving both residents of Crato and festival crew. Young and old and local and not, are invited to contribute with crochet 'granny squares' that will be assembled into a shared textile structure creating the intimate, cosy, colourful 'Crocave'.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "art-you-me-we",
+      "artist": "you me we",
+      "stage": "art-installation",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Christian Wolf. Experience your body, experience embodiment in time and space, with your next one. Reflect, realize, create, be in the now.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-a-mesa",
+      "artist": "A Mesa",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A growing table, rotating DIY workshops, weird materials, and good company. Weaving, animating, sewing, synthesising, tarot-making, incense-rolling and more. Find a seat, something's always happening.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-cloud-9-on-7-heaven",
+      "artist": "Cloud 9 on 7 Heaven",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A living apple tree suspended in a white dreamworld. No gatekeepers, no agenda. Come lie down and remember you're made of mud.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-costura-armada",
+      "artist": "Costura Armada",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Sew, repair, upcycle... Drop off your textile leftovers while you're at it. Repair is radical, and honestly quite satisfying.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-cramp-camp",
+      "artist": "Cramp Camp",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Free period care, herbal tea, a cool breeze, and zero shame. Also: a parade. You'll know it when you see it.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-cubkos-lab",
+      "artist": "Cubko's Lab",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Old PVC banners become handmade pouches and bags, one-of-a-kind and built for dancing. Your hands do the work, your imagination does the rest.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-daydream-assembly",
+      "artist": "Daydream Assembly",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Listen to your body, then sew it a little, friend. Take it, leave it, or give it away... you decide where your cushion goes pushin'.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-draw-for-your-life",
+      "artist": "Draw for Your Life",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Daily sessions, live models, themed nights. Full permission to look intensely at another human being.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-dusty-dusk",
+      "artist": "Dusty Dusk",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Live, improvised, unplanned. Music that emerges from the day and disappears into the night. Curious ears and spontaneous collaborators welcome!",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-eden-cinema",
+      "artist": "Eden Cinema",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Banned films. Fake candles. Strange conversations. Find it if you can.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-entre-maos",
+      "artist": "Entre Mãos",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A haircut as a conscious ritual. Trust the hands, surrender the hair, leave somehow different.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-gratitude-cleanse",
+      "artist": "Gratitude Cleanse",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Write what you're grateful for, bless some sad-looking plants, bring them to the lake, wash each other's hands, make incense to take home. Mona holds the space. The rest is magic.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-ham-nafas-animation",
+      "artist": "Ham-nafas Animation Workshop",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Make a tiny animation, add it to everyone else's, and receive the collective film at the end. In Farsi, ham-nafas means sharing the same breath, so inhale.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-huritao",
+      "artist": "Huritao",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Create a self-portrait on a tile from foraged materials. Hang it on the wall, and become part of a collective class picture.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-improv-mojo-dojo",
+      "artist": "Improv Mojo Dojo",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Paint with everything you've ever lived through, in coordination with others. Beginners, advanced, and the curious are all welcome in this open fruit-salad activity. Just try it out, or come and watch.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-loom-room",
+      "artist": "Loom Room",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A 4x4m loom, lots of weird materials, zero instructions. Come weave something into existence.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-moon-shack",
+      "artist": "Moon Shack",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Moon Shack, baby, moon shack! Confess to the moon, get a wish, and pass it around. She's listening.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-nave-del-sonido",
+      "artist": "Nave del Sonido",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Mess around on synths, record it on a cassette, keep the tape. Like a sound photograph, but cooler and slightly noisier.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-parallel-truths",
+      "artist": "Parallel Truths",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Whisper something into a plant. The rest is hard to explain.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-pieces-chess-club",
+      "artist": "Pieces Chess Club",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Chess, but social. Music, fun, and a few surprises from a club that's taken over Lisbon, London, Oslo, and now Crato.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-samara-pod",
+      "artist": "Samara Pod",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A womb-like pod abandoned in the undergrowth by persons or civilisations unknown. Scientists are taking notes. You should probably go inside.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-tarot-craft-lab",
+      "artist": "Tarot Craft Lab",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Make your own tarot cards. Intuition required, art skills not so much.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-tarot-sanctuary",
+      "artist": "Tarot Sanctuary",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A one-to-one therapeutic tarot reading in a softly held space. Not to predict your future, but to help you understand your present. Also roaming the festival for a one-card hit if you feel called.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-tinctorium-plant-lab",
+      "artist": "Tinctorium Plant Lab",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "A witches' kitchen where the plants finally tell you their secrets. Come after dark too, some of them glow.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-tranquilo-toss",
+      "artist": "Tranquilo Toss",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Pétanque. Sun. Maybe pastis. Definitely new friends.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-wakys-vault",
+      "artist": "Waky's Vault",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Craft your own little container from bamboo and cork. For butts, treasures, or honestly whatever :)",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-weaving-worlds",
+      "artist": "Weaving Worlds",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Add your thread to a collective tapestry growing all week long. Weavever you go you are part of the pattern.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "camp-whimsical-theatre",
+      "artist": "Whimsical Theatre",
+      "stage": "camping",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Improv, movement, character: step outside yourself for a bit. Unscripted, ungovernable.",
+      "when": "Ongoing"
+    },
+    {
+      "id": "perf-a-quiet-spirit",
+      "artist": "A Quiet Spirit",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "CALMA. A durational performance where a sculptural element is slowly transformed into a living wind chime. Through gentle movement, sound and light, the space is subtly activated. What emerges is a fleeting, poetic moment, and a resonance that remains beyond the night."
+    },
+    {
+      "id": "perf-die-hohle",
+      "artist": "Die Höhle",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "c.a.l.perspectives. Installations of inhabitable camera obscura, offering direct contact with the natural phenomenon that makes photography possible. Enter into relationship with the upside down, and an archaeological experience of the image."
+    },
+    {
+      "id": "perf-embarcacao-entidade",
+      "artist": "EMBARCAÇÃO-ENTIDADE",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Brittany Maton, Eleni Giannopoulou & others. A floating masquerade without a schedule. Part ritual, part hallucination, part boat. Somewhere between folklore, science-fiction, and the weird."
+    },
+    {
+      "id": "perf-la-belleza-es-asquerosa",
+      "artist": "La Belleza es Asquerosa",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Asquito Eso. A body both fragile and fierce, shapeshifting and endlessly reborn. A striptease unfolds not to seduce but to speak out. Here sensuality trembles with rage and anger undresses itself slowly. This body, improbably, beautiful, grotesque, defiant, wears its rawness like myth."
+    },
+    {
+      "id": "perf-lopera-du-villageois",
+      "artist": "L'Opéra du Villageois",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Zora Snake and Wilfried Nakeu. A burial and liberation ritual. L'Opéra du Villageois denounces the European museums that harbour looted art in their collections and conjures up the spirit of the stolen objects. Snake reclaims everything that the colonial powers have plundered over the past centuries: the gold, the salt, the history. But their spirits are not dead...",
+      "circled": true
+    },
+    {
+      "id": "perf-miranda-andacondas",
+      "artist": "Miranda & the Andacondas present 'Judge not lest ye be judged'",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Knetterbar. Knetterbar is a condensed microcarnival - a portal of kaos & magic, where time bends and joyfulness grooves through surreal scenes. Hosted by Miranda from the Multiverse and her highly professional this-year-not-so-randomly assigned assistants. Expect hijinks, volcanic dances, disco sound massages and mystery snacks. Reality? Maybe. Fun? Definitely."
+    },
+    {
+      "id": "perf-silencio-nao-e-silencioso",
+      "artist": "Silêncio não é Silencioso",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Azuru. Shhhhhhhhhhhhhhhhhhhhhhhhhhhh."
+    },
+    {
+      "id": "perf-soft-cryptogamic-drifts",
+      "artist": "Soft Cryptogamic Drifts",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "M.O.S.S.S. (Moving Observations on Surviving Soft Skills) & Landcare Club. Enter the long now, armed with affective tools and tear into small breaches in reality. With cryptogams as our kin, bryophytes, lichens, seaweed, fungi, ferns, we play with the invisible and kneel before mystery."
+    },
+    {
+      "id": "perf-song-for-the-lake",
+      "artist": "Song for the Lake",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "nitamortei + maud gyssels. Which human, inhuman, past and future voices can be heard in interaction with the lake as a source of histories, narratives and rituals? Its movement is circular. Consider it a looping song, an invitation to wade in the shallow waters."
+    },
+    {
+      "id": "perf-tuning-folk",
+      "artist": "Tuning folk, Tuning folks, Tuning forks",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "RÆV (Vera & Eva Maria). Equipped with tuning forks and other instruments, the Tuning Folk roam around, finding depleted souls, and nurturing them back to life."
+    },
+    {
+      "id": "perf-water-bearer",
+      "artist": "Water Bearer",
+      "stage": "performances",
+      "day": "wed",
+      "start": null,
+      "end": null,
+      "description": "Riley Davidson & Hadrien Daigneault-Roy. A response to the announcement from hydrologists of a global water bankruptcy, the performance treats water as precious alchemical matter, resonating at the core of our flesh. Quicksilver and tears, rivers and prayer."
+    },
+    {
+      "id": "thu-0900-tudo-bem-space-between-things-that-think-theyre-separate",
+      "artist": "Victoria",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "09:00",
+      "end": null,
+      "description": "Space Between Things That Think They're Separate. Between breath and movement there's a whole universe we rush past. Asana becomes less about arriving and more about what falls between the cracks on the way there."
+    },
+    {
+      "id": "thu-1000-floresta-a-pausa-thu",
+      "artist": "a pausa",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    {
+      "id": "thu-1100-tudo-bem-rest-as-resistance",
+      "artist": "Sangeeta",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "11:00",
+      "end": null,
+      "description": "Rest as Resistance. A soft no to grind culture. We gather to undo and unravel, to slow down collectively, to remember rest as necessity not luxury, as the kind of refusal that builds the world we actually want to live in."
+    },
+    {
+      "id": "thu-1200-apuro-fluid-stretch-kardio-with-a-k",
+      "artist": "Geri & IvankaXpress",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "12:00",
+      "end": "13:30",
+      "description": "Fluid Stretch & Kardio with a K. The festivities never stop, nor does our movement, so let's ride it & flow among stretching poses, slowing down into the crucial spots that help us out-rave-rave the week. Then we aerobic with it for a deep, manic sweat. #ThisIsNotYoga"
+    },
+    {
+      "id": "thu-1200-apuro-permission-to-perform",
+      "artist": "Antonio Grácio & Old Baby",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "12:00",
+      "end": "13:30",
+      "description": "Permission to Perform. We've busted spontaneity under curated punchlines. A workshop in un-polishing, cancel performativity culture, embrace the stumble, the crack and the glorious fall."
+    },
+    {
+      "id": "thu-1200-cochilo-forca-maior",
+      "artist": "Força Maior",
+      "stage": "cochilo",
+      "day": "thu",
+      "start": "12:00",
+      "end": "13:00",
+      "description": "Two men. A 400-year-old Portuguese farm where revolution was once plotted. Out came not gunpowder but a saxophone stitched into a tapestry both delicate & intense."
+    },
+    {
+      "id": "thu-1200-outro-lado-edward",
+      "artist": "Edward*",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "12:00",
+      "end": "16:00",
+      "circled": true
+    },
+    {
+      "id": "thu-1200-praia-om-unit-acid-dub-studies",
+      "artist": "Om Unit Acid Dub Studies*",
+      "stage": "praia",
+      "day": "thu",
+      "start": "12:00",
+      "end": "13:00"
+    },
+    {
+      "id": "thu-1300-praia-elemental",
+      "artist": "elemental",
+      "stage": "praia",
+      "day": "thu",
+      "start": "13:00",
+      "end": "16:00",
+      "circled": true
+    },
+    {
+      "id": "thu-1300-tudo-bem-oxygen-other-miracles",
+      "artist": "Dima",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "13:00",
+      "end": null,
+      "description": "Oxygen & Other Miracles. Breath is a small daily miracle. Rhythmic breathing and movement stir the inner fire and send something electric through the system. Turns out simply being alive is pretty electric."
+    },
+    {
+      "id": "thu-1400-apuro-a-dark-room-with-a-view",
+      "artist": "Sone (s)crew",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "14:00",
+      "end": "15:30",
+      "description": "A Dark Room with a View. Tired of the same old pornographic tropes of sex dungeons and hook-up spots? Curious to create a different kind of erotic space? Then schmoo into our darkroom discourse circle and whet your appetite."
+    },
+    {
+      "id": "thu-1400-floresta-dj-trystero",
+      "artist": "Dj Trystero",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "14:00",
+      "end": "17:00"
+    },
+    {
+      "id": "thu-1500-tudo-bem-a-gentle-grapple",
+      "artist": "Oryx",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "15:00",
+      "end": null,
+      "description": "A Gentle Grapple. Somewhere between dance and jiu-jitsu lies a playful entanglement. A squishy dance fight club, kinda. A soft fight where nobody loses and everybody wins."
+    },
+    {
+      "id": "thu-1600-outro-lado-alton-miller",
+      "artist": "Alton Miller",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "16:00",
+      "end": "19:00"
+    },
+    {
+      "id": "thu-1600-praia-protodub",
+      "artist": "protodub",
+      "stage": "praia",
+      "day": "thu",
+      "start": "16:00",
+      "end": "19:00"
+    },
+    {
+      "id": "thu-1610-cochilo-charlemagne-palestine",
+      "artist": "Charlemagne Palestine, Oren Ambarchi & Daniel O'Sullivan present 'KKAARREENNIINNAA'",
+      "stage": "cochilo",
+      "day": "thu",
+      "start": "16:10",
+      "end": "17:00",
+      "description": "One of the founders of the NYC school of minimalism music reimagines his 1997 meditative performance 'Karenina'. Colourful consonance swelling until you can't tell where the room ends and your bloodstream begins."
+    },
+    {
+      "id": "thu-1700-floresta-vlada",
+      "artist": "Vlada",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "17:00",
+      "end": "20:00",
+      "circled": true
+    },
+    {
+      "id": "thu-1700-suna-shiatsu-ayurveda-massage",
+      "artist": "Sara",
+      "stage": "suna",
+      "day": "thu",
+      "start": "17:00",
+      "end": "18:30",
+      "description": "Shiatsu & Ayurveda massage (More than two). An experiment in listening, observing and renegotiating through touch."
+    },
+    {
+      "id": "thu-1700-tudo-bem-physical-linguistics",
+      "artist": "Phoenix",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "17:00",
+      "end": null,
+      "description": "Physical Linguistics. Every body is fluent in something. Most of us were never taught how to read it. Through movement and sound, we expand the vocabulary and let our private languages meet on the floor."
+    },
+    {
+      "id": "thu-1800-apuro-the-erotics-of-destruction",
+      "artist": "Sapokeh & Acidcollective",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "18:00",
+      "end": "19:30",
+      "description": "The Erotics of Destruction. Smush. Crush. Eat. Ruin. Transform. A performance-workshop where objects become sacrilege, and composting becomes kink. What lives at the edge of the ruins? You."
+    },
+    {
+      "id": "thu-1900-cochilo-holy-tongue",
+      "artist": "Holy Tongue",
+      "stage": "cochilo",
+      "day": "thu",
+      "start": "19:00",
+      "end": "20:00",
+      "description": "Psychedelic, free-form, high energy, spiritual dub-dance music.",
+      "circled": true
+    },
+    {
+      "id": "thu-1900-outro-lado-yamour",
+      "artist": "Yamour",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "19:00",
+      "end": "22:00"
+    },
+    {
+      "id": "thu-1900-praia-marylou",
+      "artist": "Marylou",
+      "stage": "praia",
+      "day": "thu",
+      "start": "19:00",
+      "end": "23:00"
+    },
+    {
+      "id": "thu-1900-suna-why-so-serious",
+      "artist": "Rezmorah",
+      "stage": "suna",
+      "day": "thu",
+      "start": "19:00",
+      "end": "20:30",
+      "description": "Why so serious? A performance of rebellion, pleasure, and power. Bondage, dominance, joy, tenderness and a touch of brute force. Transmasc-coded, it casts the cystem into oblivion. Pursuing mutual destruction and pleasure while paying homage to dyke and faggot ancestries. Worshipping the body over capitalism, only to desecrate it. No sacred spaces, no virtue. The body is a spell, a weapon, a Molotov cocktail of sweat, spit, cum and defiance."
+    },
+    {
+      "id": "thu-1900-tudo-bem-tango-without-panic",
+      "artist": "Diego",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "19:00",
+      "end": null,
+      "description": "Tango Without Panic. Tango is just leaning, with style. Into gravity, into rhythm, into another human. Two left feet welcome."
+    },
+    {
+      "id": "thu-2300-floresta-ccl",
+      "artist": "CCL",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "20:00",
+      "end": "23:00"
+    },
+    {
+      "id": "thu-2100-suna-femmes-tipi-queer-collective-sociodrama",
+      "artist": "Manuela",
+      "stage": "suna",
+      "day": "thu",
+      "start": "21:00",
+      "end": "23:00",
+      "description": "*Femmes Tipi: Queer Collective Sociodrama. A safe container to process. For anyone affected by patriarchy."
+    },
+    {
+      "id": "thu-2100-suna-how-to-threesome",
+      "artist": "Sonja & Ale",
+      "stage": "suna",
+      "day": "thu",
+      "start": "21:00",
+      "end": "01:00",
+      "description": "How to threesome. Did you ever have a threesome that didn't go so well? Are you dreaming of having a threesome? Or are you a professional threesomer and want to play?"
+    },
+    {
+      "id": "thu-2100-tudo-bem-listening-beneath-the-skin",
+      "artist": "Raghdan",
+      "stage": "tudo-bem",
+      "day": "thu",
+      "start": "21:00",
+      "end": null,
+      "description": "Listening Beneath the Skin. Even in stillness, the body hums. Explore the subtle landscape beneath the skin until the body feels less like an object and more like a galaxy."
+    },
+    {
+      "id": "thu-2130-apuro-a-gift-to-nora",
+      "artist": "only smolu",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "21:30",
+      "end": "22:30",
+      "description": "A Gift to Nora. The great tree watches thresholds. Yoruba time-sorcery meets the dissident-transhuman body. A ritual of poetic remigration, you will most definitely not stay the same shape afterward."
+    },
+    {
+      "id": "thu-2200-moonscreen-once-upon-a-moon",
+      "artist": "Once Upon a Moon",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "22:00",
+      "end": "23:00",
+      "description": "A quiet inauguration; revealing, un-veiling. We invite weary and curious bodies into our amphitheater of denim and dust. Let the first images of the weekend wash over you. Some things are better discovered than described. Schnap into it!"
+    },
+    {
+      "id": "thu-2200-outro-lado-xdb-lowtec",
+      "artist": "XDB & Lowtec",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "22:00",
+      "end": "01:00",
+      "circled": true
+    },
+    {
+      "id": "thu-2200-cochilo-nino-de-elche",
+      "artist": "Niño de Elche",
+      "stage": "cochilo",
+      "day": "thu",
+      "start": "22:30",
+      "end": "23:30",
+      "description": "Flamenco's beautiful heretic. For twenty years he's been unpicking flamenco's seams, rewiring its soul."
+    },
+    {
+      "id": "thu-2230-apuro-lovage",
+      "artist": "LOVAGE",
+      "stage": "apuro",
+      "day": "thu",
+      "start": "22:30",
+      "end": "00:30",
+      "description": "Witches Were Right. A collective conjuring of the unseen forces we possess. A sonic bed invoking the powers and wisdom of the roots running across the veil of the seen and unseen. Vibrations that resonate from the depths and live in air tones."
+    },
+    {
+      "id": "thu-2300-floresta-vil",
+      "artist": "VIL",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "23:00",
+      "end": "02:00",
+      "circled": true
+    },
+    {
+      "id": "thu-2300-praia-mia-koden",
+      "artist": "Mia Koden",
+      "stage": "praia",
+      "day": "thu",
+      "start": "23:00",
+      "end": "02:00"
+    },
+    {
+      "id": "thu-2315-moonscreen-hazaz-collective-presents",
+      "artist": "Hazaz Collective Presents",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "23:15",
+      "end": "00:15",
+      "description": "Land unrealities (live score Nicolas Baviere). Drawing on archival and everyday footage – often shaped by a colonial gaze – three films reclaim and reimagine perceptions of Palestine through experimental image-making that blurs documentary and fiction. UNDR by Kamal Al Jafaari, The flowers stand silently witnessing by Theo Panagopoulos, Home Movies Gaza by Basma Al Shari",
+      "circled": true
+    },
+    {
+      "id": "thu-0030-moonscreen-well-well-well",
+      "artist": "Well Well Well",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "00:30",
+      "end": "01:00",
+      "description": "Stella Horta, Ben Meerwein. A camera tethered to a 100-meter cord descends into a single well – continuously, spiraling, without arrival. Inspired by early phantom ride films of the late 19th century, this work redirects cinema's oldest illusion of motion downward into geological and psychic depths. Stone becomes echo. Engineering becomes oracle.",
+      "circled": true
+    },
+    {
+      "id": "thu-0100-cochilo-takkak-takkak",
+      "artist": "Takkak Takkak",
+      "stage": "cochilo",
+      "day": "thu",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "DJ Scotch Egg meets Raja Kirik in a collision named after the sound of a wooden fish being struck. Industrial. Joyful. Completely unclassifiable. The name says it all and nothing, you'll have to feel it for yourself."
+    },
+    {
+      "id": "thu-0100-moonscreen-rawy-presents",
+      "artist": "Rawy Presents",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "A Berlin-based collective of filmmakers and cinephiles dedicated to independent SWANA (Southwest Asia & North Africa) cinema. Through pop-up screenings worldwide, they scout raw talents and untold stories – bridging cultures, preserving heritage and amplifying voices that deserve a bigger screen. White Winged Horse by Mahyar Mandegar, Sultana's Reign by Hadi Moussally, Ship of Fools by Alia Haju"
+    },
+    {
+      "id": "thu-0100-outro-lado-michael-j-blood",
+      "artist": "Michael J Blood",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "01:00",
+      "end": "04:00",
+      "circled": true
+    },
+    {
+      "id": "thu-0200-floresta-69db-wave-arising",
+      "artist": "69db presents Wave Arising*",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "02:00",
+      "end": "04:00"
+    },
+    {
+      "id": "thu-0200-moonscreen-tiny-man-festival",
+      "artist": "Curated by Tiny Man Festival: Experimental Animated Shorts",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "02:00",
+      "end": "03:00",
+      "description": "Tiny Man, the interplanetary creature of extraordinary dimensions, returns to Earth for another round of terrestrial displays of stories being told. A yearly challenge, we ask for creatives of all shapes to tell their best tales based on a theme. Short and animated, this is an anthology of trips, Trips and TRIPS from around the world, done exclusively for the Tiny Man."
+    },
+    {
+      "id": "thu-0200-praia-mala",
+      "artist": "Mala",
+      "stage": "praia",
+      "day": "thu",
+      "start": "02:00",
+      "end": "04:00"
+    },
+    {
+      "id": "thu-0300-moonscreen-mountains-that-weep",
+      "artist": "Mountains That Weep",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "03:00",
+      "end": "04:00",
+      "description": "Aurora Solá. Three black mountains blink down on aeons of human doing and undoing, while a geologist and an indigenous poet search the Amazonian landscape for clues from which to reconstruct a fast vanishing past."
+    },
+    {
+      "id": "thu-0400-floresta-haruka",
+      "artist": "Haruka",
+      "stage": "floresta",
+      "day": "thu",
+      "start": "04:00",
+      "end": "07:00"
+    },
+    {
+      "id": "thu-0400-outro-lado-flo-masse",
+      "artist": "Flo Masse",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "04:00",
+      "end": "07:00",
+      "circled": true
+    },
+    {
+      "id": "thu-0400-praia-mix-elle",
+      "artist": "Mix'Elle",
+      "stage": "praia",
+      "day": "thu",
+      "start": "04:00",
+      "end": "06:00"
+    },
+    {
+      "id": "thu-0700-outro-lado-elli",
+      "artist": "Elli",
+      "stage": "outro-lado",
+      "day": "thu",
+      "start": "07:00",
+      "end": "10:00"
+    },
+    {
+      "id": "fri-0900-tudo-bem-a-false-idea-of-control",
+      "artist": "Victoria",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "09:00",
+      "end": null,
+      "description": "A False Idea of Control. Habits run deep, deeper than we want to admit, into body and nervous system. We loosen the loop with play, pause, and movement when we don't quite recognise. The false idea of control gets a friendly poke."
+    },
+    {
+      "id": "fri-1000-apuro-from-bali-culture-to-catwalk",
+      "artist": "Fuego 027 & Falxico",
+      "stage": "apuro",
+      "day": "fri",
+      "start": "10:00",
+      "end": null,
+      "description": "From Bali Culture to Catwalk. Calígoty is: dance or die. Face. European. Runway. Old Way. Vogue, Femme. Ballroom as queer survival technology. Learn moves, grab attention, thrive in self-love and the warm, sassy hug of community."
+    },
+    {
+      "id": "fri-1000-floresta-a-pausa-fri",
+      "artist": "a pausa",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    {
+      "id": "fri-1000-outro-lado-drama",
+      "artist": "Drama",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "10:00",
+      "end": "11:30"
+    },
+    {
+      "id": "fri-1100-apuro-banana-rage",
+      "artist": "Mario Barrantes Espinoza",
+      "stage": "apuro",
+      "day": "fri",
+      "start": "11:00",
+      "end": "12:30",
+      "description": "Banana Rage. 'by the banana plantations??? you won't make it back!' A performative excavation of plantation history, extractive destruction, and the banana as a memory-charged object. Manifesto's' presence says: rage is myth, rage is force, rage is the dancefloor."
+    },
+    {
+      "id": "fri-1100-tudo-bem-crystal-clear",
+      "artist": "Sophie",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "11:00",
+      "end": null,
+      "description": "Crystal Clear. Movement and stillness, light and shadow, the loud and the quiet. The body holds all of it, and we use breath, mantra, and movement to tune to whichever one we've been avoiding."
+    },
+    {
+      "id": "fri-1130-outro-lado-coco-maria",
+      "artist": "Coco Maria",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "11:30",
+      "end": "14:00"
+    },
+    {
+      "id": "fri-1200-cochilo-djrum",
+      "artist": "Djrum",
+      "stage": "cochilo",
+      "day": "fri",
+      "start": "12:00",
+      "end": "14:00",
+      "description": "An exploratory improvised live set featuring bespoke instruments made here by the lake."
+    },
+    {
+      "id": "fri-1200-praia-o-ghettao",
+      "artist": "o ghettão*",
+      "stage": "praia",
+      "day": "fri",
+      "start": "12:00",
+      "end": "14:00"
+    },
+    {
+      "id": "fri-1300-tudo-bem-living-sculpture",
+      "artist": "Oryx",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "13:00",
+      "end": null,
+      "description": "Living Sculpture. The body as sculpture, except it breathes, leaks, and changes its mind. Move through strange shapes, states, and impulses, and let the body show you what it makes when you stop telling it what to do."
+    },
+    {
+      "id": "fri-1400-floresta-nathalie-seres",
+      "artist": "Nathalie Seres",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "14:00",
+      "end": "17:00"
+    },
+    {
+      "id": "fri-1400-outro-lado-millie-mckee",
+      "artist": "Millie McKee",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "14:00",
+      "end": "16:00"
+    },
+    {
+      "id": "fri-1400-praia-dj-caring",
+      "artist": "Dj Caring",
+      "stage": "praia",
+      "day": "fri",
+      "start": "14:00",
+      "end": "17:00"
+    },
+    {
+      "id": "fri-1500-cochilo-samuel-rohrer-eivind-aarset",
+      "artist": "Samuel Rohrer & Eivind Aarset",
+      "stage": "cochilo",
+      "day": "fri",
+      "start": "15:00",
+      "end": "16:00",
+      "description": "Drums that listen. Guitar that shapeshifts into vapour. Hazy, nocturnal, wandering like a half-remembered dream."
+    },
+    {
+      "id": "fri-1500-tudo-bem-astro-drama",
+      "artist": "Daniel",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "15:00",
+      "end": null,
+      "description": "Astro Drama. The sky is not a backdrop, it's a stage and right now the performance is wild. Saturn dismantling, Neptune dissolving, karmic axis shifting, world breaking and blooming at the same time. We read the drama above to understand the trembling below."
+    },
+    {
+      "id": "fri-1600-outro-lado-pedro-tenreiro",
+      "artist": "Pedro Tenreiro",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "16:00",
+      "end": "18:00"
+    },
+    {
+      "id": "fri-1600-suna-diy-porn",
+      "artist": "Felipe",
+      "stage": "suna",
+      "day": "fri",
+      "start": "16:00",
+      "end": "17:30",
+      "description": "DIY Porn. Felipe Andrat is a Brazilian filmmaker and image-maker based in Lisbon, porn enthusiast, open exhibitionist, and lover of collective mischief."
+    },
+    {
+      "id": "fri-1630-cochilo-heith-tarawangsawelas",
+      "artist": "Heith & Tarawangsawelas present Duori",
+      "stage": "cochilo",
+      "day": "fri",
+      "start": "16:30",
+      "end": "18:45",
+      "description": "Born in jaipong clubs at 2am, cigarettes dying in ashtrays, someone muttering about ghosts. A friendship stretched across twelve time zones. The distance itself became the music."
+    },
+    {
+      "id": "fri-1700-floresta-rhadoo",
+      "artist": "Rhadoo",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "17:00",
+      "end": "23:00"
+    },
+    {
+      "id": "fri-1700-praia-nightmares-on-wax",
+      "artist": "Nightmares on Wax",
+      "stage": "praia",
+      "day": "fri",
+      "start": "17:00",
+      "end": "20:00",
+      "circled": true
+    },
+    {
+      "id": "fri-1700-tudo-bem-wave-arising",
+      "artist": "Seb & Kynsie",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "17:00",
+      "end": null,
+      "description": "Wave Arising. The body as tide, since the sonic wave is improvised and the room is never twice the same. Qi Gong meets live sound, and the body learns to move at the speed of breath."
+    },
+    {
+      "id": "fri-1730-apuro-submissa",
+      "artist": "REZMORAH and Mahfoud",
+      "stage": "apuro",
+      "day": "fri",
+      "start": "17:30",
+      "end": "18:30",
+      "description": "SubMissa. A DEBAUCHEROUS SPELL. Progressive music, effective vocals, metaphysical realness. Audience is invited to move choreographically self-transmuted in distress. The frequency of EVERYthing. The elemental REOPLEcy++++numOUR essential."
+    },
+    {
+      "id": "fri-1800-outro-lado-icube",
+      "artist": "I:Cube*",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "18:00",
+      "end": "19:00"
+    },
+    {
+      "id": "fri-1800-suna-fisting-a-practical-workshop",
+      "artist": "Carmo",
+      "stage": "suna",
+      "day": "fri",
+      "start": "18:00",
+      "end": "19:30",
+      "description": "FISTING: A practical workshop. This workshop is both practical and expansive. We'll cover preparation, technique and aftercare — the how. But we'll also hold space for the why: What lineage are we part of when we do this? What are we invoking when we go this deep?"
+    },
+    {
+      "id": "fri-1900-outro-lado-matthias-reiling",
+      "artist": "Matthias Reiling",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "19:00",
+      "end": "22:00"
+    },
+    {
+      "id": "fri-1900-tudo-bem-enter-the-ronda",
+      "artist": "Diego",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "19:00",
+      "end": null,
+      "description": "Enter the Ronda. A social tango space for the curious, the shy, and the rhythmically adventurous. Learn the quiet etiquette of the ronda, the cabeceo's silent invitation, and let yourself drift into the orbit of the dance."
+    },
+    {
+      "id": "fri-1930-apuro-under-the-lake",
+      "artist": "Kustar Collective",
+      "stage": "apuro",
+      "day": "fri",
+      "start": "19:30",
+      "end": "22:30",
+      "description": "Under the Lake. A gremlin-nymph rises through frequencies and mist. Not human, not myth, just pure, delightful weird. Descend with us, shed some heaviness, resurface a little more tender and curious."
+    },
+    {
+      "id": "fri-2000-praia-ojoo",
+      "artist": "Ojoo",
+      "stage": "praia",
+      "day": "fri",
+      "start": "20:00",
+      "end": "23:00"
+    },
+    {
+      "id": "fri-2000-suna-fantasy-mixer",
+      "artist": "Em",
+      "stage": "suna",
+      "day": "fri",
+      "start": "20:00",
+      "end": "00:00",
+      "description": "Fantasy Mixer (queer play party). A space to connect with fantasies (your own and others'), express them anonymously, and make some of them come true. ~ to support us in transitioning to an open play space."
+    },
+    {
+      "id": "fri-2100-cochilo-michelle-gurevich",
+      "artist": "Michelle Gurevich",
+      "stage": "cochilo",
+      "day": "fri",
+      "start": "21:00",
+      "end": "22:15",
+      "description": "When poetry meets music in a smokey bar; melancholic, dramatic, and strangely comforting at the same time."
+    },
+    {
+      "id": "fri-2100-tudo-bem-vibrations-other-invisible-friends",
+      "artist": "Ceci & Julim",
+      "stage": "tudo-bem",
+      "day": "fri",
+      "start": "21:00",
+      "end": null,
+      "description": "Vibrations & Other Invisible Friends. Lie down and let the unseen do the talking. Gongs, chimes, and pauses ripple through you while your body remembers how to rest. Nothing to do but listen while the invisible rearranges you."
+    },
+    {
+      "id": "fri-2130-moonscreen-a-homage-to-tiny-companions",
+      "artist": "Landcare Club & Diaskoop",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "21:30",
+      "end": "22:00",
+      "description": "A Homage to Tiny Companions with Diaskoop. These small compositions made earlier at the Landcare Club. Join us for an appreciation of seed fluffs & flower petals to discover more about the land, or just because they're beautiful!"
+    },
+    {
+      "id": "fri-2200-moonscreen-k-live-performance",
+      "artist": "Mathieu Erlacher",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "22:00",
+      "end": "23:30",
+      "description": "K (live performance). K is a solo that explores the body as a field of forces in transformation. In dialogue with space and environment, sound, light, and movement intertwine to create an intense and immersive WOW. A performance that expands perception."
+    },
+    {
+      "id": "fri-2200-outro-lado-keith-worthy",
+      "artist": "Keith Worthy",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "22:00",
+      "end": "01:00"
+    },
+    {
+      "id": "fri-2230-apuro-a-sonic-seance",
+      "artist": "Infinity log (manure & Lou Drago) with El Bango, Maroyan, Iflham, Vibrational Arts",
+      "stage": "apuro",
+      "day": "fri",
+      "start": "22:30",
+      "end": "00:00",
+      "description": "A Sonic Séance. A durational sonic séance of deep frequencies, strings, chants, herbal potions, and an altar for the departed. Mourning as collective resonance. Real among ghosts. Open comes tender. Come lay with us..."
+    },
+    {
+      "id": "fri-2300-floresta-tiago",
+      "artist": "Tiago",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "23:00",
+      "end": "03:00",
+      "circled": true
+    },
+    {
+      "id": "fri-2300-praia-dj-godfather",
+      "artist": "Dj Godfather*",
+      "stage": "praia",
+      "day": "fri",
+      "start": "23:00",
+      "end": "00:00"
+    },
+    {
+      "id": "fri-2330-cochilo-lip-sync-4-your-waking-life",
+      "artist": "Lip Sync 4 your Waking Life",
+      "stage": "cochilo",
+      "day": "fri",
+      "start": "23:30",
+      "end": "02:00",
+      "description": "The sequel. If you were there last year, you know what madness to expect. If you weren't.. well.. you kinda had to have been there.. ;) FYI, this is also your moment to shine. Yeah you :)",
+      "circled": true
+    },
+    {
+      "id": "fri-0000-moonscreen-unheld-iii",
+      "artist": "Saghi Ehteshamzadeh & Kimia Koochakzadeh-Yazdi",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "00:00",
+      "end": "01:00",
+      "description": "Unheld III (live AV). This evening offers two works by Iranian women – each finding their own language for displacement, memory and what the body carries across borders. Unheld III explores tender moments of disassociation in female bodies – a requiem for displacement, holding fragments of home while embracing an identity that can only emerge at a distance. Through improvised yet carefully mapped performance, Kimia's wearable Alloy Resonator transforms her body into instrument & Saghi's intimate archive of haptic encounters with flora and female tenderness builds a world between dislocation and connection.",
+      "circled": true
+    },
+    {
+      "id": "fri-0000-praia-niknak",
+      "artist": "NikNak*",
+      "stage": "praia",
+      "day": "fri",
+      "start": "00:00",
+      "end": "01:00"
+    },
+    {
+      "id": "fri-0100-moonscreen-curtas-maryam-tafakory",
+      "artist": "Maryam Tafakory",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "Curated by Curtas: Maryam Tafakory. Portuguese Shorts Agência Curtas Vila do Conde. Maryam Tafakory layers poetry, archival fragments and speculative nonfiction into films that move through historical gaps and unspoken rules. Her practice traces quiet acts of erasure – upon bodies, intimacies, histories – giving space to concealed queer stories and what is too often dismissed as excessive or trivial. Nazarbazi, Razeh-Del, Daria's Night Flower",
+      "circled": true
+    },
+    {
+      "id": "fri-0100-outro-lado-cosmo",
+      "artist": "Cosmo",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "01:00",
+      "end": "04:00"
+    },
+    {
+      "id": "fri-0100-praia-nosedrip",
+      "artist": "Nosedrip",
+      "stage": "praia",
+      "day": "fri",
+      "start": "01:00",
+      "end": "06:00",
+      "circled": true
+    },
+    {
+      "id": "fri-0200-moonscreen-suna-erotic-film",
+      "artist": "Curated by SUNA & Erotic Film Festival Barcelona",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "A selection of sexy shorts & shadowplay. Erotic Film Festival Barcelona and Suna present a juicy selection of films that explore desire, bodies and sexuality with nuance: playful, political, intimate, challenging. The night then climaxes in a participatory performance streamed live to the big screen straight from across the road in Suna.",
+      "circled": true
+    },
+    {
+      "id": "fri-0200-suna-moonsuna",
+      "artist": "Moonsuna",
+      "stage": "suna",
+      "day": "fri",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "Erotic Film Festival Barcelona and Suna present a juicy selection of films that explore desire, bodies and sexuality with nuance: playful, political, intimate, challenging. The night then climaxes in a participatory performance streamed live to the big screen straight from across the road in Suna."
+    },
+    {
+      "id": "fri-0300-floresta-koodoo-lamaz",
+      "artist": "Koodoo & Lamaz",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "03:00",
+      "end": "07:00"
+    },
+    {
+      "id": "fri-0400-outro-lado-cassy",
+      "artist": "Cassy",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "04:00",
+      "end": "07:00"
+    },
+    {
+      "id": "fri-0600-praia-a-pausa-fri",
+      "artist": "a pausa",
+      "stage": "praia",
+      "day": "fri",
+      "start": "06:00",
+      "end": "12:00"
+    },
+    {
+      "id": "fri-0700-floresta-konduku",
+      "artist": "Konduku",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "07:00",
+      "end": "10:00",
+      "circled": true
+    },
+    {
+      "id": "fri-0700-floresta-paquita-gordon",
+      "artist": "Paquita Gordon",
+      "stage": "floresta",
+      "day": "fri",
+      "start": "07:00",
+      "end": "10:00"
+    },
+    {
+      "id": "fri-0700-outro-lado-leafar-legov",
+      "artist": "Leafar Legov*",
+      "stage": "outro-lado",
+      "day": "fri",
+      "start": "07:00",
+      "end": "10:00"
+    },
+    {
+      "id": "sat-0900-tudo-bem-a-quiet-place-for-quiet-people",
+      "artist": "Anna Eva",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "09:00",
+      "end": null,
+      "description": "A Quiet Place for Quiet People. A soft landing for the sensitive and the overstimulated. Move slowly, breathe deeply, and enjoy the relief of not having to say anything at all. Belonging without words."
+    },
+    {
+      "id": "sat-1000-apuro-trancebreath",
+      "artist": "Eva Maria Greiderer & Alex Jenkin",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "10:00",
+      "end": "11:30",
+      "description": "Trancebreath. In-tense. Out-tense. Sus-tense. Psychedelic breathwork to transcend, rewire, and return replenished. Breathe like you mean it."
+    },
+    {
+      "id": "sat-1000-floresta-a-pausa-sat",
+      "artist": "a pausa",
+      "stage": "floresta",
+      "day": "sat",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    {
+      "id": "sat-1000-outro-lado-margaux-gazur",
+      "artist": "Margaux Gazur*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "10:00",
+      "end": "11:00"
+    },
+    {
+      "id": "sat-1100-outro-lado-alexandre-centeio",
+      "artist": "Alexandre Centeio*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "11:00",
+      "end": "12:00"
+    },
+    {
+      "id": "sat-1100-tudo-bem-silent-signals",
+      "artist": "Ollie",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "11:00",
+      "end": null,
+      "description": "Silent Signals. A quiet, playful descent beneath thinking. The body remembers what it knew before language, the child still somewhere in there starts speaking again in sensation, image, and memory."
+    },
+    {
+      "id": "sat-1200-cochilo-lula-pena",
+      "artist": "Lula Pena",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "12:00",
+      "end": "13:00",
+      "description": "One guitar. A single thread tugging you through fado's exquisite grief, flamenco's gut-punch, bossa nova's tenderness. A poet who sings and a singer who poems. Lisbon's quiet earthquake."
+    },
+    {
+      "id": "sat-1200-outro-lado-birds-tapes",
+      "artist": "Birds & Tapes*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "12:00",
+      "end": "13:00"
+    },
+    {
+      "id": "sat-1200-praia-hugo-sanchez",
+      "artist": "Hugo Sanchez",
+      "stage": "praia",
+      "day": "sat",
+      "start": "12:00",
+      "end": "16:00"
+    },
+    {
+      "id": "sat-1300-apuro-needle-as-nectar",
+      "artist": "Mathilde Naoun, Giulia Salandin, Giulia Fabbretti",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "13:00",
+      "end": "14:30",
+      "description": "Needle as Nectar. Pain into pleasure. Vulnerability, trust, consent. Permanent marks from a still-shaping angle. Tattoo as collective transformation."
+    },
+    {
+      "id": "sat-1300-outro-lado-ani-zakareishvili",
+      "artist": "Ani Zakareishvili*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "13:00",
+      "end": "14:00"
+    },
+    {
+      "id": "sat-1300-tudo-bem-astro-descent",
+      "artist": "Daniel",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "13:00",
+      "end": null,
+      "description": "Astro Descent. Each layer deeper, each threshold asking you to set something down. Through astrology, trance, and sound, we move beneath the surface of the mind, through the seen forces and the unseen ones, and meet what's already waiting."
+    },
+    {
+      "id": "sat-1400-floresta-dana-kuehr",
+      "artist": "Dana Kuehr",
+      "stage": "floresta",
+      "day": "sat",
+      "start": "14:00",
+      "end": "17:00"
+    },
+    {
+      "id": "sat-1400-outro-lado-lerosa",
+      "artist": "Lerosa*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "14:00",
+      "end": "15:00"
+    },
+    {
+      "id": "sat-1500-apuro-elemental-group-massage",
+      "artist": "em~amir",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "15:00",
+      "end": "16:30",
+      "description": "Elemental group massage. Touch your friends. Touch like a river. Touch like a rock. Gift them fire, blow on them like wind. A collaborative touch-gift ecology opens."
+    },
+    {
+      "id": "sat-1500-outro-lado-billi",
+      "artist": "Billi",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "15:00",
+      "end": "18:00"
+    },
+    {
+      "id": "sat-1500-tudo-bem-silence-moves-us",
+      "artist": "Robyn",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "15:00",
+      "end": null,
+      "description": "Silence Moves Us. A push and pull between chaos and calm, between sound and stillness, between what the body hears and what it answers with. Silence moves. The body listens. Something subtle begins to speak."
+    },
+    {
+      "id": "sat-1500-tudo-bem-soft-cell",
+      "artist": "Charlie",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "15:00",
+      "end": null,
+      "description": "Soft Cell. A late-festival session for late-festival bodies. Mantra, movement, contact, and a bit of soul pondering that takes you the rest of the way to the wellspring inside you that never actually had walls to begin with."
+    },
+    {
+      "id": "sat-1600-cochilo-bonga",
+      "artist": "Bonga",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "16:00",
+      "end": "17:00",
+      "description": "Icon of Angolan music.",
+      "circled": true
+    },
+    {
+      "id": "sat-1600-praia-alan-braxe",
+      "artist": "Alan Braxe",
+      "stage": "praia",
+      "day": "sat",
+      "start": "16:00",
+      "end": "18:00"
+    },
+    {
+      "id": "sat-1600-suna-whipping-worship",
+      "artist": "Goddess Eileen & Slave Rui",
+      "stage": "suna",
+      "day": "sat",
+      "start": "16:00",
+      "end": "17:30",
+      "description": "Whipping & Worship. A brief intro on the use of impact toys (whips, paddles, crops and canes) and a discussion on the psychic and spiritual aspects of dominance and submission. There will be lots of toys available and ample time for free play."
+    },
+    {
+      "id": "sat-1700-apuro-lets-talk-about-sex-work",
+      "artist": "Azizza Azizz, Miguel Marquez, Sabrina Sanchez",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "17:00",
+      "end": "18:30",
+      "description": "Let's Talk About Sex Work. When intimacy meets currency, what do we learn about ourselves? No judgment. Just real talk from those who know. Come into the circle."
+    },
+    {
+      "id": "sat-1700-floresta-serginho",
+      "artist": "Serginho",
+      "stage": "floresta",
+      "day": "sat",
+      "start": "17:00",
+      "end": "20:00",
+      "circled": true
+    },
+    {
+      "id": "sat-1700-tudo-bem-primordial-vibration",
+      "artist": "Sophie",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "17:00",
+      "end": null,
+      "description": "Primordial Vibration. Before music, before language, there was vibration. The universe clears its throat and we prepare to listen."
+    },
+    {
+      "id": "sat-1700-tudo-bem-tudo-bem-tudo-bom",
+      "artist": "Danilo & Fifi",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "17:00",
+      "end": null,
+      "description": "Tudo Bem, Tudo Bom. All's good my heart. The longest day deserves a chorus. Somewhere between devotion and chaos, we sing."
+    },
+    {
+      "id": "sat-1800-cochilo-john-mcentire-sam-prekop",
+      "artist": "John McEntire & Sam Prekop",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "18:00",
+      "end": "19:00",
+      "description": "Thirty years defining post-rock's skeleton. Tonight they shed skin. Rhythm-driven electronica and modular pieces so precise they make you want to dance and meditate simultaneously. Sit still. Move. Both at once."
+    },
+    {
+      "id": "sat-1800-outro-lado-aleksi-perala",
+      "artist": "Aleksi Perälä*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "18:00",
+      "end": "20:00"
+    },
+    {
+      "id": "sat-1800-praia-arrogance-arrogance",
+      "artist": "Arrogance Arrogance",
+      "stage": "praia",
+      "day": "sat",
+      "start": "18:00",
+      "end": "21:00"
+    },
+    {
+      "id": "sat-1800-suna-eco-bdsm",
+      "artist": "Aria & Annalisa",
+      "stage": "suna",
+      "day": "sat",
+      "start": "18:00",
+      "end": "19:30",
+      "description": "Eco BDSM: Your Femmasc Power. A somatic investigation into the power structures that fragment the experience of pleasure. Through the lenses of Eco-Sex and Eco-Porn, we aim to dismantle the hierarchical binaries of 'Man/Woman' and 'Culture/Nature.'"
+    },
+    {
+      "id": "sat-1900-tudo-bem-the-non-fearful-body",
+      "artist": "Phoenix",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "19:00",
+      "end": null,
+      "description": "The Non-fearful Body. Sensuality is intrinsic, not learned. Humour is a rebellion against perfectionism. Together they take the neural pathway less traveled, the wild one, the soft one, the one covered in paint. If you can laugh, your body probably feels safe enough to be here."
+    },
+    {
+      "id": "sat-0000-suna-ipponawa-extend",
+      "artist": "Ipponawa (BDSM play party)",
+      "stage": "suna",
+      "day": "sat",
+      "start": "20:00",
+      "end": "00:00"
+    },
+    {
+      "id": "sat-2000-apuro-roots-in-resonance",
+      "artist": "Maija x Masala Movement (Pooja B, Sangeeta, Vindya, SUCHI, Rishi, Mary Jane & Reena Pathrose)",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "20:00",
+      "end": "00:00",
+      "description": "Roots in Resonance - South Asian Diaspora offering. A welcome ceremony. Decolonising yoga over childhood snacks. Tracing queer histories. Bharatnatyam & Kuchipudi dance performance. How our migrant backgrounds shape the way we show up in the world and tinge our artistic expressions in electronic music."
+    },
+    {
+      "id": "sat-2000-cochilo-o-ghettao",
+      "artist": "O Ghettão",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "20:00",
+      "end": "22:00",
+      "description": "Ever heard polyrhythmic afro-deep-house, kuduro and minimal povera jazz all in one place? Well Lisbon does."
+    },
+    {
+      "id": "sat-2000-floresta-prosumer",
+      "artist": "Prosumer",
+      "stage": "floresta",
+      "day": "sat",
+      "start": "20:00",
+      "end": "00:00",
+      "circled": true
+    },
+    {
+      "id": "sat-2000-moonscreen-shcuro-maria-amor",
+      "artist": "Shcuro & Maria Amor",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "20:00",
+      "end": "22:00",
+      "description": "Downtempo DJ set. Founders of decade-old Lisbon label Paraíso and producers of the eponymous documentary. Their DJ set pays homage to the chillout rooms of 90s raves – downtempo, low BPM, unhurried.."
+    },
+    {
+      "id": "sat-2000-outro-lado-parallel-9",
+      "artist": "Parallel 9",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "20:00",
+      "end": "22:00"
+    },
+    {
+      "id": "sat-2000-suna-ipponawa",
+      "artist": "mira.Miranda, Himawari, Sad.ropes, Mari & Gigi",
+      "stage": "suna",
+      "day": "sat",
+      "start": "20:00",
+      "end": "00:00",
+      "description": "Ipponawa (BDSM play party). A shibari workshop where, through the use of a single rope, you can explore the connection with your own body and with another person. Discover how one rope can become a bridge for playful interaction and trust."
+    },
+    {
+      "id": "sat-2000-suna-pleasure-activism-101",
+      "artist": "*Femmes Tipi: Pleasure Activism 101",
+      "stage": "suna",
+      "day": "sat",
+      "start": "20:00",
+      "end": "22:00",
+      "description": "From Educational to Somatic sensual exploration of the power of pleasure and Self pleasure."
+    },
+    {
+      "id": "sat-2100-praia-natalia-escobar",
+      "artist": "Natalia Escobar",
+      "stage": "praia",
+      "day": "sat",
+      "start": "21:00",
+      "end": "00:00"
+    },
+    {
+      "id": "sat-2100-tudo-bem-summer-songstice",
+      "artist": "Danilo & Fifi",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "21:00",
+      "end": null,
+      "description": "Summer Songstice. Worship at the altar of summer in sweet sweet song. Hallelujah, but make it queer."
+    },
+    {
+      "id": "sat-2200-moonscreen-paraiso",
+      "artist": "Daniel Mota",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "22:00",
+      "end": "23:30",
+      "description": "Paraíso. In the early 90s, Portugal ignited its own dance music explosion – wild raves birthing a sound uniquely its own. Through exclusive footage and interviews with DJs, producers, dancers and promoters, this documentary traces the rise of Portuguese rave culture and its lasting echo in electronic music worldwide."
+    },
+    {
+      "id": "sat-2200-outro-lado-edward-konstantin",
+      "artist": "Edward & Konstantin",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "22:00",
+      "end": "02:00",
+      "circled": true
+    },
+    {
+      "id": "sat-2200-tudo-bem-what-emerges-between-us",
+      "artist": "Raghdan",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "22:00",
+      "end": null,
+      "description": "What Emerges Between Us. We carry hidden rooms inside us, latent versions of ourselves waiting for someone to hold the key. Something forms in the space between. Not you, not me. Something shared."
+    },
+    {
+      "id": "sat-2300-tudo-bem-bathing-in-40-hz",
+      "artist": "Asa",
+      "stage": "tudo-bem",
+      "day": "sat",
+      "start": "23:00",
+      "end": null,
+      "description": "Bathing in 40 Hz. The double bass hums at the edge of hearing. A slow-moving tide of sound. Lie down and float."
+    },
+    {
+      "id": "sat-2200-cochilo-nj-nigga-fox-danifox-firmeza",
+      "artist": "DJ Nigga Fox, DJ Danifox and DJ Firmeza",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "23:30",
+      "end": "02:00",
+      "description": "Lisbon-based DJ collective. Smile-generator since '94. Discovered on Awesome Tapesfrom Africa. Sounds like surfing on pure sunshine."
+    },
+    {
+      "id": "sat-2330-moonscreen-serendipity",
+      "artist": "Camila Padilha ft. The Sunshine Boys (live jam)",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "23:30",
+      "end": "00:00",
+      "description": "Serendipity. Two clubber friends, separated by time and space, meet again by chance on a dancefloor in the future. What unites them? The same 'hot track' that rocked their last party together. Logidy is treating us with a live version of his soundtrack in collaboration with his studio companion Flo. Aka, The Sunshine Boys."
+    },
+    {
+      "id": "sat-0000-moonscreen-modular-youth",
+      "artist": "Modular Youth (live AV)",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "00:00",
+      "end": "00:15",
+      "description": "Scenographer Luisa Lukas weaves digitised home videos from 1998–2004 into a live audiovisual meditation on the fragility of early childhood. Through datamoshing, pixel distortion and layering, images dissolve as memories do - into fragments and emotional traces. Sound and image unite, built intuitively, collapsing into silence. Each iteration is unique, specially reworked for Moonscreen.",
+      "circled": true
+    },
+    {
+      "id": "sat-0001-praia-shackleton",
+      "artist": "Shackleton*",
+      "stage": "praia",
+      "day": "sat",
+      "start": "00:00",
+      "end": "01:00"
+    },
+    {
+      "id": "sat-2330-cochilo-decius",
+      "artist": "Decius",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "00:00",
+      "end": "01:15",
+      "description": "This so fucking tough. On first listen, I got that feeling you get when you've been driving through the pitch black desert, finally hearing the bass echoing in the distance, and you make a big turn which may actually just be a cliff, but instead ends at a rave with people going off, lasers beaming between the dunes, and you know you're in for a wild night.\" — the greatest bandcamp review we ever read."
+    },
+    {
+      "id": "sat-0001-apuro-shibari-x-gong",
+      "artist": "Julim Rosa & Marcos Mangani",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "00:30",
+      "end": "01:30",
+      "description": "Shibari x Gong. Tension. Limits. Release. Rope and resonance in the space-in-between. Witness what's possible when edges become portals and the skin the primary organ of sense-making."
+    },
+    {
+      "id": "sat-0001-cochilo-joshua-serafin",
+      "artist": "Joshua Serafin & Mario Barrantes Espinoza w/ Fake Moss",
+      "stage": "cochilo",
+      "day": "sat",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "Fractured Divinities meets Maxhete. Exactly."
+    },
+    {
+      "id": "sat-0100-praia-olgica",
+      "artist": "Olgica",
+      "stage": "praia",
+      "day": "sat",
+      "start": "01:00",
+      "end": "03:00"
+    },
+    {
+      "id": "sat-0115-moonscreen-who-owns-you",
+      "artist": "notbinarycode (bee barros ~ ndr0n ~ quendera ~ violeta)",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "01:15",
+      "end": "04:00",
+      "description": "Who Owns You? Globally, data is kept captive. Here, unshackled, it flows between machine, coders, and audience. Human-hyped code generates art. No AI. Livecoding jam: we show our screens; you interpret the creation process. Visual and sonic landscapes, ephemeral and improvised."
+    },
+    {
+      "id": "sat-0200-apuro-rabbit-magic-man",
+      "artist": "The Rabbit and the Magic Man",
+      "stage": "apuro",
+      "day": "sat",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "Bondage, dominance, joy, tenderness and a touch of brute force. A performance of rebellion, pleasure, and power. Transmasc-coded, it casts the system into oblivion. Pursuing mutual destruction and pleasure while paying homage to dyke and faggot ancestries. Worshipping the body over capitalism, only to desecrate it. No sacred spaces, no virtue. The body is a spell, a weapon, a Molotov cocktail of sweat, spit, cum and defiance."
+    },
+    {
+      "id": "sat-0200-outro-lado-tobias",
+      "artist": "Tobias*",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "02:00",
+      "end": "04:00"
+    },
+    {
+      "id": "sat-0300-praia-upsammy-gyrofield",
+      "artist": "Upsammy x Gyrofield",
+      "stage": "praia",
+      "day": "sat",
+      "start": "03:00",
+      "end": "06:00"
+    },
+    {
+      "id": "sat-0400-outro-lado-serenne",
+      "artist": "Serenne",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "04:00",
+      "end": "06:00"
+    },
+    {
+      "id": "sat-0600-outro-lado-snplo",
+      "artist": "SnPLO",
+      "stage": "outro-lado",
+      "day": "sat",
+      "start": "06:00",
+      "end": "10:00",
+      "circled": true
+    },
+    {
+      "id": "sat-0600-praia-a-pausa-sat",
+      "artist": "a pausa",
+      "stage": "praia",
+      "day": "sat",
+      "start": "06:00",
+      "end": "12:00"
+    },
+    {
+      "id": "sun-0900-tudo-bem-body-as-receiver",
+      "artist": "Robyn",
+      "stage": "tudo-bem",
+      "day": "sun",
+      "start": "09:00",
+      "end": null,
+      "description": "Body as Receiver. Don't kill intelligence, just land it in the body. Low frequencies, subtle shifts, deep listening. Sound moves through you tuning the system from the inside. Less about hearing. More about feeling what's already there."
+    },
+    {
+      "id": "sun-1000-floresta-a-pausa-sun",
+      "artist": "a pausa",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    {
+      "id": "sun-1000-outro-lado-jan-jelinek",
+      "artist": "Jan Jelinek*",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "10:00",
+      "end": "11:00"
+    },
+    {
+      "id": "sun-1100-outro-lado-sam-prekop",
+      "artist": "Sam Prekop*",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "11:00",
+      "end": "12:00"
+    },
+    {
+      "id": "sun-1100-tudo-bem-gentle-reassembly",
+      "artist": "Saida",
+      "stage": "tudo-bem",
+      "day": "sun",
+      "start": "11:00",
+      "end": null,
+      "description": "Gentle Reassembly. For mornings when the body is heavy and the soul is slightly off-kilter."
+    },
+    {
+      "id": "sun-1200-apuro-performing-with-pride",
+      "artist": "Brook Tate",
+      "stage": "apuro",
+      "day": "sun",
+      "start": "12:00",
+      "end": "13:30",
+      "description": "Performing with Pride ft. Brian the non-binary Lion. A musical theatre workshop focusing on queer expression, character embodiment and finding power in voice. Part storytelling, part vocal technique and full on musical-theatre-showtime.. roar :)"
+    },
+    {
+      "id": "sun-1200-cochilo-kitty-daisy-lewis",
+      "artist": "Kitty Daisy & Lewis",
+      "stage": "cochilo",
+      "day": "sun",
+      "start": "12:00",
+      "end": "13:00",
+      "description": "Siblings serving luau guitar-ska-rockabilly-R&B chaos."
+    },
+    {
+      "id": "sun-1200-outro-lado-lina",
+      "artist": "Lina",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "12:00",
+      "end": "14:00"
+    },
+    {
+      "id": "sun-1330-apuro-conducted-improv",
+      "artist": "Shahzad Ismaily",
+      "stage": "apuro",
+      "day": "sun",
+      "start": "13:30",
+      "end": "14:30",
+      "description": "Conducted improv. Butch Morris gesture based conduction tradition. Enter sonic improv with your full cellves. No net. No fear. Just game."
+    },
+    {
+      "id": "sat-1400-praia-selecta-fontes-placeholder",
+      "artist": "Selecta Fontes",
+      "stage": "praia",
+      "day": "sun",
+      "start": "14:00",
+      "end": "16:00"
+    },
+    {
+      "id": "sun-1400-floresta-katatonic-silentio",
+      "artist": "Katatonic Silentio*",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "14:00",
+      "end": "15:00"
+    },
+    {
+      "id": "sun-1400-outro-lado-tau-car",
+      "artist": "Tau Car",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "14:00",
+      "end": "16:00",
+      "circled": true
+    },
+    {
+      "id": "sun-1400-praia-selecta-fontes",
+      "artist": "Selecta Fontes",
+      "stage": "praia",
+      "day": "sun",
+      "start": "14:00",
+      "end": "16:00"
+    },
+    {
+      "id": "sun-1500-cochilo-asmaa-hamzaoui-bnat",
+      "artist": "Asmaa Hamzaoui & Bnat Timbouktou",
+      "stage": "cochilo",
+      "day": "sun",
+      "start": "15:00",
+      "end": "16:15",
+      "description": "Southern Moroccan desert. Gnawa as living memory. Stories of slavery, migration, spiritual endurance carried in a woman's voice that could crack stone. Desert blues meets trance-state invocation."
+    },
+    {
+      "id": "sun-1500-floresta-valody",
+      "artist": "Valody",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "15:00",
+      "end": "17:30",
+      "circled": true
+    },
+    {
+      "id": "sun-1600-outro-lado-andres-zacco",
+      "artist": "Andrés Zacco",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "16:00",
+      "end": "18:00"
+    },
+    {
+      "id": "sun-1600-praia-vixen-sound",
+      "artist": "Vixen Sound",
+      "stage": "praia",
+      "day": "sun",
+      "start": "16:00",
+      "end": "18:00"
+    },
+    {
+      "id": "sun-1600-suna-foraging-pleasure",
+      "artist": "Gigi & Mari",
+      "stage": "suna",
+      "day": "sun",
+      "start": "16:00",
+      "end": "17:30",
+      "description": "Foraging pleasure. An ecosexuality workshop that explores pleasure and softness as a way of reconnecting the body with the non-human world through consent-based sensorial practices."
+    },
+    {
+      "id": "sun-1600-apuro-communititting",
+      "artist": "Communititting",
+      "stage": "apuro",
+      "day": "sun",
+      "start": "16:30",
+      "end": "18:30",
+      "description": "Strangers become waves. Touch = gospel. Sound = glue. A sonic love cult. Dive in or drift away. The flow is giving aliveness. Not a performance but a meltbood, ooze in?"
+    },
+    {
+      "id": "sun-1730-cochilo-pedrinho-xale",
+      "artist": "Pedrinho Xalé",
+      "stage": "cochilo",
+      "day": "sun",
+      "start": "17:30",
+      "end": "18:30",
+      "description": "Arrived in Lisbon at 18 with Santiago Island lodged in his marrow. Turned longing luminous. Synthesizers bent to Cape Verdean soul. Reggae and funaná tangled into something no shoreline can contain."
+    },
+    {
+      "id": "sun-1730-floresta-2jack4u",
+      "artist": "2JACK4U*",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "17:30",
+      "end": "20:00"
+    },
+    {
+      "id": "sun-1800-outro-lado-jichael-mackson",
+      "artist": "Jichael Mackson*",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "18:00",
+      "end": "20:00",
+      "circled": true
+    },
+    {
+      "id": "sun-1800-praia-simply-rockers",
+      "artist": "Simply Rockers Sound System",
+      "stage": "praia",
+      "day": "sun",
+      "start": "18:00",
+      "end": "20:00"
+    },
+    {
+      "id": "sun-1800-suna-get-nakie",
+      "artist": "Rodrigo",
+      "stage": "suna",
+      "day": "sun",
+      "start": "18:00",
+      "end": "19:30",
+      "description": "Get Nakie! What is the potential of baring the skin?"
+    },
+    {
+      "id": "sun-1900-moonscreen-486sx",
+      "artist": "Phrex (audio) & Rasco.mov (visual)",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "19:00",
+      "end": "22:00",
+      "description": "486SX (live AV). Where sonic memories from a distant past reverberate in dreams of an obscure postcapitalist future drowned in sedatives."
+    },
+    {
+      "id": "sun-2000-floresta-carrier-gavsborg",
+      "artist": "Carrier & Gavsborg*",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "20:00",
+      "end": "21:30",
+      "circled": true
+    },
+    {
+      "id": "sun-2000-outro-lado-lawrence-thomas-melchior",
+      "artist": "Lawrence & Thomas Melchior*",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "20:00",
+      "end": "21:00"
+    },
+    {
+      "id": "sun-2000-praia-vedic-roots",
+      "artist": "Vedic Roots",
+      "stage": "praia",
+      "day": "sun",
+      "start": "20:00",
+      "end": "22:00"
+    },
+    {
+      "id": "sun-2000-suna-collective-erotic-play",
+      "artist": "Jairo & Julia",
+      "stage": "suna",
+      "day": "sun",
+      "start": "20:00",
+      "end": "00:00",
+      "description": "Collective Erotic Play. A consent-centered journey where NO becomes grounding, desire becomes dialogue, and touch unfolds as conscious, collective co-creation."
+    },
+    {
+      "id": "sun-2000-suna-who-let-the-girls-out",
+      "artist": "Didi & Teresa",
+      "stage": "suna",
+      "day": "sun",
+      "start": "20:00",
+      "end": "22:00",
+      "description": "*Femmes Tipi: Who let the girls out. Ourselves, darling, connect with what turns you on in a warm, sensuous, gurl to grrl steam room. leave appeasement at the door, come feel pleasure from below. For femme & trans folkx only."
+    },
+    {
+      "id": "sun-2030-cochilo-ata-kak",
+      "artist": "Ata Kak",
+      "stage": "cochilo",
+      "day": "sun",
+      "start": "20:30",
+      "end": "21:30",
+      "description": "Ghanaian vocal acrobatics. Syllable-bender. Smile-generator since '94. Discovered on Awesome Tapesfrom Africa. Sounds like surfing on pure sunshine."
+    },
+    {
+      "id": "sun-2100-outro-lado-ulf-eriksson",
+      "artist": "Ulf Eriksson",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "21:00",
+      "end": "00:00"
+    },
+    {
+      "id": "sun-2100-apuro-spirit-theatre",
+      "artist": "Chen Ting and Shahzad Ismaily",
+      "stage": "apuro",
+      "day": "sun",
+      "start": "21:30",
+      "end": "22:30",
+      "description": "Spirit Theatre. An interactive telepathic performance where the boundaries between minds dissolve. Through sound, ritual, and immersive magic, a portal to the invisible realm opens. Dark secrets are revealed. Unspoken questions find their answers. Personal messages are channeled from the unseen."
+    },
+    {
+      "id": "sun-2130-floresta-dasha-rush",
+      "artist": "Dasha Rush",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "21:30",
+      "end": "01:00",
+      "circled": true
+    },
+    {
+      "id": "sun-2200-moonscreen-nomadica",
+      "artist": "Nomadica",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "22:00",
+      "end": "23:00",
+      "description": "Born on the slopes of Etna, untethered from any geography. Nomadica curates screenings, events and workshops at the crossroads of experimental arts. They explore the uncertain relationship between cinema's optical eye and the ever-changing natural world – a journey between forest floor and incandescent sky. Discoveries on the Forest Floor by Charlotte Pryce, LANDfILL 16 by Jennifer Reeves, Through the Lens by Cécile Fontaine, Under the Volcano by Colectivo Los Ingrávidos, The Astronomer's Dream by Julie Murray, Luminous Variations in the City Skies by Giuseppe Spina, Sun Song by Joseph Bernard"
+    },
+    {
+      "id": "sun-2200-praia-lions-den",
+      "artist": "Lion's Den",
+      "stage": "praia",
+      "day": "sun",
+      "start": "22:00",
+      "end": "00:00"
+    },
+    {
+      "id": "sun-2300-moonscreen-in-dreams",
+      "artist": "In Dreams",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "23:00",
+      "end": "00:30",
+      "description": "As our journey nears its end, drop into these dreamlike short films. Luminous works that create a gentle space for processing the week's ride. Subtle Matter Fluid Hands by Maika Garnica, Joon by Marian Aliabadi, Earth Body I by Arran Gregory, Top View of My Brain as a Crime Scene by Luzia Johow, The Cast by Leon Billerbeck, Gãthra by Camilla Dubhe and White Houston, A shell of (for) you by Julia Chetwood, UM)bigo by Sofia Santa-Rita, Sunset Special by Nicolas Gebbe, Baile do Sol by Miguel Tavares"
+    },
+    {
+      "id": "sun-2330-cochilo-raw-life-is-beautiful",
+      "artist": "Maureen Onwunali, FES., Malur, Andy",
+      "stage": "apuro",
+      "day": "sun",
+      "start": "23:30",
+      "end": "00:30",
+      "description": "Raw Life is Beautiful. Poetry with a live band. A sensory reckoning. No polish. No filter. Just beautiful, bleeding raw life."
+    },
+    {
+      "id": "sun-0000-outro-lado-eduardo-de-la-calle",
+      "artist": "Eduardo de la Calle*",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "00:00",
+      "end": "01:00",
+      "circled": true
+    },
+    {
+      "id": "sun-0000-praia-simply-rockers-late",
+      "artist": "Simply Rockers Sound System",
+      "stage": "praia",
+      "day": "sun",
+      "start": "00:00",
+      "end": "02:00"
+    },
+    {
+      "id": "sun-0040-moonscreen-resonance",
+      "artist": "Gizem Öz & Lova Ranung",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "00:40",
+      "end": "01:10",
+      "description": "Resonance (live AV). Sound unfolds as pure material: vibration, decay, interference. Visually, a drifting ecosystem of particles, spores and abstracted organic forms. Image and sound remain in deliberate tension, sustaining an atmosphere that refuses to resolve."
+    },
+    {
+      "id": "sun-0100-floresta-polar-inertia",
+      "artist": "Polar Inertia*",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "01:00",
+      "end": "02:30"
+    },
+    {
+      "id": "sun-0100-outro-lado-jane-fitz",
+      "artist": "Jane Fitz",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": "01:00",
+      "end": "05:00",
+      "circled": true
+    },
+    {
+      "id": "sun-0120-moonscreen-morada-aberta",
+      "artist": "Tânia Dinis",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "01:20",
+      "end": "02:00",
+      "description": "Morada Aberta: Onde o Gesto Cura (closing performance). Three interconnected moments, unfolding across languages, spaces and temporalities. Drawing from personal memory and the landscapes of North Portugal, Alto Minho and Galiza, this expanded cinema work follows working women - guardians of ancestral knowledge tied to land, sea and natural cycles. Between documentary and fiction, it traces the invisible gestures that sustain communities and keep sacred knowledge alive."
+    },
+    {
+      "id": "sun-0230-floresta-rene-wise",
+      "artist": "Rene Wise",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "02:30",
+      "end": "06:00",
+      "circled": true
+    },
+    {
+      "id": "sun-0600-floresta-rroxymore",
+      "artist": "rRoxymore",
+      "stage": "floresta",
+      "day": "sun",
+      "start": "06:00",
+      "end": "09:00"
+    },
+    {
+      "id": "sun-0700-tudo-bem-el-cuento",
+      "artist": "ECHO ECHO",
+      "stage": "tudo-bem",
+      "day": "sun",
+      "start": "07:00",
+      "end": null,
+      "description": "El Cuento. As the sun slowly rises, a story begins to unfold. Voices, rhythm, and imagination drift between dream and daylight. The morning is listening."
+    },
+    {
+      "id": "sun-outro-lado-untimed-dj-dustin",
+      "artist": "DJ Dustin",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": null,
+      "end": null
+    },
+    {
+      "id": "sun-outro-lado-untimed-mimi",
+      "artist": "Mimi",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": null,
+      "end": null
+    },
+    {
+      "id": "sun-outro-lado-untimed-vera",
+      "artist": "Vera",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": null,
+      "end": null
+    },
+    {
+      "id": "sun-outro-lado-untimed-vuur",
+      "artist": "Vuur",
+      "stage": "outro-lado",
+      "day": "sun",
+      "start": null,
+      "end": null
+    },
+    {
+      "id": "sun-suna-flower-altar",
+      "artist": "Flower Altar",
+      "stage": "suna",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "João Carinho. An altar of dried flowers and aromatics for missed connections, desires, and love among tombstones."
+    },
+    {
+      "id": "mon-0900-floresta-kia-richard-akingbehin",
+      "artist": "Kia & Richard Akingbehin",
+      "stage": "floresta",
+      "day": "mon",
+      "start": "09:00",
+      "end": "13:00",
+      "circled": true
+    },
+    {
+      "id": "mon-1000-cochilo-alexi-perala",
+      "artist": "Alexi Perälä",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "10:00",
+      "end": "12:00",
+      "description": "Ambient drone from astral vibrations."
+    },
+    {
+      "id": "mon-1300-cochilo-shahzad-ismaily",
+      "artist": "Shahzad Ismaily",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "13:00",
+      "end": "14:00",
+      "description": "Multi-instrumentalist. Heartstring plucker. If this doesn't tender, check your pulse."
+    },
+    {
+      "id": "mon-1300-floresta-kuba-97",
+      "artist": "Kuba'97",
+      "stage": "floresta",
+      "day": "mon",
+      "start": "13:00",
+      "end": "16:00",
+      "circled": true
+    },
+    {
+      "id": "mon-1500-cochilo-devon-rexi",
+      "artist": "Devon Rexi",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "15:00",
+      "end": "16:00",
+      "description": "Krautrock motorik flirts with dub gravity. Songs arrive like transmissions from the furthest wormhole, quantum, fantastical, but their real terrain is earthly: vulnerability, friction, the small mythologies of survival."
+    },
+    {
+      "id": "mon-1600-floresta-djrum",
+      "artist": "Djrum",
+      "stage": "floresta",
+      "day": "mon",
+      "start": "16:00",
+      "end": null,
+      "circled": true
+    },
+    {
+      "id": "mon-1730-cochilo-sonic-interventions",
+      "artist": "Sonic Interventions",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "17:30",
+      "end": "18:30",
+      "description": "The revolution, jazzified. Diasporic-futuristic-transcultural big bang. Music. Spoken word. Movement. Prepare to tremble."
+    },
+    {
+      "id": "mon-2100-cochilo-robert-aiki-audrey-lowe",
+      "artist": "Robert Aiki Audrey Lowe",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "21:00",
+      "end": "21:50",
+      "description": "Brooklyn alchemist. Space as canvas. Modular synths as paint. Timbres so rich they require their own postal code. Longform pieces that build cathedrals in your cochlea."
+    },
+    {
+      "id": "mon-2200-cochilo-colleen-libres-antes-del-final",
+      "artist": "Colleen presents Libres Antes del Final",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "22:00",
+      "end": "22:55",
+      "description": "Bubble. Pulse. Ripple along with the frequencies of the Moog Matriarch. Go deep. Remember to surface for air. You might forget."
+    },
+    {
+      "id": "mon-0700-cochilo-eutape",
+      "artist": "eUtape",
+      "stage": "cochilo",
+      "day": "mon",
+      "start": "07:00",
+      "end": "10:00",
+      "description": "Sound researcher. Deep thinker. Local fixture. Colours his worlds lush, ethereal, diffused. Soft edges to hold onto as the sun comes up."
+    }
+  ]
+}
