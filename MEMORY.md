@@ -6,8 +6,9 @@ Read ~/.claude/CLAUDE.md for memory rules and topic files.
 
 ## Status
 
-- v1 shipped locally as commit `22b872b`. Vanilla HTML/CSS/JS PWA in `public/`. 299 events, 42 pre-seeded favourites (booklet circles), 11 active stages.
-- Run locally: `cd public && python3 -m http.server 8765`, open `http://<lan-ip>:8765` on the phone.
+- **v2 shipped** locally as commit `78275cb`. Horizontal-scroll timeline + Lineup + Favourites + Info tabs, full-screen Fusion-style detail modal, genre-filtered favourites, Google Calendar URLs + .ics export, share sheet with QR, user-added events. 303 events across 12 stages, 27 booklet-circled seeded as favourites.
+- v1 retained as commit `22b872b` for context.
+- Run locally: `cd public && python3 -m http.server 8765`, open `http://<lan-ip>:8765` on the phone (currently 10.210.4.0).
 - Deploy: GitHub Pages — push to a public repo, set Pages source to `main /public`. Not yet done.
 
 ## Reference: Shallow Bunny
@@ -16,9 +17,11 @@ The reference app is at `https://shallowbunny.com/lineup/<festival>` (e.g. `…/
 
 ## Data quirks
 
-- `tudo-bem` workshops have `start` but no `end` in the booklet — UI assumes 60 min for "live now" detection; rest of the views just show the start time.
-- `mimo` and `casa-marmelada` have intro pages but no scheduled events; their chips are hidden from the Stages tab.
-- One Shackleton praia entry has a "?" mark in the booklet (transcriber flagged it as uncertain).
+- Mimo has 1 scheduled event in wakinglife.app's bundle (Glossy Mario, Fri 10:00–13:00). The user fills the rest via the **Add event** feature.
+- Suna events sourced from slay use decimal-hour times — converted to HH:MM in the merge script.
+- 54 untimed booklet entries (camps, art installations, untimed performances) live in the same events array with `start`/`end` = null.
+- Tudo Bem? workshops keep a 60-min default duration on the timetable when `end` is null.
+- A few descriptions are imperfect — re-run `scripts/merge_data.py` whenever upstream wakinglife.app refreshes.
 
 ## React rewrite is not blocked
 
