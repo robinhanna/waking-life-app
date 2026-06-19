@@ -1,24 +1,35 @@
-// Service worker for Waking Life PWA.
+// Service worker for Waking Life PWA (v2).
 // Strategy:
 //   - Shell (HTML/CSS/JS/manifest/icons): cache-first.
-//   - data/lineup.json: stale-while-revalidate so updates land on next reload.
-//   - Anything else: network-first with cache fallback.
+//   - data/lineup.json: stale-while-revalidate so refreshes land on next reload.
+//   - Vendor (qrcode): cache-first.
 
-const VERSION = "wl-v1";
+const VERSION = "wl-v2.0";
 const SHELL_CACHE = `${VERSION}-shell`;
-const DATA_CACHE = `${VERSION}-data`;
+const DATA_CACHE  = `${VERSION}-data`;
 
 const SHELL_ASSETS = [
   "./",
   "index.html",
   "app.css",
   "app.js",
-  "views.js",
   "store.js",
+  "helpers.js",
+  "calendar.js",
   "manifest.webmanifest",
+  "views/timetable.js",
+  "views/lineup.js",
+  "views/favourites.js",
+  "views/info.js",
+  "components/event-row.js",
+  "components/event-block.js",
+  "components/detail-modal.js",
+  "components/share-sheet.js",
+  "components/add-event-form.js",
+  "vendor/qrcode.mjs",
+  "icons/icon-180.png",
   "icons/icon-192.png",
   "icons/icon-512.png",
-  "icons/icon-180.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -44,7 +55,6 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
-
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
 
@@ -52,7 +62,6 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(staleWhileRevalidate(req));
     return;
   }
-
   event.respondWith(cacheFirst(req));
 });
 
@@ -61,11 +70,9 @@ async function cacheFirst(req) {
   if (cached) return cached;
   try {
     const res = await fetch(req);
-    const cache = await caches.open(SHELL_CACHE);
-    cache.put(req, res.clone());
+    if (res && res.ok) (await caches.open(SHELL_CACHE)).put(req, res.clone());
     return res;
   } catch (e) {
-    // Fallback to index for navigation requests.
     if (req.mode === "navigate") {
       const fallback = await caches.match("index.html");
       if (fallback) return fallback;
@@ -81,5 +88,5 @@ async function staleWhileRevalidate(req) {
     if (res && res.ok) cache.put(req, res.clone());
     return res;
   }).catch(() => null);
-  return cached || (await network) || new Response("[]", { headers: { "Content-Type": "application/json" } });
+  return cached || (await network) || new Response("{}", { headers: { "Content-Type": "application/json" } });
 }
