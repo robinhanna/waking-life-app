@@ -9,7 +9,7 @@ Read ~/.claude/CLAUDE.md for memory rules and topic files.
 - **v2 shipped** locally as commit `78275cb`. Horizontal-scroll timeline + Lineup + Favourites + Info tabs, full-screen Fusion-style detail modal, genre-filtered favourites, Google Calendar URLs + .ics export, share sheet with QR, user-added events. 303 events across 12 stages, 27 booklet-circled seeded as favourites.
 - v1 retained as commit `22b872b` for context.
 - Run locally: `cd public && python3 -m http.server 8765`, open `http://<lan-ip>:8765` on the phone (currently 10.210.4.0).
-- Deploy: GitHub Pages — push to a public repo, set Pages source to `main /public`. Not yet done.
+- **Deployed**: https://robinhanna.github.io/waking-life-app/ — repo at https://github.com/robinhanna/waking-life-app. GitHub Actions workflow (`.github/workflows/pages.yml`) auto-deploys `public/` on every push to main.
 
 ## Reference: Shallow Bunny
 
