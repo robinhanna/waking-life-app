@@ -19,6 +19,34 @@ export function renderInfo(data) {
   ]);
   root.append(counts);
 
+  // Update section
+  const update = el("div", { style: { marginTop: 32, borderTop: "1px solid var(--border)", paddingTop: 18 } });
+  update.append(el("h2", { class: "section" }, ["Update"]));
+  update.append(el("p", { style: { color: "var(--fg-mute)", fontSize: 13, margin: "0 0 10px" } },
+    ["Force a fresh fetch if the app looks out of date."]));
+  const updateBtn = el("button", {
+    type: "button",
+    style: { padding: "10px 14px", borderRadius: 10, background: "var(--accent)", color: "var(--gold-ink)", fontWeight: 600, fontSize: 14 },
+  }, ["Update app now"]);
+  updateBtn.addEventListener("click", async () => {
+    updateBtn.disabled = true;
+    updateBtn.textContent = "Updating…";
+    try {
+      if ("serviceWorker" in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(r => r.unregister()));
+      }
+      if ("caches" in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
+    } finally {
+      location.reload();
+    }
+  });
+  update.append(updateBtn);
+  root.append(update);
+
   // Reset section
   const reset = el("div", { style: { marginTop: 32, borderTop: "1px solid var(--border)", paddingTop: 18 } });
   reset.append(el("h2", { class: "section" }, ["Reset"]));
