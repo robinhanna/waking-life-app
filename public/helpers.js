@@ -10,10 +10,9 @@ export const DAY_SHORT_LABEL = {
   fri: "Fri", sat: "Sat", sun: "Sun", mon: "Mon",
 };
 
-// Earliest hour shown on the timetable for any day. Festival days run
-// late, so a day really starts ~10:00 and goes through to ~10:00 next morning.
-export const DAY_START_HOUR = 10;
-export const DAY_END_HOUR = 34;   // 24 + 10 = 10:00 next morning
+// Continuous-timeline constants.
+// Day-pill anchor clock hour — where the viewport scrolls when you tap a day.
+export const DAY_ANCHOR_HOUR = 12;
 
 export const el = (tag, attrs = {}, children = []) => {
   const node = document.createElement(tag);
@@ -52,46 +51,61 @@ export function dayIndex(data, day) {
   return i === -1 ? 99 : i;
 }
 
-// Return effective start/end in minutes relative to the day's start (DAY_START_HOUR * 60).
-// Events that begin before DAY_START_HOUR are treated as belonging to the previous day
-// (the booking already places them under the right day per the source). Events that
-// continue past midnight have their end shifted by +24h if it's smaller than start.
-export function blockRange(event) {
-  const startMin = toMin(event.start);
-  let endMin = toMin(event.end);
-  if (startMin == null) return null;
-  if (endMin == null) endMin = startMin + 60;   // 60-min default for missing end
-  if (endMin < startMin) endMin += 24 * 60;
-  // Express in "minutes since DAY_START_HOUR of this day".
-  const base = DAY_START_HOUR * 60;
-  let s = startMin - base;
-  let e = endMin   - base;
-  // If start is before DAY_START_HOUR (e.g. 07:00 morning sets), wrap into the previous
-  // day's tail by adding 24h. But the source already assigns those to the next day's tab,
-  // so most cases just need a forward shift if the day "officially" begins later.
-  if (s < 0) { s += 24 * 60; e += 24 * 60; }
-  return { startCol: s, endCol: e };
+// ─── Continuous timeline geometry ──────────────────────────────────────────
+
+// Minutes from festival epoch (start of data.days[0] at 00:00 local).
+// e.g. for festival 16–22 Jun, epoch = Tue 16 Jun 00:00. An event on
+// "wed" at 14:00 returns (1 * 1440 + 14*60) = 2280.
+export function minutesFromEpoch(data, day, hhmm) {
+  const di = dayIndex(data, day);
+  const mins = toMin(hhmm);
+  return di * 24 * 60 + (mins ?? 0);
 }
 
-export function nowMinutesSinceDayStart() {
+// Returns { startMin, endMin } from festival epoch for a timed event.
+// Cross-midnight events have endMin shifted by +24h. Null for untimed events.
+export function eventRange(data, event) {
+  if (!event.start) return null;
+  const startMin = minutesFromEpoch(data, event.day, event.start);
+  let endMin;
+  if (event.end) {
+    const endClock = toMin(event.end);
+    const startClock = toMin(event.start);
+    endMin = endClock <= startClock
+      ? minutesFromEpoch(data, event.day, event.end) + 24 * 60
+      : minutesFromEpoch(data, event.day, event.end);
+  } else {
+    endMin = startMin + 60;     // 60-min default for missing end
+  }
+  return { startMin, endMin };
+}
+
+export function totalFestivalMinutes(data) {
+  return data.days.length * 24 * 60;
+}
+
+// Current real time as minutes-from-epoch. Negative before festival, > total
+// after festival, used to position the now-line on the continuous timeline.
+export function nowMinutesFromEpoch(data) {
+  if (!data.dayDates || !data.days.length) return null;
+  const firstDay = data.days[0];
+  const epochIso = data.dayDates[firstDay];
+  if (!epochIso) return null;
+  const epoch = new Date(`${epochIso}T00:00:00`);
   const now = new Date();
-  const total = now.getHours() * 60 + now.getMinutes();
-  let mins = total - DAY_START_HOUR * 60;
-  if (mins < 0) mins += 24 * 60;
-  return mins;
+  return Math.round((now.getTime() - epoch.getTime()) / 60000);
 }
 
+// Which day is "today" (or yesterday if it's late-night).
 export function todayDaySlug(data) {
-  // Map current date to one of data.days using dayDates if present.
   const today = new Date();
   const iso = today.toISOString().slice(0, 10);
   for (const [day, date] of Object.entries(data.dayDates ?? {})) {
     if (date === iso) return day;
   }
-  // If before 10am, today is yesterday's festival day (late-night).
   const yesterday = new Date(today.getTime() - 24 * 3600 * 1000)
     .toISOString().slice(0, 10);
-  if (today.getHours() < DAY_START_HOUR) {
+  if (today.getHours() < DAY_ANCHOR_HOUR) {
     for (const [day, date] of Object.entries(data.dayDates ?? {})) {
       if (date === yesterday) return day;
     }
@@ -120,4 +134,30 @@ export function flagEmoji(countryCode) {
   const base = 0x1F1E6;
   const code = countryCode.toUpperCase();
   return String.fromCodePoint(base + code.charCodeAt(0) - 65, base + code.charCodeAt(1) - 65);
+}
+
+// ─── Levenshtein distance for "Did you mean" suggestions ────────────────────
+
+export function levenshtein(a, b) {
+  a = (a || "").toLowerCase();
+  b = (b || "").toLowerCase();
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+  const prev = new Array(b.length + 1);
+  const cur  = new Array(b.length + 1);
+  for (let j = 0; j <= b.length; j++) prev[j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    cur[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(
+        cur[j - 1] + 1,
+        prev[j] + 1,
+        prev[j - 1] + cost,
+      );
+    }
+    for (let j = 0; j <= b.length; j++) prev[j] = cur[j];
+  }
+  return prev[b.length];
 }

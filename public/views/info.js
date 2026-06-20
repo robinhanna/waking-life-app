@@ -1,6 +1,6 @@
 // Info / about page. Minimal copy, version, debug reset.
 import { el } from "../helpers.js";
-import { reseedFavourites, clearFavourites } from "../store.js";
+import { clearFavourites } from "../store.js";
 
 const VERSION = "v2.0";
 
@@ -51,21 +51,9 @@ export function renderInfo(data) {
   const reset = el("div", { style: { marginTop: 32, borderTop: "1px solid var(--border)", paddingTop: 18 } });
   reset.append(el("h2", { class: "section" }, ["Reset"]));
 
-  const reseedBtn = el("button", {
-    type: "button",
-    style: { padding: "10px 14px", borderRadius: 10, background: "var(--bg-elev)", color: "var(--fg)", fontSize: 14 },
-  }, ["Re-seed favourites from booklet"]);
-  reseedBtn.addEventListener("click", () => {
-    if (confirm("Replace your current favourites with the original booklet circles? Notes will be wiped too.")) {
-      reseedFavourites(data.events);
-      document.dispatchEvent(new CustomEvent("favs:changed"));
-    }
-  });
-  reset.append(reseedBtn);
-
   const clearBtn = el("button", {
     type: "button",
-    style: { padding: "10px 14px", borderRadius: 10, background: "transparent", color: "var(--heart)", fontSize: 14, marginLeft: 8 },
+    style: { padding: "10px 14px", borderRadius: 10, background: "transparent", color: "var(--heart)", fontSize: 14 },
   }, ["Clear all favourites"]);
   clearBtn.addEventListener("click", () => {
     if (confirm("Clear all favourites and notes?")) {

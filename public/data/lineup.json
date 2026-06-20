@@ -68,17 +68,20 @@
     "camping": {
       "label": "Creative camps",
       "color": "#B8A788",
-      "kind": "ongoing"
+      "kind": "ongoing",
+      "intro": "Campiriñas para todas! Creative Camps are thematic bairros that add refreshing, weird & funky participatory spaces on the campsite. Driven by individuals or small collectives, they are experimental, temporary spaces for campsite vibe elevation, investigation and transmutation. Take a whirl.."
     },
     "art-installation": {
       "label": "Art installations",
       "color": "#9AAFAB",
-      "kind": "ongoing"
+      "kind": "ongoing",
+      "intro": "Material inventions drawing out immaterial reactions. Whether in canopies, dusty corners or the lake's edge, the terrain is laden with artistic booby traps. Try not to get ensnared."
     },
     "performances": {
       "label": "(some) performances",
       "color": "#C9B080",
-      "kind": "ongoing"
+      "kind": "ongoing",
+      "intro": "If you keep your eyes wide shut you might catch a glimpse of a performance or two, a sizzle, a spark, and collision with the fantastical may include you if you're in the right place at the right time. Where does the line blur between the performer and the audience? You can't have FOMO if you don't know when you're missing in action.."
     }
   },
   "events": [
@@ -139,7 +142,7 @@
       "countryCode": null
     },
     {
-      "id": "camp-venga-bingo",
+      "id": "camping-venga-bingo",
       "artist": "Venga Bingo",
       "stage": "camping",
       "day": "tue",
@@ -343,7 +346,7 @@
       "countryCode": "PT/IT"
     },
     {
-      "id": "camp-a-mesa",
+      "id": "camping-a-mesa",
       "artist": "A Mesa",
       "stage": "camping",
       "day": "wed",
@@ -352,37 +355,22 @@
       "description": "A growing table, rotating DIY workshops, weird materials, and good company. Weaving, animating, sewing, synthesising, tarot-making, incense-rolling and more. Find a seat, something's always happening.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-a-quiet-spirit",
-      "artist": "A Quiet Spirit",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "CALMA. A durational performance where a sculptural element is slowly transformed into a living wind chime. Through gentle movement, sound and light, the space is subtly activated. What emerges is a fleeting, poetic moment, and a resonance that remains beyond the night.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "art-bus-stop",
+      "id": "art-installation-bus-stop",
       "artist": "Bus stop",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Sunburn Gaze. A lost urban artefact. A stage for the inspired. A space for social encounters and strange visions.. What happens in the bus stop, no one talks about. But the lights keep flickering as if something weird will happen tonight.",
+      "description": "Sunburn Gaze. A lost urban artefact. A stage for the inspired. A space for social encounters and strange visions. What happens in the bus stop, no one talks about. But the lights keep flickering as if something weird will happen tonight.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-call-your-grandma",
+      "id": "art-installation-call-your-grandma",
       "artist": "Call your grandma",
       "stage": "art-installation",
       "day": "wed",
@@ -391,37 +379,34 @@
       "description": "minipops. A side-quest where embracing old technology and forgotten traditions will surface questions that only your elders have an answer to.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-calma",
+      "id": "art-installation-calma",
       "artist": "CALMA",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Mopets off-grid. CALMA. If you are lucky you will find CALMA in the deep wilderness of the terrain.. a hidden space to rest your spirit & lounge in nature at daytime and catch performative surprises & light art at night...",
+      "description": "Mopets off-grid. CALMA. If you are lucky you will find CALMA in the deep wilderness of the terrain… a hidden space to rest your spirit & lounge in nature at daytime and catch performative surprises & light art at night…",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-casa-marmelada",
+      "id": "art-installation-casa-marmelada",
       "artist": "casa marmelada",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "We are the stone house, you are the milk, drawn from the silence of granite and silk. A psychedelic picnic for the soul unfolds in the cottage no one can control. Casa Marmelada is open.. then not, a door that remembers what footsteps forgot. We lure you with stories, then send you along, you'll leave with a new tune, a different song. No beans will we spill, not a secret, nor clue just sneaky-peek knowing between us and you. So come to the edge of the nearly-unseen: the stone house is pouring from places between.",
+      "description": "We are the stone house, you are the milk, drawn from the silence of granite and silk. A psychedelic picnic for the soul unfolds in the cottage no one can control. Casa Marmelada is open… then not, a door that remembers what footsteps forgot. We lure you with stories, then send you along, you'll leave with a new tune, a different song. No beans will we spill, not a secret, nor clue — just sneaky-peek knowing between us and you. So come to the edge of the nearly-unseen: the stone house is pouring from places between.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-chandeliers",
+      "id": "art-installation-chandeliers",
       "artist": "Chandeliers",
       "stage": "art-installation",
       "day": "wed",
@@ -430,11 +415,10 @@
       "description": "Parker Heyl. Two kinetic Chandeliers inspired by the 1875 work of mathematician Harry Hart. They echo the complexity of digital imagery, yet these sculptures achieve a physical object aura by using purely analog and mechanical technologies.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-cloud-9-on-7-heaven",
+      "id": "camping-cloud-9-on-7-heaven",
       "artist": "Cloud 9 on 7 Heaven",
       "stage": "camping",
       "day": "wed",
@@ -443,37 +427,34 @@
       "description": "A living apple tree suspended in a white dreamworld. No gatekeepers, no agenda. Come lie down and remember you're made of mud.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-cold-sauna",
+      "id": "art-installation-cold-sauna",
       "artist": "Cold Sauna",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Service Continu. A sensory refuge, this 'cold sauna' extends the lake's cooling effect through a simple closed-loop water system. Lake water is pumped to create a gentle artificial rain, cooling the space. Filtered light, dampened sound, and reclaimed materials create a low-tech, reversible retreat for rest and reset.",
+      "description": "Service Continu. A sensory refuge, this 'cold sauna' cooling effect extends the lake's cooling effect through a simple closed-loop water system. Lake water is pumped to create a gentle artificial rain, cooling the space. Filtered light, dampened sound, and reclaimed materials create a low-tech, reversible retreat for rest and reset.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-costura-armada",
+      "id": "camping-costura-armada",
       "artist": "Costura Armada",
       "stage": "camping",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Sew, repair, upcycle... Drop off your textile leftovers while you're at it. Repair is radical, and honestly quite satisfying.",
+      "description": "Sew, repair, upcycle… Drop off your textile leftovers while you're at it. Repair is radical, and honestly quite satisfying.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-cramp-camp",
+      "id": "camping-cramp-camp",
       "artist": "Cramp Camp",
       "stage": "camping",
       "day": "wed",
@@ -482,11 +463,10 @@
       "description": "Free period care, herbal tea, a cool breeze, and zero shame. Also: a parade. You'll know it when you see it.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-cubkos-lab",
+      "id": "camping-cubko-s-lab",
       "artist": "Cubko's Lab",
       "stage": "camping",
       "day": "wed",
@@ -495,37 +475,22 @@
       "description": "Old PVC banners become handmade pouches and bags, one-of-a-kind and built for dancing. Your hands do the work, your imagination does the rest.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-daydream-assembly",
+      "id": "camping-daydream-assembly",
       "artist": "Daydream Assembly",
       "stage": "camping",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Listen to your body, then sew it a little, friend. Take it, leave it, or give it away... you decide where your cushion goes pushin'.",
+      "description": "Listen to your body, then sew it a little, friend. Take it, leave it, or give it away… you decide where your cushion goes pushin'.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-die-hohle",
-      "artist": "Die Höhle",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "c.a.l.perspectives. Installations of inhabitable camera obscura, offering direct contact with the natural phenomenon that makes photography possible. Enter into relationship with the upside down, and an archaeological experience of the image.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-draw-for-your-life",
+      "id": "camping-draw-for-your-life",
       "artist": "Draw for Your Life",
       "stage": "camping",
       "day": "wed",
@@ -534,11 +499,10 @@
       "description": "Daily sessions, live models, themed nights. Full permission to look intensely at another human being.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-dusty-dusk",
+      "id": "camping-dusty-dusk",
       "artist": "Dusty Dusk",
       "stage": "camping",
       "day": "wed",
@@ -547,11 +511,10 @@
       "description": "Live, improvised, unplanned. Music that emerges from the day and disappears into the night. Curious ears and spontaneous collaborators welcome!",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-eden-cinema",
+      "id": "camping-eden-cinema",
       "artist": "Eden Cinema",
       "stage": "camping",
       "day": "wed",
@@ -560,24 +523,10 @@
       "description": "Banned films. Fake candles. Strange conversations. Find it if you can.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-embarcacao-entidade",
-      "artist": "EMBARCAÇÃO-ENTIDADE",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Brittany Maton, Eleni Giannopoulou & others. A floating masquerade without a schedule. Part ritual, part hallucination, part boat. Somewhere between folklore, science-fiction, and the weird.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-entre-maos",
+      "id": "camping-entre-maos",
       "artist": "Entre Mãos",
       "stage": "camping",
       "day": "wed",
@@ -586,11 +535,10 @@
       "description": "A haircut as a conscious ritual. Trust the hands, surrender the hair, leave somehow different.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-fugazmente",
+      "id": "art-installation-fugazmente",
       "artist": "Fugazmente",
       "stage": "art-installation",
       "day": "wed",
@@ -599,11 +547,10 @@
       "description": "Guardians of Words. A curated sanctuary of textual spirituality and poetry with spirit. Join the Guardians of Words to explore the cosmos by peeking into new perspectives through the bewildering spell of language.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-gratitude-cleanse",
+      "id": "camping-gratitude-cleanse",
       "artist": "Gratitude Cleanse",
       "stage": "camping",
       "day": "wed",
@@ -612,11 +559,10 @@
       "description": "Write what you're grateful for, bless some sad-looking plants, bring them to the lake, wash each other's hands, make incense to take home. Mona holds the space. The rest is magic.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-ham-nafas-animation",
+      "id": "camping-ham-nafas-animation-workshop",
       "artist": "Ham-nafas Animation Workshop",
       "stage": "camping",
       "day": "wed",
@@ -625,11 +571,10 @@
       "description": "Make a tiny animation, add it to everyone else's, and receive the collective film at the end. In Farsi, ham-nafas means sharing the same breath, so inhale.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-huritao",
+      "id": "camping-huritao",
       "artist": "Huritao",
       "stage": "camping",
       "day": "wed",
@@ -638,11 +583,10 @@
       "description": "Create a self-portrait on a tile from foraged materials. Hang it on the wall, and become part of a collective class picture.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-improv-mojo-dojo",
+      "id": "camping-improv-mojo-dojo",
       "artist": "Improv Mojo Dojo",
       "stage": "camping",
       "day": "wed",
@@ -651,11 +595,10 @@
       "description": "Paint with everything you've ever lived through, in coordination with others. Beginners, advanced, and the curious are all welcome in this open fruit-salad activity. Just try it out, or come and watch.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-kaaskade",
+      "id": "art-installation-kaaskade",
       "artist": "KäasKäde",
       "stage": "art-installation",
       "day": "wed",
@@ -664,38 +607,10 @@
       "description": "JeJoMaDe. A platform by the waterfront where people can chill, wonder and be pleasantly confused. A confusing mix of harbour & cheese, many options to hang & sit, swing, nibble & crawl.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-lopera-du-villageois",
-      "artist": "L'Opéra du Villageois",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Zora Snake and Wilfried Nakeu. A burial and liberation ritual. L'Opéra du Villageois denounces the European museums that harbour looted art in their collections and conjures up the spirit of the stolen objects. Snake reclaims everything that the colonial powers have plundered over the past centuries: the gold, the salt, the history. But their spirits are not dead...",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null,
-      "circled": true
-    },
-    {
-      "id": "perf-la-belleza-es-asquerosa",
-      "artist": "La Belleza es Asquerosa",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Asquito Eso. A body both fragile and fierce, shapeshifting and endlessly reborn. A striptease unfolds not to seduce but to speak out. Here sensuality trembles with rage and anger undresses itself slowly. This body, improbably, beautiful, grotesque, defiant, wears its rawness like myth.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-loom-room",
+      "id": "camping-loom-room",
       "artist": "Loom Room",
       "stage": "camping",
       "day": "wed",
@@ -704,11 +619,10 @@
       "description": "A 4x4m loom, lots of weird materials, zero instructions. Come weave something into existence.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-midsummer-mouramas",
+      "id": "art-installation-midsummer-mouramas",
       "artist": "Midsummer Mouramas",
       "stage": "art-installation",
       "day": "wed",
@@ -717,37 +631,22 @@
       "description": "Cella Collective. These lakeside structures turn local ecology, geology and folklore, into spaces for contemplative bathing and soaking. These dwellings house the 'Enchanted Moura' and they invite you to enjoy the threshold between land and water, waiting and becoming.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-mimo-smellscape",
+      "id": "art-installation-mimo-smellscape",
       "artist": "Mimo Smellscape",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Vlenser. Scent slips past logic, straight into memory, into feeling - at Mimo, we follow this invisible thread. Locally gathered, constantly shifting, smell is our guide. No labels, no hierarchy - but sensation rewiring perception, dissolving limits, and pulling you deep into the olfactory subconscious.",
+      "description": "Vlenser. Scent slips past logic, straight into memory, into feeling — at Mimo, we follow this invisible thread. Locally gathered, constantly shifting, smell is our guide. No labels, no hierarchy — but sensation rewiring perception, dissolving limits, and pulling you deep into the olfactory subconscious.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-miranda-andacondas",
-      "artist": "Miranda & the Andacondas present 'Judge not lest ye be judged'",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Knetterbar. Knetterbar is a condensed microcarnival - a portal of kaos & magic, where time bends and joyfulness grooves through surreal scenes. Hosted by Miranda from the Multiverse and her highly professional this-year-not-so-randomly assigned assistants. Expect hijinks, volcanic dances, disco sound massages and mystery snacks. Reality? Maybe. Fun? Definitely.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-moon-shack",
+      "id": "camping-moon-shack",
       "artist": "Moon Shack",
       "stage": "camping",
       "day": "wed",
@@ -756,11 +655,10 @@
       "description": "Moon Shack, baby, moon shack! Confess to the moon, get a wish, and pass it around. She's listening.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-mudanca",
+      "id": "art-installation-mudanca",
       "artist": "Mudança",
       "stage": "art-installation",
       "day": "wed",
@@ -769,11 +667,10 @@
       "description": "Echo Studios. Mudança is inspired by butterfly evolution, structures across water reflect each phase. Visitors move through a living narrative. Strangers breathe together, less alone in change. Something shifts and loosens. We leave differently than we arrived, gently rearranged, not new, not whole.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-nave-del-sonido",
+      "id": "camping-nave-del-sonido",
       "artist": "Nave del Sonido",
       "stage": "camping",
       "day": "wed",
@@ -782,11 +679,10 @@
       "description": "Mess around on synths, record it on a cassette, keep the tape. Like a sound photograph, but cooler and slightly noisier.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-ovo",
+      "id": "art-installation-ovo",
       "artist": "OvO",
       "stage": "art-installation",
       "day": "wed",
@@ -795,11 +691,10 @@
       "description": "Oliver Ellmers. Reimagining OvO as a darker, more minimal parametric sculpture. The design is generative in approach, using light, reflection and refraction to continuously reshape the space. It's intended as a calm but uncanny place to reset and drift through a more cinematic mood.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-parallel-truths",
+      "id": "camping-parallel-truths",
       "artist": "Parallel Truths",
       "stage": "camping",
       "day": "wed",
@@ -808,11 +703,10 @@
       "description": "Whisper something into a plant. The rest is hard to explain.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-pieces-chess-club",
+      "id": "camping-pieces-chess-club",
       "artist": "Pieces Chess Club",
       "stage": "camping",
       "day": "wed",
@@ -821,24 +715,22 @@
       "description": "Chess, but social. Music, fun, and a few surprises from a club that's taken over Lisbon, London, Oslo, and now Crato.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-pinata",
+      "id": "art-installation-pinata",
       "artist": "Piñata",
       "stage": "art-installation",
       "day": "wed",
       "start": null,
       "end": null,
-      "description": "Robin Jae. Here, blind violence is rewarded, for a piñata is completed by its destruction! These days the game is performed for thrills and rewards. Yet, if the piñata is made to be a demon, or a spirit, its destruction becomes a symbolic gesture. O' brave warrior, your prize awaits... Come! Conquer! Liberate spirit!",
+      "description": "Robin Jae. Here, blind violence is rewarded, for a piñata is completed by its destruction! These days the game is performed for thrills and rewards. Yet, if the piñata is made to be a demon, or a spirit, its destruction becomes a symbolic gesture. O' brave warrior, your prize awaits… Come! Conquer! Liberate spirit!",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-samara-pod",
+      "id": "camping-samara-pod",
       "artist": "Samara Pod",
       "stage": "camping",
       "day": "wed",
@@ -847,50 +739,10 @@
       "description": "A womb-like pod abandoned in the undergrowth by persons or civilisations unknown. Scientists are taking notes. You should probably go inside.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-silencio-nao-e-silencioso",
-      "artist": "Silêncio não é Silencioso",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Azuru. Shhhhhhhhhhhhhhhhhhhhhhhhhhhh.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "perf-soft-cryptogamic-drifts",
-      "artist": "Soft Cryptogamic Drifts",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "M.O.S.S.S. (Moving Observations on Surviving Soft Skills) & Landcare Club. Enter the long now, armed with affective tools and tear into small breaches in reality. With cryptogams as our kin, bryophytes, lichens, seaweed, fungi, ferns, we play with the invisible and kneel before mystery.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "perf-song-for-the-lake",
-      "artist": "Song for the Lake",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "nitamortei + maud gyssels. Which human, inhuman, past and future voices can be heard in interaction with the lake as a source of histories, narratives and rituals? Its movement is circular. Consider it a looping song, an invitation to wade in the shallow waters.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-tarot-craft-lab",
+      "id": "camping-tarot-craft-lab",
       "artist": "Tarot Craft Lab",
       "stage": "camping",
       "day": "wed",
@@ -899,11 +751,10 @@
       "description": "Make your own tarot cards. Intuition required, art skills not so much.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-tarot-sanctuary",
+      "id": "camping-tarot-sanctuary",
       "artist": "Tarot Sanctuary",
       "stage": "camping",
       "day": "wed",
@@ -912,11 +763,10 @@
       "description": "A one-to-one therapeutic tarot reading in a softly held space. Not to predict your future, but to help you understand your present. Also roaming the festival for a one-card hit if you feel called.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-tinctorium-plant-lab",
+      "id": "camping-tinctorium-plant-lab",
       "artist": "Tinctorium Plant Lab",
       "stage": "camping",
       "day": "wed",
@@ -925,11 +775,10 @@
       "description": "A witches' kitchen where the plants finally tell you their secrets. Come after dark too, some of them glow.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-tranquilo-toss",
+      "id": "camping-tranquilo-toss",
       "artist": "Tranquilo Toss",
       "stage": "camping",
       "day": "wed",
@@ -938,24 +787,10 @@
       "description": "Pétanque. Sun. Maybe pastis. Definitely new friends.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-tuning-folk",
-      "artist": "Tuning folk, Tuning folks, Tuning forks",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "RÆV (Vera & Eva Maria). Equipped with tuning forks and other instruments, the Tuning Folk roam around, finding depleted souls, and nurturing them back to life.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-wakys-vault",
+      "id": "camping-waky-s-vault",
       "artist": "Waky's Vault",
       "stage": "camping",
       "day": "wed",
@@ -964,24 +799,10 @@
       "description": "Craft your own little container from bamboo and cork. For butts, treasures, or honestly whatever :)",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "perf-water-bearer",
-      "artist": "Water Bearer",
-      "stage": "performances",
-      "day": "wed",
-      "start": null,
-      "end": null,
-      "description": "Riley Davidson & Hadrien Daigneault-Roy. A response to the announcement from hydrologists of a global water bankruptcy, the performance treats water as precious alchemical matter, resonating at the core of our flesh. Quicksilver and tears, rivers and prayer.",
-      "genres": [],
-      "country": null,
-      "countryCode": null,
-      "when": null
-    },
-    {
-      "id": "camp-weaving-worlds",
+      "id": "camping-weaving-worlds",
       "artist": "Weaving Worlds",
       "stage": "camping",
       "day": "wed",
@@ -990,11 +811,10 @@
       "description": "Add your thread to a collective tapestry growing all week long. Weavever you go you are part of the pattern.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "camp-whimsical-theatre",
+      "id": "camping-whimsical-theatre",
       "artist": "Whimsical Theatre",
       "stage": "camping",
       "day": "wed",
@@ -1003,11 +823,10 @@
       "description": "Improv, movement, character: step outside yourself for a bit. Unscripted, ungovernable.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-www",
+      "id": "art-installation-www-wakinglife-wide-web",
       "artist": "WWW - WakingLife Wide Web",
       "stage": "art-installation",
       "day": "wed",
@@ -1016,11 +835,10 @@
       "description": "ARAS, Coletivo Giria, Louise. A participatory crochet installation developed through workshops involving both residents of Crato and festival crew. Young and old and local and not, are invited to contribute with crochet 'granny squares' that will be assembled into a shared textile structure creating the intimate, cosy, colourful 'Crocave'.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
     },
     {
-      "id": "art-you-me-we",
+      "id": "art-installation-you-me-we",
       "artist": "you me we",
       "stage": "art-installation",
       "day": "wed",
@@ -1029,8 +847,21 @@
       "description": "Christian Wolf. Experience your body, experience embodiment in time and space, with your next one. Reflect, realize, create, be in the now.",
       "genres": [],
       "country": null,
-      "countryCode": null,
-      "when": "Ongoing"
+      "countryCode": null
+    },
+    {
+      "id": "thu-0030-moonscreen-well-well-well",
+      "artist": "Well Well Well",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "00:30",
+      "end": "01:00",
+      "description": "Horta & Meerwein",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "thu-0045-cochilo-nkisi",
@@ -1087,6 +918,20 @@
       "circled": true
     },
     {
+      "id": "thu-0100-moonscreen-rawy-presents",
+      "artist": "Rawy Presents",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "SWANA cinema shorts",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "thu-0200-cochilo-hhy-and-the-kampala-unit",
       "artist": "HHY & The Kampala Unit",
       "stage": "cochilo",
@@ -1102,6 +947,34 @@
       ],
       "country": "Portugal / Uganda",
       "countryCode": "PT/UG"
+    },
+    {
+      "id": "thu-0200-moonscreen-tiny-man-festival-experimental-animated-shots",
+      "artist": "Tiny Man Festival: Experimental Animated Shots",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "02:00",
+      "end": "03:00",
+      "description": "",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "thu-0300-moonscreen-mountains-that-weep",
+      "artist": "Mountains That Weep",
+      "stage": "moonscreen",
+      "day": "thu",
+      "start": "03:00",
+      "end": "04:00",
+      "description": "Aurora Solá",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "thu-0400-praia-kiss-nuka",
@@ -1615,10 +1488,9 @@
       "day": "thu",
       "start": "22:00",
       "end": "23:00",
-      "description": "A quiet inauguration; revealing, unveiling. We invite weary and curious bodies into our amphitheater of denim and dust. Let the first images of the weekend wash over you. Some things are better discovered than described. Schnap into it!",
+      "description": "a quiet inauguration",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -1698,10 +1570,9 @@
       "day": "thu",
       "start": "23:15",
       "end": "00:15",
-      "description": "Drawing on archival and everyday footage – often shaped by a colonial gaze – three films reclaim and reimagine perceptions of Palestine through experimental image-making that blurs documentary and fiction.  UNDR by Kamal Al Jafaari The flowers stand silently witnessing by Theo Panagopoulos Home Movies Gaza by Basma Al Shari",
+      "description": "live score Nicolas Baviere",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -1721,16 +1592,29 @@
       "countryCode": null
     },
     {
-      "id": "fri-0030-moonscreen-well-well-well",
-      "artist": "Well Well Well",
+      "id": "fri-0000-moonscreen-unheld-iii",
+      "artist": "Unheld III",
       "stage": "moonscreen",
       "day": "fri",
-      "start": "00:30",
+      "start": "00:00",
       "end": "01:00",
-      "description": "A camera tethered to a 100-meter cord descends into a single well – continuously, spiraling, without arrival. Inspired by early phantom ride films of the late 19th century, this work redirects cinema's oldest illusion of motion downward into geological and psychic depths. Stone becomes echo. Engineering becomes oracle.",
+      "description": "Ehteshamzadeh & Koochakzadeh-Yazdi",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "fri-0100-moonscreen-curated-by-curtas-maryam-tafakory",
+      "artist": "Curated by Curtas: Maryam Tafakory",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "Portuguese shorts",
+      "genres": [
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -1751,21 +1635,6 @@
       "country": "UK",
       "countryCode": "GB",
       "circled": true
-    },
-    {
-      "id": "fri-0100-moonscreen-rawy-presents",
-      "artist": "Rawy Presents",
-      "stage": "moonscreen",
-      "day": "fri",
-      "start": "01:00",
-      "end": "02:00",
-      "description": "A Berlin-based collective of filmmakers and cinephiles dedicated to independent SWANA (Southwest Asia & North Africa) cinema. Through pop-up screenings worldwide, they scout raw talents and untold stories – bridging cultures, preserving heritage and amplifying voices that deserve a bigger screen.  White Winged Horse by Mahyar Mandegar Sultana's Reign by Hadi Moussally Ship of Fools by Alia Haju",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": null,
-      "countryCode": null
     },
     {
       "id": "fri-0100-cochilo-takkak-takkak",
@@ -1801,6 +1670,20 @@
       "countryCode": "GB"
     },
     {
+      "id": "fri-0200-moonscreen-curated-by-suna-and-erotic-film-festival-barcelona",
+      "artist": "Curated by SUNA & Erotic Film Festival Barcelona",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "sexy shorts & shadowplay",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "fri-0200-praia-mala",
       "artist": "Mala",
       "stage": "praia",
@@ -1825,36 +1708,6 @@
       "description": "w/ Moonscreen — EFF Barcelona",
       "genres": [
         "Workshop"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "fri-0200-moonscreen-tiny-man-festival-experimental-animated-shots",
-      "artist": "Tiny Man Festival: Experimental Animated Shots",
-      "stage": "moonscreen",
-      "day": "fri",
-      "start": "02:00",
-      "end": "03:00",
-      "description": "Tiny Man, the interplanetary creature of extraordinary dimensions, returns to Earth for another round of terrestrial displays of stories being told. A yearly challenge, we ask for creatives of all shapes to tell their best tales based on a theme. Short and animated, this is an anthology of trips, Trips and TRIPS from around the world, done exclusively for the Tiny Man.",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "fri-0300-moonscreen-mountains-that-weep",
-      "artist": "Mountains That Weep",
-      "stage": "moonscreen",
-      "day": "fri",
-      "start": "03:00",
-      "end": "04:00",
-      "description": "Three black mountains blink down on aeons of human doing and undoing, while a geologist and an indigenous poet search the Amazonian landscape for clues from which to reconstruct a fast vanishing past.",
-      "genres": [
-        "cinema",
-        "AV"
       ],
       "country": null,
       "countryCode": null
@@ -2451,10 +2304,9 @@
       "day": "fri",
       "start": "21:30",
       "end": "22:00",
-      "description": "These small compositions were made earlier at the Landcare Club. Join us for an appreciation of seed fluffs & flower petals to discover more about the land, or just because they're beautiful!",
+      "description": "Landcare Club & Diaskoop",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -2466,10 +2318,9 @@
       "day": "fri",
       "start": "22:00",
       "end": "23:30",
-      "description": "K is a solo that explores the body as a field of forces in transformation. In dialogue with space and environment, sound, light, and movement intertwine to create an intense and immersive WOW. A performance that e x p a n d s perception.",
+      "description": "Mathieu Erlacher",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -2550,6 +2401,20 @@
       "countryCode": null
     },
     {
+      "id": "sat-0000-moonscreen-modular-youth",
+      "artist": "Modular Youth",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "00:00",
+      "end": "00:15",
+      "description": "Luisa Lukas",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "sat-0000-praia-niknak",
       "artist": "NikNak",
       "stage": "praia",
@@ -2568,19 +2433,18 @@
       "countryCode": "GB"
     },
     {
-      "id": "sat-0000-moonscreen-unheld-iii",
-      "artist": "Unheld III",
+      "id": "sat-0015-moonscreen-phase-space-field",
+      "artist": "Phase Space: Field",
       "stage": "moonscreen",
       "day": "sat",
-      "start": "00:00",
-      "end": "01:00",
-      "description": "This evening offers two works by Iranian women – each finding their own language for displacement, memory and what the body carries across borders.  Unheld III explores tender moments of disassociation in female bodies – a requiem for displacement, holding fragments of home while embracing an identity that can only emerge at a distance. Through improvised yet carefully mapped performance, Kimia's wearable Alloy Resonator transforms her body into instrument & Saghi's intimate archive of haptic encounters with flora and female tenderness builds a world between dislocation and connection.",
+      "start": "00:15",
+      "end": "01:15",
+      "description": "Gwenan & Danimation",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
-      "country": "Iran",
-      "countryCode": "IR"
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "sat-0100-outro-lado-cosmo",
@@ -2598,21 +2462,6 @@
       ],
       "country": "South Korea",
       "countryCode": "KR"
-    },
-    {
-      "id": "sat-0100-moonscreen-curated-by-curtas-maryam-tafakory",
-      "artist": "Curated by Curtas: Maryam Tafakory",
-      "stage": "moonscreen",
-      "day": "sat",
-      "start": "01:00",
-      "end": "02:00",
-      "description": "Maryam Tafakory layers poetry, archival fragments and speculative nonfiction into films that move through historical gaps and unspoken rules. Her practice traces quiet acts of erasure – upon bodies, intimacies, histories – giving space to concealed queer stories and what is too often dismissed as excessive or trivial.  Nazarbazi Razeh-Del Daria's Night Flower",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": "Iran",
-      "countryCode": "IR"
     },
     {
       "id": "sat-0100-praia-nosedrip",
@@ -2634,6 +2483,20 @@
       "circled": true
     },
     {
+      "id": "sat-0115-moonscreen-who-owns-you",
+      "artist": "Who Owns You?",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "01:15",
+      "end": "04:00",
+      "description": "notbinarycode — livecoding jam",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "sat-0200-apuro-a-sonic-seance",
       "artist": "A Sonic Séance",
       "stage": "apuro",
@@ -2643,21 +2506,6 @@
       "description": "A durational sonic séance of deep frequencies, strings, chants, herbal potions, and an altar for the departed. Mourning as collective resonance. Rest among ghosts. Dawn comes tender. Come lay with us.",
       "genres": [
         "performance"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "sat-0200-moonscreen-curated-by-suna-and-erotic-film-festival-barcelona",
-      "artist": "Curated by SUNA & Erotic Film Festival Barcelona",
-      "stage": "moonscreen",
-      "day": "sat",
-      "start": "02:00",
-      "end": "04:00",
-      "description": "Erotic Film Festival Barcelona and Suna present a juicy selection of films that explore desire, bodies and sexuality with nuance: playful, political, intimate, challenging. The night then climaxes in a participatory performance streamed live to the big screen straight from across the road in Suna.",
-      "genres": [
-        "cinema",
-        "AV"
       ],
       "country": null,
       "countryCode": null
@@ -3229,13 +3077,12 @@
       "day": "sat",
       "start": "20:00",
       "end": "22:00",
-      "description": "Founders of decade-old Lisbon label Paraíso and producers of the eponymous documentary. Their DJ set pays homage to the chillout rooms of 90s raves – downtempo, low BPM, unhurried..",
+      "description": "downtempo dj set",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
-      "country": "Portugal",
-      "countryCode": "PT"
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "sat-2030-cochilo-o-ghettao",
@@ -3304,13 +3151,12 @@
       "day": "sat",
       "start": "22:00",
       "end": "23:30",
-      "description": "In the early 90s, Portugal ignited its own dance music explosion – wild raves birthing a sound uniquely its own. Through exclusive footage and interviews with DJs, producers, dancers and promoters, this documentary traces the rise of Portuguese rave culture and its lasting echo in electronic music worldwide.",
+      "description": "Daniel Mota — 90s rave doc",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
-      "country": "Portugal",
-      "countryCode": "PT"
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "sat-2200-tudo-bem-what-emerges-between-us",
@@ -3347,13 +3193,12 @@
       "day": "sat",
       "start": "23:30",
       "end": "00:00",
-      "description": "",
+      "description": "Camila Padilha ft. The Sunshine Boys",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
-      "country": "Brazil",
-      "countryCode": "BR"
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "sun-0000-floresta-bashkka",
@@ -3370,21 +3215,6 @@
       ],
       "country": "Germany",
       "countryCode": "DE"
-    },
-    {
-      "id": "sun-0000-moonscreen-modular-youth",
-      "artist": "Modular Youth",
-      "stage": "moonscreen",
-      "day": "sun",
-      "start": "00:00",
-      "end": "00:15",
-      "description": "Scenographer Luisa Lukas weaves digitised home videos from 1998–2004 into a live audiovisual meditation on the fragility of early childhood. Through datamoshing, pixel distortion and layering, images dissolve as memories do - into fragments and emotional traces. Sound and image unite, built intuitively, collapsing into silence. Each iteration is unique, specially reworked for Moonscreen.",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": null,
-      "countryCode": null
     },
     {
       "id": "sun-0000-praia-shackleton",
@@ -3404,21 +3234,6 @@
       "countryCode": "GB"
     },
     {
-      "id": "sun-0015-moonscreen-phase-space-field",
-      "artist": "Phase Space: Field",
-      "stage": "moonscreen",
-      "day": "sun",
-      "start": "00:15",
-      "end": "01:15",
-      "description": "Episodic memories are distilled into sense impressions. Where last year's Drift was pre-recorded, introspective, rising from a nighttime stillness into a din at dawn, Field is live, connected, beginning in the commotion of a daylight gathering & landing us softly back where we started: a quiet lake shore at night.",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "sun-0030-apuro-shibari-x-gong",
       "artist": "Shibari x Gong",
       "stage": "apuro",
@@ -3428,6 +3243,20 @@
       "description": "Tension. Limits. Release. Rope and resonance in the space-in-between. Witness what's possible when edges become portals and the skin the primary organ of sense-making.",
       "genres": [
         "performance"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "sun-0040-moonscreen-resonance",
+      "artist": "Resonance",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "00:40",
+      "end": "01:10",
+      "description": "Gizem Öz & Lova Ranung",
+      "genres": [
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -3466,16 +3295,15 @@
       "countryCode": "RS"
     },
     {
-      "id": "sun-0115-moonscreen-who-owns-you",
-      "artist": "Who Owns You?",
+      "id": "sun-0120-moonscreen-morada-aberta-onde-o-gesto-cura",
+      "artist": "Morada Aberta: Onde o Gesto Cura",
       "stage": "moonscreen",
       "day": "sun",
-      "start": "01:15",
-      "end": "04:00",
-      "description": "Globally, data is kept captive. Here, unshackled, it flows between machine, coders, and audience. Human-typed code generates art. No AI. Livecoding jam: we show our screens; you interpret the creation process. Visual and sonic landscapes, ephemeral and improvised through custom software. Breaking loops and looping breaks – notbinarycode strikes again.",
+      "start": "01:20",
+      "end": "02:00",
+      "description": "Tânia Dinis — closing",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -3986,10 +3814,9 @@
       "day": "sun",
       "start": "19:00",
       "end": "22:00",
-      "description": "Where sonic memories from a distant past reverberate in dreams of an obscure postcapitalist future drowned in sedatives.",
+      "description": "Phrex & Rasco.mov",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -4153,10 +3980,9 @@
       "day": "sun",
       "start": "22:00",
       "end": "23:00",
-      "description": "Born on the slopes of Etna, untethered from any geography. Nomadica curates screenings, events and workshops at the crossroads of experimental arts. They explore the uncertain relationship between cinema's optical eye and the ever-changing natural world – a journey between forest floor and incandescent sky.  Discoveries on the Forest Floor by Charlotte Pryce LANDFILL 16 by Jennifer Reeves Through the Lens by Cécile Fontaine Under the Volcano by Colectivo Los Ingrávidos The Astronomer's Dream by Julie Murray Luminous Variations in the City Skies by Giuseppe Spina Sun Song by Joseph Bernard",
+      "description": "cinema & the natural world",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -4168,10 +3994,9 @@
       "day": "sun",
       "start": "23:00",
       "end": "00:30",
-      "description": "As our journey nears its end, drop into these dreamlike short films. Luminous works that create a gentle space for processing the week's ride.  Subtle Matter Fluid Hands by Maika Garnica Joon by Marian Aliabadi Earth Body I by Arran Gregory Top View of My Brain as a Crime Scene by Luzia Johow The Cast by Leon Billerbeck Gáthra by Camilla Dubhe and White Houston A shell of (for) you by Julia Chetwood UM)bigo by Sofia Santa-Rita Sunset Special by Nicolas Gebbe Baile do Sol by Miguel Tavares",
+      "description": "luminous short films",
       "genres": [
-        "cinema",
-        "AV"
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -4187,6 +4012,151 @@
       "genres": [
         "performance"
       ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-a-quiet-spirit",
+      "artist": "A Quiet Spirit",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "CALMA. A durational performance where a sculptural element is slowly transformed into a living wind chime. Through gentle movement, sound and light, the space is subtly activated. What emerges is a fleeting, poetic moment, and a resonance that remains beyond the night.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-die-hohle",
+      "artist": "Die Höhle",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "c.a.l.perspectives. Installations of inhabitable camera obscura, offering direct contact with the natural phenomenon that makes photography possible. Enter into relationship with the upside down, and an archaeological experience of the image.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-embarcacao-entidade",
+      "artist": "EMBARCAÇÃO-ENTIDADE",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Brittany Maton, Eleni Giannopoulou & others. A floating masquerade without a schedule. Part ritual, part hallucination, part boat. Somewhere between folklore, science-fiction, and the weird.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-l-opera-du-villageois",
+      "artist": "L'Opéra du Villageois",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Zora Snake and Wilfried Nakeu. A burial and liberation ritual. L'Opéra du Villageois denounces the European museums that harbour looted art in their collections and conjures up the spirit of the stolen objects. Snake reclaims everything that thecolonial powers have plundered over the past centuries: the gold, the salt, the history. But their spirits are not dead…",
+      "genres": [],
+      "country": null,
+      "countryCode": null,
+      "circled": true
+    },
+    {
+      "id": "performances-la-belleza-es-asquerosa",
+      "artist": "La Belleza es Asquerosa",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Asquito Eso. A body both fragile and fierce, shapeshifting and endlessly reborn. A striptease unfolds not to seduce but to speak out. Here sensuality trembles with rage and anger undresses itself slowly. This body, improbably, beautiful, grotesque, defiant, wears its rawness like myth.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-miranda-and-the-andacondas-present-judge-not-lest-ye-be-judged",
+      "artist": "Miranda & the Andacondas present 'Judge not lest ye be judged'",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Knetterbar. Knetterbar is a condensed microcarnival — a portal of kaos & magic where time bends and joyfulness grooves through surreal scenes. Hosted by Miranda from the Multiverse and her highly professional this-year-not-so-randomly assigned assistants. Expect hijinks, volcanic dances, disco sound massages and mystery snacks. Reality? Maybe. Fun? Definitely.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-morada-aberta-onde-o-gesto-cura-closing-performance",
+      "artist": "Morada Aberta: Onde o Gesto Cura (closing performance)",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Tânia Dinis. Three interconnected moments, unfolding across languages, spaces and temporalities. Drawing from personal memory and the landscapes of North Portugal, Alto Minho and Galiza, this expanded cinema work follows working women — guardians of ancestral knowledge tied to land, sea and natural cycles. Between documentary and fiction, it traces the invisible gestures that sustain communities and keep sacred knowledge alive.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-silencio-nao-e-silencioso",
+      "artist": "Silêncio não é Silencioso",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Azuru. Shhhhhhhhhhhhhhhhhhhhhhhhhhhhh.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-soft-cryptogamic-drifts",
+      "artist": "Soft Cryptogamic Drifts",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "M.O.S.S.S. (Moving Observations on Surviving Soft Skills) & Landcare Club. Enter the long now, armed with affective tools and tear into small breaches in reality. With cryptogamics as our kin, bryophytes, lichens, seaweed, fungi, ferns, we play with the invisible and kneel before mystery.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-song-for-the-lake",
+      "artist": "Song for the Lake",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "nitamortei + maud gyssels. Which human, inhuman, past and future voices can be heard in interaction with the lake as a source of histories, narratives and rituals? Its movement is circular. Consider it a looping song, an invitation to wade in the shallow waters.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-tuning-folk-tuning-folks-tuning-forks",
+      "artist": "Tuning folk, Tuning folks, Tuning forks",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "RÆV. (Vera & Eva Maria). Equipped with tuning forks and other instruments, the Tuning Folk roam around, finding depleted souls, and nurturing them back to life.",
+      "genres": [],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "performances-water-bearer",
+      "artist": "Water Bearer",
+      "stage": "performances",
+      "day": "sun",
+      "start": null,
+      "end": null,
+      "description": "Riley Davidson & Hadrien Daigneault-Roy. A response to the announcement from hydrologists of a global water bankruptcy, the performance treats water as precious alchemical matter, resonating at the core of our flesh. Quicksilver and tears, rivers and prayer.",
+      "genres": [],
       "country": null,
       "countryCode": null
     },
@@ -4238,21 +4208,6 @@
       "countryCode": "PT"
     },
     {
-      "id": "mon-0040-moonscreen-resonance",
-      "artist": "Resonance",
-      "stage": "moonscreen",
-      "day": "mon",
-      "start": "00:40",
-      "end": "01:10",
-      "description": "Sound unfolds as pure material: vibration, decay, interference. Visually, a drifting ecosystem of particles, spores and abstracted organic forms. Image and sound remain in deliberate tension, sustaining an atmosphere that refuses to resolve.",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": "Turkey / Sweden",
-      "countryCode": "TR/SE"
-    },
-    {
       "id": "mon-0100-outro-lado-jane-fitz",
       "artist": "Jane Fitz",
       "stage": "outro-lado",
@@ -4283,21 +4238,6 @@
       ],
       "country": "France",
       "countryCode": "FR"
-    },
-    {
-      "id": "mon-0120-moonscreen-morada-aberta-onde-o-gesto-cura",
-      "artist": "Morada Aberta: Onde o Gesto Cura",
-      "stage": "moonscreen",
-      "day": "mon",
-      "start": "01:20",
-      "end": "02:00",
-      "description": "Three interconnected moments, unfolding across languages, spaces and temporalities. Drawing from personal memory and the landscapes of North Portugal, Alto Minho and Galiza, this expanded cinema work follows working women - guardians of ancestral knowledge tied to land, sea and natural cycles. Between documentary and fiction, it traces the invisible gestures that sustain communities and keep sacred knowledge alive.",
-      "genres": [
-        "cinema",
-        "AV"
-      ],
-      "country": "Portugal",
-      "countryCode": "PT"
     },
     {
       "id": "mon-0230-floresta-rene-wise",

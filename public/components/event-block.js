@@ -1,16 +1,16 @@
-// Single event block on the timetable grid.
-import { el, blockRange, stageMeta, fmtTime } from "../helpers.js";
+// Single event block on the continuous timetable grid.
+import { el, eventRange, stageMeta, fmtTime } from "../helpers.js";
 import { isFavourite } from "../store.js";
 import { openDetail } from "./detail-modal.js";
 
 export function renderEventBlock(data, event, minuteW) {
-  const range = blockRange(event);
+  const range = eventRange(data, event);
   if (!range) return null;
   const fav = isFavourite(event.id);
   const stage = stageMeta(data, event.stage);
 
-  const left = range.startCol * minuteW;
-  const width = Math.max(36, (range.endCol - range.startCol) * minuteW - 2);
+  const left  = range.startMin * minuteW;
+  const width = Math.max(36, (range.endMin - range.startMin) * minuteW - 2);
 
   const block = el("button", {
     class: `tt-block${fav ? " is-fav" : ""}${event.userAdded ? " is-user" : ""}`,

@@ -68,6 +68,7 @@ export function renderFavourites(data) {
     mkSort("time", "Time"),
     mkSort("stage", "Stage"),
     mkSort("genre", "Genre"),
+    mkSort("artists", "Artists"),
   );
   root.append(el("div", { style: {
     display: "flex", justifyContent: "space-between",
@@ -97,7 +98,7 @@ export function renderFavourites(data) {
       root.append(el("h3", { class: "group" }, [meta.label]));
       for (const e of list) root.append(renderEventRow(data, e, { showNote: true }));
     }
-  } else { // genre
+  } else if (sortMode === "genre") {
     const grouped = new Map();
     for (const e of favs) {
       for (const g of (e.genres?.length ? e.genres : ["—"])) {
@@ -111,6 +112,11 @@ export function renderFavourites(data) {
       root.append(el("h3", { class: "group" }, [g]));
       for (const e of grouped.get(g)) root.append(renderEventRow(data, e, { showNote: true }));
     }
+  } else { // artists
+    favs.sort((a, b) =>
+      a.artist.localeCompare(b.artist, undefined, { sensitivity: "base" })
+      || (a.start ?? "").localeCompare(b.start ?? ""));
+    for (const e of favs) root.append(renderEventRow(data, e, { showNote: true }));
   }
 
   // Export bar

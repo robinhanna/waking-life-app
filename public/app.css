@@ -196,6 +196,21 @@ h3.group {
 }
 .tt-axis-tick.major { border-color: var(--bg-elev-2); color: var(--fg-mute); }
 
+/* Day-boundary marker in the axis */
+.tt-axis-day {
+  position: absolute; top: 0; bottom: 0;
+  border-left: 2px solid var(--accent-dim);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  padding: 6px 0 0 6px;
+  background: linear-gradient(to right, rgba(216,164,255,0.07), transparent 60px);
+  z-index: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
 .tt-row {
   display: contents;          /* row participates in parent grid */
 }
@@ -499,6 +514,76 @@ h3.group {
   font: inherit; font-size: 14px;
 }
 .add-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+/* ───── Lineup accordion ───── */
+.accordion-row {
+  display: flex; align-items: center; gap: 10px;
+  width: 100%;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  text-align: left;
+}
+.accordion-row .stage-dot {
+  width: 12px; height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.accordion-row .accordion-label {
+  flex: 1;
+  font-size: 15px; font-weight: 600;
+  color: var(--fg);
+}
+.accordion-row .accordion-count {
+  font-size: 12px;
+  color: var(--fg-mute);
+  font-variant-numeric: tabular-nums;
+}
+.accordion-row .accordion-caret {
+  font-size: 18px;
+  color: var(--fg-dim);
+  transition: transform 150ms ease;
+}
+.accordion-row[aria-expanded="true"] .accordion-caret { transform: rotate(90deg); }
+.accordion-body { padding-left: 22px; border-bottom: 1px solid var(--border); }
+
+.stage-intro {
+  font-size: 13px;
+  color: var(--fg-mute);
+  line-height: 1.5;
+  font-style: italic;
+  margin: 4px 0 14px;
+  padding: 8px 12px;
+  border-left: 2px solid var(--accent-dim);
+  background: var(--bg-elev);
+  border-radius: 0 6px 6px 0;
+}
+
+.did-you-mean {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--fg-mute);
+}
+.dym-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-dim);
+  padding: 0;
+}
+
+.search-wrap { margin: 0 0 12px; }
+.search-wrap input {
+  width: 100%;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: var(--fg);
+  font: inherit;
+  font-size: 15px;
+}
+.search-wrap input:focus { outline: 2px solid var(--accent-dim); }
 
 /* ───── tab bar ───── */
 #tabs {

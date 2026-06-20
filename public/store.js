@@ -45,13 +45,6 @@ export function clearFavourites() {
   writeFavs(favCache);
 }
 
-export function reseedFavourites(events) {
-  // wipe storage, then seed
-  localStorage.removeItem(FAV_KEY);
-  favCache = null;
-  seedFromCircled(events);
-}
-
 export function isFavourite(id)   { return Object.prototype.hasOwnProperty.call(favs(), id); }
 export function toggleFavourite(id) {
   const m = favs();

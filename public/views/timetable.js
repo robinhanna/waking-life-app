@@ -1,78 +1,85 @@
-// Horizontal-scroll CSS-grid timeline.
+// Continuous horizontal timeline. One row per stage, full festival width.
+// Day pills scroll the viewport to that day's anchor; they do NOT re-render.
 import {
-  el, DAY_LABEL, DAY_SHORT_LABEL, DAY_START_HOUR, DAY_END_HOUR,
-  blockRange, todayDaySlug, stageMeta, nowMinutesSinceDayStart,
+  el, DAY_SHORT_LABEL, DAY_ANCHOR_HOUR,
+  totalFestivalMinutes, nowMinutesFromEpoch, todayDaySlug, stageMeta,
 } from "../helpers.js";
 import { renderEventBlock } from "../components/event-block.js";
 import { getUserEvents } from "../store.js";
 
-let selectedDay = null;
+const MINUTE_W = 1.4;            // pixels per minute (kept in sync with CSS)
 let nowLineInterval = null;
 
-const MINUTE_W = 1.4;    // pixels per minute — kept in sync with CSS --minute-w
-
 export function renderTimetable(data) {
-  if (selectedDay == null) {
-    selectedDay = todayDaySlug(data) ?? data.days[1] ?? data.days[0];
-  }
-  if (!data.days.includes(selectedDay)) selectedDay = data.days[0];
-
   const root = el("section", { class: "tt-view" });
 
-  // Day pill bar
+  // ─── Day pill bar ─────────────────────────────────────────────────────
   const dayBar = el("div", { class: "tt-day-bar" });
+  const dayBtns = new Map();
+
+  const nowBtn = el("button", {
+    class: "tt-day", type: "button", "data-anchor": "now",
+  }, ["Now"]);
+  dayBar.append(nowBtn);
+
   for (const d of data.days) {
     const btn = el("button", {
-      class: "tt-day",
-      type: "button",
-      "aria-pressed": d === selectedDay ? "true" : "false",
-    }, [
-      DAY_SHORT_LABEL[d] ?? d,
-    ]);
-    btn.addEventListener("click", () => {
-      selectedDay = d;
-      const fresh = renderTimetable(data);
-      root.replaceWith(fresh);
-    });
+      class: "tt-day", type: "button",
+      "aria-pressed": "false",
+    }, [DAY_SHORT_LABEL[d] ?? d]);
     dayBar.append(btn);
+    dayBtns.set(d, btn);
   }
   root.append(dayBar);
 
-  // All timed events for the selected day, including user-added ones
+  // ─── Gather all events (data + user) ──────────────────────────────────
   const all = [...data.events, ...getUserEvents()];
-  const timed = all.filter(e => e.day === selectedDay && e.start);
+  const timed = all.filter(e => e.start);
 
-  // Active stages: those with at least one event on this day. Keep stage order
-  // from data.stages, then any extra (e.g. user "Other" stage).
-  const activeStages = data.days ? Object.keys(data.stages).filter(s =>
-    timed.some(e => e.stage === s),
-  ) : [];
-  const extraStages = Array.from(new Set(timed.map(e => e.stage)))
-    .filter(s => !activeStages.includes(s));
-  const stages = [...activeStages, ...extraStages];
+  // Active stages: data.stages key order, then anything else found.
+  const stagesInUse = new Set(timed.map(e => e.stage));
+  const orderedStages = Object.keys(data.stages).filter(s => stagesInUse.has(s));
+  const extras = Array.from(stagesInUse).filter(s => !orderedStages.includes(s));
+  const stages = [...orderedStages, ...extras];
 
   if (!stages.length) {
-    root.append(el("p", { class: "empty" }, ["Nothing scheduled this day."]));
+    root.append(el("p", { class: "empty" }, ["Nothing scheduled."]));
     return root;
   }
 
-  const totalMin = (DAY_END_HOUR - DAY_START_HOUR) * 60;
+  const totalMin = totalFestivalMinutes(data);
   const totalW = totalMin * MINUTE_W;
 
+  // ─── Scroller + grid ──────────────────────────────────────────────────
   const scroller = el("div", { class: "tt-scroller" });
-  const grid = el("div", { class: "tt-grid", style: { width: `calc(var(--label-w) + ${totalW}px)` } });
+  const grid = el("div", {
+    class: "tt-grid",
+    style: { width: `calc(var(--label-w) + ${totalW}px)` },
+  });
 
-  // Axis row
+  // Corner + axis
   grid.append(el("div", { class: "tt-axis-corner" }));
-
   const axis = el("div", { class: "tt-axis", style: { width: `${totalW}px` } });
-  for (let h = DAY_START_HOUR; h <= DAY_END_HOUR; h++) {
-    const left = (h - DAY_START_HOUR) * 60 * MINUTE_W;
-    const hourLabel = h % 24;
+
+  for (let day = 0; day < data.days.length; day++) {
+    const daySlug = data.days[day];
+    const dayLeft = day * 24 * 60 * MINUTE_W;
+    // Day boundary marker + label
     axis.append(el("div", {
-      class: `tt-axis-tick${h % 6 === 0 ? " major" : ""}`,
-      style: { left: `${left}px` },
-    }, [`${String(hourLabel).padStart(2, "0")}`]));
+      class: "tt-axis-day",
+      style: { left: `${dayLeft}px` },
+    }, [`${DAY_SHORT_LABEL[daySlug]} · ${shortDate(data.dayDates?.[daySlug])}`]));
+    // Hour ticks within the day
+    for (let h = 0; h <= 24; h++) {
+      const left = (day * 24 * 60 + h * 60) * MINUTE_W;
+      const isDay = h === 0;
+      const isMajor = h % 6 === 0;
+      if (isDay) continue;       // day boundary already drawn
+      axis.append(el("div", {
+        class: `tt-axis-tick${isMajor ? " major" : ""}`,
+        style: { left: `${left}px` },
+      }, [`${String(h).padStart(2, "0")}`]));
+    }
   }
   grid.append(axis);
 
@@ -88,33 +95,75 @@ export function renderTimetable(data) {
     grid.append(lane);
   }
 
-  // Now-line
-  const isToday = todayDaySlug(data) === selectedDay;
-  if (isToday) {
-    const nowLine = el("div", { class: "tt-now-line" });
-    placeNowLine(nowLine);
-    grid.append(nowLine);
-    if (nowLineInterval) clearInterval(nowLineInterval);
-    nowLineInterval = setInterval(() => placeNowLine(nowLine), 60_000);
-    // Auto-scroll to now horizontally on first render
-    setTimeout(() => {
-      const x = Math.max(0, nowMinutesSinceDayStart() * MINUTE_W - 120);
-      scroller.scrollLeft = x;
-    }, 0);
-  }
+  // Now line — only when current time is within festival window
+  const nowLine = el("div", { class: "tt-now-line" });
+  grid.append(nowLine);
+  placeNowLine(data, nowLine);
+  if (nowLineInterval) clearInterval(nowLineInterval);
+  nowLineInterval = setInterval(() => placeNowLine(data, nowLine), 60_000);
 
   scroller.append(grid);
   root.append(scroller);
 
+  // ─── Day pill scroll handlers ────────────────────────────────────────
+  const scrollToMinute = (mins) => {
+    const target = mins * MINUTE_W - scroller.clientWidth / 3;
+    scroller.scrollTo({ left: Math.max(0, target), behavior: "smooth" });
+  };
+  const scrollToDay = (day) => {
+    const di = data.days.indexOf(day);
+    if (di < 0) return;
+    scrollToMinute(di * 24 * 60 + DAY_ANCHOR_HOUR * 60);
+    markActive(day);
+  };
+  const markActive = (day) => {
+    for (const [slug, btn] of dayBtns) btn.setAttribute("aria-pressed", slug === day ? "true" : "false");
+    nowBtn.setAttribute("aria-pressed", day === null ? "true" : "false");
+  };
+
+  for (const [d, btn] of dayBtns) btn.addEventListener("click", () => scrollToDay(d));
+
+  const scrollToNow = () => {
+    const now = nowMinutesFromEpoch(data);
+    if (now == null || now < 0 || now > totalMin) {
+      // Outside festival: fall back to today's-day-slug or first day.
+      const today = todayDaySlug(data);
+      scrollToDay(today ?? data.days[0]);
+      return;
+    }
+    scrollToMinute(now);
+    markActive(null);
+  };
+  nowBtn.addEventListener("click", scrollToNow);
+
+  // Initial scroll: prefer Now if within festival; else today's anchor; else first day.
+  requestAnimationFrame(() => {
+    const now = nowMinutesFromEpoch(data);
+    if (now != null && now >= 0 && now <= totalMin) {
+      scrollToMinute(now);
+      markActive(null);
+    } else {
+      const today = todayDaySlug(data);
+      scrollToDay(today ?? data.days[1] ?? data.days[0]);
+    }
+  });
+
   return root;
 }
 
-function placeNowLine(line) {
-  const mins = nowMinutesSinceDayStart();
-  if (mins < 0 || mins > (DAY_END_HOUR - DAY_START_HOUR) * 60) {
+function placeNowLine(data, line) {
+  const total = totalFestivalMinutes(data);
+  const mins = nowMinutesFromEpoch(data);
+  if (mins == null || mins < 0 || mins > total) {
     line.style.display = "none";
     return;
   }
   line.style.display = "block";
   line.style.left = `calc(var(--label-w) + ${mins * MINUTE_W}px)`;
+}
+
+function shortDate(iso) {
+  if (!iso) return "";
+  const d = new Date(`${iso}T00:00:00`);
+  return `${d.getDate()} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][d.getMonth()]}`;
 }

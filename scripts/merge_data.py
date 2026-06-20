@@ -59,10 +59,151 @@ STAGES = {
     "mimo":             {"label": "Mimo",             "color": "#E8BC8A", "kind": "live"},
     "tudo-bem":         {"label": "Tudo Bem?",        "color": "#C49BE8", "kind": "workshop"},
     "suna":             {"label": "Suna",             "color": "#D89B9B", "kind": "workshop"},
-    "camping":          {"label": "Creative camps",   "color": "#B8A788", "kind": "ongoing"},
-    "art-installation": {"label": "Art installations","color": "#9AAFAB", "kind": "ongoing"},
-    "performances":     {"label": "(some) performances","color": "#C9B080","kind": "ongoing"},
+    "camping": {
+        "label": "Creative camps",
+        "color": "#B8A788",
+        "kind": "ongoing",
+        "intro": (
+            "Campiriñas para todas! Creative Camps are thematic bairros that add refreshing, "
+            "weird & funky participatory spaces on the campsite. Driven by individuals or small "
+            "collectives, they are experimental, temporary spaces for campsite vibe elevation, "
+            "investigation and transmutation. Take a whirl.."
+        ),
+    },
+    "art-installation": {
+        "label": "Art installations",
+        "color": "#9AAFAB",
+        "kind": "ongoing",
+        "intro": (
+            "Material inventions drawing out immaterial reactions. Whether in canopies, dusty "
+            "corners or the lake's edge, the terrain is laden with artistic booby traps. Try not "
+            "to get ensnared."
+        ),
+    },
+    "performances": {
+        "label": "(some) performances",
+        "color": "#C9B080",
+        "kind": "ongoing",
+        "intro": (
+            "If you keep your eyes wide shut you might catch a glimpse of a performance or two, "
+            "a sizzle, a spark, and collision with the fantastical may include you if you're in "
+            "the right place at the right time. Where does the line blur between the performer "
+            "and the audience? You can't have FOMO if you don't know when you're missing in action.."
+        ),
+    },
 }
+
+
+# ─── Booklet items: untimed entries for camps / art / performances ──────────
+#
+# Source: input/IMG_1533_art.jpeg through IMG_1541_some performances.jpeg.
+# Each row is (artist, description). The booklet groups them by section heading.
+
+BOOKLET_CAMPING = [
+    ("Venga Bingo", "You've never played bingo like this. A night full of drag, performances, sass, and punk, hosted by our iconic Venga Girls. Come for the game, stay for the drama, and win sexy prizes!"),
+    ("A Mesa", "A growing table, rotating DIY workshops, weird materials, and good company. Weaving, animating, sewing, synthesising, tarot-making, incense-rolling and more. Find a seat, something's always happening."),
+    ("Cloud 9 on 7 Heaven", "A living apple tree suspended in a white dreamworld. No gatekeepers, no agenda. Come lie down and remember you're made of mud."),
+    ("Costura Armada", "Sew, repair, upcycle… Drop off your textile leftovers while you're at it. Repair is radical, and honestly quite satisfying."),
+    ("Cramp Camp", "Free period care, herbal tea, a cool breeze, and zero shame. Also: a parade. You'll know it when you see it."),
+    ("Cubko's Lab", "Old PVC banners become handmade pouches and bags, one-of-a-kind and built for dancing. Your hands do the work, your imagination does the rest."),
+    ("Daydream Assembly", "Listen to your body, then sew it a little, friend. Take it, leave it, or give it away… you decide where your cushion goes pushin'."),
+    ("Draw for Your Life", "Daily sessions, live models, themed nights. Full permission to look intensely at another human being."),
+    ("Dusty Dusk", "Live, improvised, unplanned. Music that emerges from the day and disappears into the night. Curious ears and spontaneous collaborators welcome!"),
+    ("Eden Cinema", "Banned films. Fake candles. Strange conversations. Find it if you can."),
+    ("Entre Mãos", "A haircut as a conscious ritual. Trust the hands, surrender the hair, leave somehow different."),
+    ("Gratitude Cleanse", "Write what you're grateful for, bless some sad-looking plants, bring them to the lake, wash each other's hands, make incense to take home. Mona holds the space. The rest is magic."),
+    ("Ham-nafas Animation Workshop", "Make a tiny animation, add it to everyone else's, and receive the collective film at the end. In Farsi, ham-nafas means sharing the same breath, so inhale."),
+    ("Huritao", "Create a self-portrait on a tile from foraged materials. Hang it on the wall, and become part of a collective class picture."),
+    ("Improv Mojo Dojo", "Paint with everything you've ever lived through, in coordination with others. Beginners, advanced, and the curious are all welcome in this open fruit-salad activity. Just try it out, or come and watch."),
+    ("Loom Room", "A 4x4m loom, lots of weird materials, zero instructions. Come weave something into existence."),
+    ("Moon Shack", "Moon Shack, baby, moon shack! Confess to the moon, get a wish, and pass it around. She's listening."),
+    ("Nave del Sonido", "Mess around on synths, record it on a cassette, keep the tape. Like a sound photograph, but cooler and slightly noisier."),
+    ("Parallel Truths", "Whisper something into a plant. The rest is hard to explain."),
+    ("Pieces Chess Club", "Chess, but social. Music, fun, and a few surprises from a club that's taken over Lisbon, London, Oslo, and now Crato."),
+    ("Samara Pod", "A womb-like pod abandoned in the undergrowth by persons or civilisations unknown. Scientists are taking notes. You should probably go inside."),
+    ("Tarot Craft Lab", "Make your own tarot cards. Intuition required, art skills not so much."),
+    ("Tarot Sanctuary", "A one-to-one therapeutic tarot reading in a softly held space. Not to predict your future, but to help you understand your present. Also roaming the festival for a one-card hit if you feel called."),
+    ("Tinctorium Plant Lab", "A witches' kitchen where the plants finally tell you their secrets. Come after dark too, some of them glow."),
+    ("Tranquilo Toss", "Pétanque. Sun. Maybe pastis. Definitely new friends."),
+    ("Waky's Vault", "Craft your own little container from bamboo and cork. For butts, treasures, or honestly whatever :)"),
+    ("Weaving Worlds", "Add your thread to a collective tapestry growing all week long. Weavever you go you are part of the pattern."),
+    ("Whimsical Theatre", "Improv, movement, character: step outside yourself for a bit. Unscripted, ungovernable."),
+]
+
+BOOKLET_ART = [
+    ("Bus stop", "Sunburn Gaze. A lost urban artefact. A stage for the inspired. A space for social encounters and strange visions. What happens in the bus stop, no one talks about. But the lights keep flickering as if something weird will happen tonight."),
+    ("Call your grandma", "minipops. A side-quest where embracing old technology and forgotten traditions will surface questions that only your elders have an answer to."),
+    ("CALMA", "Mopets off-grid. CALMA. If you are lucky you will find CALMA in the deep wilderness of the terrain… a hidden space to rest your spirit & lounge in nature at daytime and catch performative surprises & light art at night…"),
+    ("Chandeliers", "Parker Heyl. Two kinetic Chandeliers inspired by the 1875 work of mathematician Harry Hart. They echo the complexity of digital imagery, yet these sculptures achieve a physical object aura by using purely analog and mechanical technologies."),
+    ("Cold Sauna", "Service Continu. A sensory refuge, this 'cold sauna' cooling effect extends the lake's cooling effect through a simple closed-loop water system. Lake water is pumped to create a gentle artificial rain, cooling the space. Filtered light, dampened sound, and reclaimed materials create a low-tech, reversible retreat for rest and reset."),
+    ("Fugazmente", "Guardians of Words. A curated sanctuary of textual spirituality and poetry with spirit. Join the Guardians of Words to explore the cosmos by peeking into new perspectives through the bewildering spell of language."),
+    ("KäasKäde", "JeJoMaDe. A platform by the waterfront where people can chill, wonder and be pleasantly confused. A confusing mix of harbour & cheese, many options to hang & sit, swing, nibble & crawl."),
+    ("OvO", "Oliver Ellmers. Reimagining OvO as a darker, more minimal parametric sculpture. The design is generative in approach, using light, reflection and refraction to continuously reshape the space. It's intended as a calm but uncanny place to reset and drift through a more cinematic mood."),
+    ("Midsummer Mouramas", "Cella Collective. These lakeside structures turn local ecology, geology and folklore, into spaces for contemplative bathing and soaking. These dwellings house the 'Enchanted Moura' and they invite you to enjoy the threshold between land and water, waiting and becoming."),
+    ("Mimo Smellscape", "Vlenser. Scent slips past logic, straight into memory, into feeling — at Mimo, we follow this invisible thread. Locally gathered, constantly shifting, smell is our guide. No labels, no hierarchy — but sensation rewiring perception, dissolving limits, and pulling you deep into the olfactory subconscious."),
+    ("Mudança", "Echo Studios. Mudança is inspired by butterfly evolution, structures across water reflect each phase. Visitors move through a living narrative. Strangers breathe together, less alone in change. Something shifts and loosens. We leave differently than we arrived, gently rearranged, not new, not whole."),
+    ("Piñata", "Robin Jae. Here, blind violence is rewarded, for a piñata is completed by its destruction! These days the game is performed for thrills and rewards. Yet, if the piñata is made to be a demon, or a spirit, its destruction becomes a symbolic gesture. O' brave warrior, your prize awaits… Come! Conquer! Liberate spirit!"),
+    ("WWW - WakingLife Wide Web", "ARAS, Coletivo Giria, Louise. A participatory crochet installation developed through workshops involving both residents of Crato and festival crew. Young and old and local and not, are invited to contribute with crochet 'granny squares' that will be assembled into a shared textile structure creating the intimate, cosy, colourful 'Crocave'."),
+    ("you me we", "Christian Wolf. Experience your body, experience embodiment in time and space, with your next one. Reflect, realize, create, be in the now."),
+    ("casa marmelada", "We are the stone house, you are the milk, drawn from the silence of granite and silk. A psychedelic picnic for the soul unfolds in the cottage no one can control. Casa Marmelada is open… then not, a door that remembers what footsteps forgot. We lure you with stories, then send you along, you'll leave with a new tune, a different song. No beans will we spill, not a secret, nor clue — just sneaky-peek knowing between us and you. So come to the edge of the nearly-unseen: the stone house is pouring from places between."),
+]
+
+BOOKLET_PERFORMANCES = [
+    ("Morada Aberta: Onde o Gesto Cura (closing performance)", "Tânia Dinis. Three interconnected moments, unfolding across languages, spaces and temporalities. Drawing from personal memory and the landscapes of North Portugal, Alto Minho and Galiza, this expanded cinema work follows working women — guardians of ancestral knowledge tied to land, sea and natural cycles. Between documentary and fiction, it traces the invisible gestures that sustain communities and keep sacred knowledge alive."),
+    ("A Quiet Spirit", "CALMA. A durational performance where a sculptural element is slowly transformed into a living wind chime. Through gentle movement, sound and light, the space is subtly activated. What emerges is a fleeting, poetic moment, and a resonance that remains beyond the night."),
+    ("Die Höhle", "c.a.l.perspectives. Installations of inhabitable camera obscura, offering direct contact with the natural phenomenon that makes photography possible. Enter into relationship with the upside down, and an archaeological experience of the image."),
+    ("EMBARCAÇÃO-ENTIDADE", "Brittany Maton, Eleni Giannopoulou & others. A floating masquerade without a schedule. Part ritual, part hallucination, part boat. Somewhere between folklore, science-fiction, and the weird."),
+    ("L'Opéra du Villageois", "Zora Snake and Wilfried Nakeu. A burial and liberation ritual. L'Opéra du Villageois denounces the European museums that harbour looted art in their collections and conjures up the spirit of the stolen objects. Snake reclaims everything that thecolonial powers have plundered over the past centuries: the gold, the salt, the history. But their spirits are not dead…"),
+    ("La Belleza es Asquerosa", "Asquito Eso. A body both fragile and fierce, shapeshifting and endlessly reborn. A striptease unfolds not to seduce but to speak out. Here sensuality trembles with rage and anger undresses itself slowly. This body, improbably, beautiful, grotesque, defiant, wears its rawness like myth."),
+    ("Miranda & the Andacondas present 'Judge not lest ye be judged'", "Knetterbar. Knetterbar is a condensed microcarnival — a portal of kaos & magic where time bends and joyfulness grooves through surreal scenes. Hosted by Miranda from the Multiverse and her highly professional this-year-not-so-randomly assigned assistants. Expect hijinks, volcanic dances, disco sound massages and mystery snacks. Reality? Maybe. Fun? Definitely."),
+    ("Silêncio não é Silencioso", "Azuru. Shhhhhhhhhhhhhhhhhhhhhhhhhhhhh."),
+    ("Soft Cryptogamic Drifts", "M.O.S.S.S. (Moving Observations on Surviving Soft Skills) & Landcare Club. Enter the long now, armed with affective tools and tear into small breaches in reality. With cryptogamics as our kin, bryophytes, lichens, seaweed, fungi, ferns, we play with the invisible and kneel before mystery."),
+    ("Song for the Lake", "nitamortei + maud gyssels. Which human, inhuman, past and future voices can be heard in interaction with the lake as a source of histories, narratives and rituals? Its movement is circular. Consider it a looping song, an invitation to wade in the shallow waters."),
+    ("Tuning folk, Tuning folks, Tuning forks", "RÆV. (Vera & Eva Maria). Equipped with tuning forks and other instruments, the Tuning Folk roam around, finding depleted souls, and nurturing them back to life."),
+    ("Water Bearer", "Riley Davidson & Hadrien Daigneault-Roy. A response to the announcement from hydrologists of a global water bankruptcy, the performance treats water as precious alchemical matter, resonating at the core of our flesh. Quicksilver and tears, rivers and prayer."),
+]
+
+# Default attribution day for untimed entries — they appear on the same day regardless,
+# but `day` is required by the schema. Use Wednesday for camping/art (festival opens),
+# Sunday for performances (Morada Aberta is the Sun → Mon closing performance).
+BOOKLET_DAY = {
+    "camping": "wed",
+    "art-installation": "wed",
+    "performances": "sun",
+}
+
+# L'Opéra du Villageois is circled in the booklet — preserve the favourite seed.
+BOOKLET_CIRCLED = {"L'Opéra du Villageois"}
+
+
+def build_booklet_events() -> list[dict]:
+    out = []
+    sources = [
+        ("camping", BOOKLET_CAMPING),
+        ("art-installation", BOOKLET_ART),
+        ("performances", BOOKLET_PERFORMANCES),
+    ]
+    for stage, items in sources:
+        for artist, desc in items:
+            ev = {
+                "id": event_id("untimed", None, stage, artist),
+                "artist": artist,
+                "stage": stage,
+                "day": BOOKLET_DAY[stage],
+                "start": None,
+                "end": None,
+                "description": desc,
+                "genres": [],
+                "country": None,
+                "countryCode": None,
+            }
+            if artist == "Venga Bingo":
+                ev["when"] = "Tuesday only"
+                ev["day"] = "tue"
+            if artist in BOOKLET_CIRCLED:
+                ev["circled"] = True
+            out.append(ev)
+    return out
 
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
@@ -238,11 +379,11 @@ def hours_to_hhmm(h: float) -> str:
     return f"{hh:02d}:{mm:02d}"
 
 
-def extract_suna(slay_html: str) -> list[dict]:
+def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) -> list[dict]:
+    """Extract all E("<stage_id>",...) events from slay HTML."""
     out = []
-    # E("suna","Friday",16,17.5,"Title","facilitator/description"[,{femme:1}])
     pattern = re.compile(
-        r'E\("suna","(\w+)",([\d.]+),([\d.]+),"((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"'
+        rf'E\("{re.escape(stage_id)}","(\w+)",([\d.]+),([\d.]+),"((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"'
         r'(?:,\{[^}]*\})?\)',
     )
     for m in pattern.finditer(slay_html):
@@ -252,19 +393,34 @@ def extract_suna(slay_html: str) -> list[dict]:
             continue
         start = hours_to_hhmm(float(start_h))
         end = hours_to_hhmm(float(end_h))
+        # Genre defaulting: suna = Workshop/Play party by duration; moonscreen = Cinema.
+        if default_genres is not None:
+            genres = list(default_genres)
+        elif stage_id == "suna":
+            genres = ["Workshop"] if not float(end_h) - float(start_h) >= 4 else ["Play party"]
+        else:
+            genres = []
         out.append({
-            "id": event_id(day_s, start, "suna", title),
+            "id": event_id(day_s, start, stage_id, title),
             "artist": unescape_js(title),
-            "stage": "suna",
+            "stage": stage_id,
             "day": day_s,
             "start": start,
             "end": end,
             "description": unescape_js(desc).strip(),
-            "genres": ["Workshop"] if not float(end_h) - float(start_h) >= 4 else ["Play party"],
+            "genres": genres,
             "country": None,
             "countryCode": None,
         })
     return out
+
+
+def extract_suna(slay_html: str) -> list[dict]:
+    return extract_slay_stage(slay_html, "suna")
+
+
+def extract_moonscreen_slay(slay_html: str) -> list[dict]:
+    return extract_slay_stage(slay_html, "moonscreen", default_genres=["Cinema"])
 
 
 # ─── 3. v1 untimed carryover ──────────────────────────────────────────────────
@@ -326,27 +482,30 @@ def dedupe(events: Iterable[dict]) -> list[dict]:
 
 
 def main() -> int:
-    # 1. wakinglife.app
+    # 1. wakinglife.app (everything EXCEPT moonscreen — slay has fresher Moonscreen)
     index_html = fetch(WLAPP_INDEX)
     bundle_path = find_bundle_url(index_html)
     if not bundle_path:
         print("! could not find wakinglife.app bundle URL", file=sys.stderr)
         return 1
     bundle_js = fetch(f"https://wakinglife.app{bundle_path}")
-    wlapp = extract_wlapp(bundle_js)
-    print(f"  wakinglife.app: {len(wlapp)} events", file=sys.stderr)
+    wlapp_all = extract_wlapp(bundle_js)
+    wlapp = [e for e in wlapp_all if e["stage"] != "moonscreen"]
+    print(f"  wakinglife.app: {len(wlapp)} events (dropped {len(wlapp_all) - len(wlapp)} moonscreen)", file=sys.stderr)
 
-    # 2. slay → suna only
+    # 2. slay → suna + moonscreen
     slay_html = fetch(SLAY_URL)
     suna = extract_suna(slay_html)
+    moonscreen = extract_moonscreen_slay(slay_html)
     print(f"  slay (suna):    {len(suna)} events", file=sys.stderr)
+    print(f"  slay (moon):    {len(moonscreen)} events", file=sys.stderr)
 
-    # 3. v1 untimed
-    untimed = load_v1_untimed()
-    print(f"  v1 untimed:     {len(untimed)} events", file=sys.stderr)
+    # 3. Booklet untimed (camps / art / performances) — baked in, replaces v1 untimed.
+    untimed = build_booklet_events()
+    print(f"  booklet untimed:{len(untimed)} events", file=sys.stderr)
 
     # combine + dedupe
-    all_events = dedupe(wlapp + suna + untimed)
+    all_events = dedupe(wlapp + suna + moonscreen + untimed)
 
     # mark circled from v1 artist-slug set
     circled_slugs = load_v1_circled_artists()
