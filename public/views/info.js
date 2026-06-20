@@ -2,7 +2,7 @@
 import { el } from "../helpers.js";
 import { clearFavourites } from "../store.js";
 
-const VERSION = "v2.4";
+const VERSION = "v2.4.1";
 
 export function renderInfo(data) {
   const root = el("section", { class: "info-view" });
@@ -20,29 +20,36 @@ export function renderInfo(data) {
   const thanks = el("section", { class: "info-section" });
   thanks.append(el("h2", { class: "section" }, ["Thanks"]));
   thanks.append(el("p", { class: "info-body" }, [
-    "Big nod to the people behind the unofficial wakinglife.app and the slay timetable. Most of the data here started in their hands. Their work is the reason this didn't need a month of transcription.",
+    "Big nod to the people behind the unofficial wakinglife.app and the slay timetable. They got me started.",
   ]));
   root.append(thanks);
 
   // ─── Install ─────────────────────────────────────────────────────────
   const install = el("section", { class: "info-section" });
-  install.append(el("h2", { class: "section" }, ["Install on your iPhone"]));
+  install.append(el("h2", { class: "section" }, ["Install on your phone"]));
   install.append(el("p", { class: "info-body" }, [
     "You'll want it on the home screen so it works offline at the lake.",
   ]));
 
-  install.append(el("h3", { class: "info-subhead" }, ["Safari"]));
+  install.append(el("h3", { class: "info-subhead" }, ["iPhone — Safari"]));
   install.append(el("ol", { class: "info-steps" }, [
     el("li", {}, ["Open this page in Safari."]),
     el("li", {}, ["Tap the Share button at the bottom (square with the arrow)."]),
     el("li", {}, ["Tap “Add to Home Screen”, then Add."]),
   ]));
 
-  install.append(el("h3", { class: "info-subhead" }, ["Chrome"]));
+  install.append(el("h3", { class: "info-subhead" }, ["iPhone — Chrome"]));
   install.append(el("ol", { class: "info-steps" }, [
     el("li", {}, ["Open this page in Chrome."]),
     el("li", {}, ["Tap the share icon next to the URL."]),
     el("li", {}, ["Tap “Add to Home Screen”, then Add."]),
+  ]));
+
+  install.append(el("h3", { class: "info-subhead" }, ["Android — Chrome"]));
+  install.append(el("ol", { class: "info-steps" }, [
+    el("li", {}, ["Open this page in Chrome."]),
+    el("li", {}, ["Tap the three-dot menu, top-right."]),
+    el("li", {}, ["Tap “Install app” (or “Add to Home screen”)."]),
   ]));
   root.append(install);
 

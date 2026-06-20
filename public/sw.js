@@ -4,7 +4,7 @@
 //   - data/lineup.json: stale-while-revalidate so refreshes land on next reload.
 //   - Vendor (qrcode): cache-first.
 
-const VERSION = "wl-v2.4";
+const VERSION = "wl-v2.4.1";
 const SHELL_CACHE = `${VERSION}-shell`;
 const DATA_CACHE  = `${VERSION}-data`;
 
