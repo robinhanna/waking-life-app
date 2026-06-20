@@ -379,8 +379,53 @@ def hours_to_hhmm(h: float) -> str:
     return f"{hh:02d}:{mm:02d}"
 
 
-def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) -> list[dict]:
-    """Extract all E("<stage_id>",...) events from slay HTML."""
+def parse_slay_desc(slay_html: str) -> dict[str, str]:
+    """Parse slay's `const DESC = { "<stage>|<title>": `<text>`, ... };` block.
+    Values are backtick template literals that may span multiple lines."""
+    start = slay_html.find("const DESC={")
+    if start < 0:
+        return {}
+    # Walk forward to find the matching `};` that closes the dict literal.
+    # Slay's DESC values are backtick strings, so we count `{}` ignoring text inside backticks.
+    depth = 0
+    in_bt = False
+    i = start + len("const DESC=")
+    end = -1
+    while i < len(slay_html):
+        ch = slay_html[i]
+        if in_bt:
+            if ch == "`":
+                in_bt = False
+        else:
+            if ch == "`":
+                in_bt = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    end = i + 1
+                    break
+        i += 1
+    block = slay_html[start:end if end > 0 else len(slay_html)]
+    out = {}
+    for m in re.finditer(r'"([^"]+)":`([^`]*)`', block, re.DOTALL):
+        key, value = m.group(1), m.group(2)
+        out[key] = value.strip()
+    return out
+
+
+def extract_slay_stage(
+    slay_html: str,
+    stage_id: str,
+    *,
+    default_genres=None,
+    desc_dict: dict[str, str] | None = None,
+) -> list[dict]:
+    """Extract all E("<stage_id>",...) events from slay HTML, merging in the
+    long-form description from the DESC block when available."""
+    if desc_dict is None:
+        desc_dict = parse_slay_desc(slay_html)
     out = []
     pattern = re.compile(
         rf'E\("{re.escape(stage_id)}","(\w+)",([\d.]+),([\d.]+),"((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"'
@@ -402,6 +447,14 @@ def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) ->
             day_s = day_order[idx]
         start = hours_to_hhmm(float(start_h))
         end = hours_to_hhmm(float(end_h))
+        # Merge slay's long-form DESC block over the EV row's short text.
+        title = unescape_js(title)
+        ev_text = unescape_js(desc).strip()
+        long_text = desc_dict.get(f"{stage_id}|{title}", "").strip()
+        if long_text and ev_text and ev_text.lower() not in long_text.lower():
+            description = f"{ev_text}. {long_text}"
+        else:
+            description = long_text or ev_text
         # Genre defaulting: suna = Workshop/Play party by duration; moonscreen = Cinema.
         if default_genres is not None:
             genres = list(default_genres)
@@ -411,12 +464,12 @@ def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) ->
             genres = []
         out.append({
             "id": event_id(day_s, start, stage_id, title),
-            "artist": unescape_js(title),
+            "artist": title,
             "stage": stage_id,
             "day": day_s,
             "start": start,
             "end": end,
-            "description": unescape_js(desc).strip(),
+            "description": description,
             "genres": genres,
             "country": None,
             "countryCode": None,
@@ -424,12 +477,12 @@ def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) ->
     return out
 
 
-def extract_suna(slay_html: str) -> list[dict]:
-    return extract_slay_stage(slay_html, "suna")
+def extract_suna(slay_html: str, desc_dict: dict[str, str] | None = None) -> list[dict]:
+    return extract_slay_stage(slay_html, "suna", desc_dict=desc_dict)
 
 
-def extract_moonscreen_slay(slay_html: str) -> list[dict]:
-    return extract_slay_stage(slay_html, "moonscreen", default_genres=["Cinema"])
+def extract_moonscreen_slay(slay_html: str, desc_dict: dict[str, str] | None = None) -> list[dict]:
+    return extract_slay_stage(slay_html, "moonscreen", default_genres=["Cinema"], desc_dict=desc_dict)
 
 
 # ─── 3. v1 untimed carryover ──────────────────────────────────────────────────
@@ -502,10 +555,12 @@ def main() -> int:
     wlapp = [e for e in wlapp_all if e["stage"] != "moonscreen"]
     print(f"  wakinglife.app: {len(wlapp)} events (dropped {len(wlapp_all) - len(wlapp)} moonscreen)", file=sys.stderr)
 
-    # 2. slay → suna + moonscreen
+    # 2. slay → suna + moonscreen (with DESC dict merged for long-form text)
     slay_html = fetch(SLAY_URL)
-    suna = extract_suna(slay_html)
-    moonscreen = extract_moonscreen_slay(slay_html)
+    desc_dict = parse_slay_desc(slay_html)
+    suna = extract_suna(slay_html, desc_dict)
+    moonscreen = extract_moonscreen_slay(slay_html, desc_dict)
+    print(f"  slay DESC dict: {len(desc_dict)} entries", file=sys.stderr)
     print(f"  slay (suna):    {len(suna)} events", file=sys.stderr)
     print(f"  slay (moon):    {len(moonscreen)} events", file=sys.stderr)
 
