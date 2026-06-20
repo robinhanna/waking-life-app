@@ -1,13 +1,14 @@
-// Favourites — filter by genre, sort by time/stage/genre, calendar export.
+// Favourites — filter by genre, sort by time/stage/genre/artists, calendar export.
 import {
   el, stageMeta, dayIndex, groupBy, uniq, DAY_LABEL,
 } from "../helpers.js";
 import { favouriteIds, getUserEvents } from "../store.js";
 import { renderEventRow } from "../components/event-row.js";
-import { downloadIcs, googleCalendarUrl } from "../calendar.js";
+import { downloadIcs } from "../calendar.js";
 
-let sortMode = "time";          // "time" | "stage" | "genre"
-let activeGenres = new Set();   // multi-select filter
+let sortMode = "time";              // "time" | "stage" | "genre" | "artists"
+let activeGenres = new Set();       // multi-select filter
+const expandedFavStages = new Set(); // accordion state for "stage" mode
 
 export function renderFavourites(data) {
   const root = el("section", { class: "fav-view" });
@@ -22,6 +23,17 @@ export function renderFavourites(data) {
       "Tap the heart on any event to favourite it.",
     ]));
     return root;
+  }
+
+  // Calendar export — always at the top.
+  const timedFavs = favs.filter(e => e.start && e.end);
+  if (timedFavs.length) {
+    const calBtn = el("button", {
+      type: "button",
+      class: "cal-top-btn",
+    }, ["Add to your calendar"]);
+    calBtn.addEventListener("click", () => downloadIcs(data, timedFavs));
+    root.append(calBtn);
   }
 
   // Filter chip row
@@ -50,7 +62,7 @@ export function renderFavourites(data) {
       (e.genres ?? []).some(g => activeGenres.has(g)));
   }
 
-  // Sort segmented + export button
+  // Sort segmented
   const sortBtns = el("div", { class: "segmented" });
   const mkSort = (mode, label) => {
     const b = el("button", {
@@ -93,17 +105,42 @@ export function renderFavourites(data) {
       for (const e of timeless) root.append(renderEventRow(data, e, { showNote: true }));
     }
   } else if (sortMode === "stage") {
+    // Accordion — same shape as Lineup.
     const grouped = groupBy(favs, e => e.stage);
-    const stages = Object.keys(data.stages).concat(
+    const stageOrder = Object.keys(data.stages).concat(
       Array.from(new Set(favs.map(e => e.stage))).filter(s => !(s in data.stages)),
     );
-    for (const slug of stages) {
-      const list = grouped.get(slug);
+    for (const stageSlug of stageOrder) {
+      const list = grouped.get(stageSlug);
       if (!list?.length) continue;
       list.sort(byDayTime(data));
-      const meta = stageMeta(data, slug);
-      root.append(el("h3", { class: "group" }, [meta.label]));
-      for (const e of list) root.append(renderEventRow(data, e, { showNote: true }));
+      const meta = stageMeta(data, stageSlug);
+      const open = expandedFavStages.has(stageSlug);
+
+      const header = el("button", {
+        class: `accordion-row${open ? " is-open" : ""}`,
+        type: "button",
+        "aria-expanded": open ? "true" : "false",
+      });
+      header.append(
+        el("span", { class: "stage-dot", style: { background: meta.color } }),
+        el("span", { class: "accordion-label" }, [meta.label]),
+        el("span", { class: "accordion-count" }, [String(list.length)]),
+        el("span", { class: "accordion-caret", "aria-hidden": "true" }, ["›"]),
+      );
+      header.addEventListener("click", () => {
+        if (expandedFavStages.has(stageSlug)) expandedFavStages.delete(stageSlug);
+        else expandedFavStages.add(stageSlug);
+        const fresh = renderFavourites(data);
+        root.replaceWith(fresh);
+      });
+      root.append(header);
+
+      if (open) {
+        const body = el("div", { class: "accordion-body" });
+        for (const e of list) body.append(renderEventRow(data, e, { showNote: true }));
+        root.append(body);
+      }
     }
   } else if (sortMode === "genre") {
     const grouped = new Map();
@@ -125,27 +162,6 @@ export function renderFavourites(data) {
       || (a.start ?? "").localeCompare(b.start ?? ""));
     for (const e of favs) root.append(renderEventRow(data, e, { showNote: true }));
   }
-
-  // Export bar
-  const exportBar = el("div", { style: {
-    display: "flex", gap: 8, margin: "20px 0 0", flexWrap: "wrap",
-  } });
-  const timedFavs = favs.filter(e => e.start && e.end);
-  const icsBtn = el("button", {
-    type: "button",
-    style: { flex: 1, padding: "12px", borderRadius: 10, background: "var(--bg-elev)", fontSize: 14 },
-  }, [`⬇ Download .ics (${timedFavs.length})`]);
-  icsBtn.addEventListener("click", () => downloadIcs(data, timedFavs));
-  const gcalBtn = el("button", {
-    type: "button",
-    style: { flex: 1, padding: "12px", borderRadius: 10, background: "var(--bg-elev)", fontSize: 14 },
-  }, ["📅 Add each to Google Calendar"]);
-  gcalBtn.addEventListener("click", () => {
-    if (timedFavs.length > 6 && !confirm(`This will open ${timedFavs.length} tabs. Continue?`)) return;
-    for (const e of timedFavs) window.open(googleCalendarUrl(data, e), "_blank", "noopener");
-  });
-  exportBar.append(icsBtn, gcalBtn);
-  root.append(exportBar);
 
   return root;
 }

@@ -1,32 +1,80 @@
-// Info / about page. Minimal copy, version, debug reset.
+// Info / about page. Origin story, install instructions, contact, controls.
 import { el } from "../helpers.js";
 import { clearFavourites } from "../store.js";
 
-const VERSION = "v2.0";
+const VERSION = "v2.4";
 
 export function renderInfo(data) {
   const root = el("section", { class: "info-view" });
   root.append(el("h1", { class: "view-title" }, ["Info"]));
 
-  root.append(el("p", { style: { fontSize: 15, marginTop: 4 } },
-    ["Unofficial personal timetable for Waking Life 2026."]));
-  root.append(el("p", { style: { color: "var(--fg-mute)", fontSize: 14 } },
-    ["No phones on the dance floor."]));
+  // ─── Why this exists ─────────────────────────────────────────────────
+  const why = el("section", { class: "info-section" });
+  why.append(el("h2", { class: "section" }, ["Why this exists"]));
+  why.append(el("p", { class: "info-body" }, [
+    "I wanted an app for Waking Life. Started building one. Then found out two people already had — the unofficial wakinglife.app and the slay timetable — and they're both good. So this one is the sum of what theirs taught me, plus the bits I missed: notes you can scribble next to any act, favourites that actually change colour on the timeline, an option to add the impromptu sets you only stumble across on site, and a calendar export so your Apple Watch nudges you on the way to the next one.",
+  ]));
+  root.append(why);
 
-  // Version + counts
-  const counts = el("p", { style: { color: "var(--fg-dim)", fontSize: 13, marginTop: 18 } }, [
-    `${VERSION} · ${data.events.length} events · ${Object.keys(data.stages).length} stages`,
-  ]);
-  root.append(counts);
+  // ─── Thanks ──────────────────────────────────────────────────────────
+  const thanks = el("section", { class: "info-section" });
+  thanks.append(el("h2", { class: "section" }, ["Thanks"]));
+  thanks.append(el("p", { class: "info-body" }, [
+    "Big nod to the people behind the unofficial wakinglife.app and the slay timetable. Most of the data here started in their hands. Their work is the reason this didn't need a month of transcription.",
+  ]));
+  root.append(thanks);
 
-  // Update section
-  const update = el("div", { style: { marginTop: 32, borderTop: "1px solid var(--border)", paddingTop: 18 } });
+  // ─── Install ─────────────────────────────────────────────────────────
+  const install = el("section", { class: "info-section" });
+  install.append(el("h2", { class: "section" }, ["Install on your iPhone"]));
+  install.append(el("p", { class: "info-body" }, [
+    "You'll want it on the home screen so it works offline at the lake.",
+  ]));
+
+  install.append(el("h3", { class: "info-subhead" }, ["Safari"]));
+  install.append(el("ol", { class: "info-steps" }, [
+    el("li", {}, ["Open this page in Safari."]),
+    el("li", {}, ["Tap the Share button at the bottom (square with the arrow)."]),
+    el("li", {}, ["Tap “Add to Home Screen”, then Add."]),
+  ]));
+
+  install.append(el("h3", { class: "info-subhead" }, ["Chrome"]));
+  install.append(el("ol", { class: "info-steps" }, [
+    el("li", {}, ["Open this page in Chrome."]),
+    el("li", {}, ["Tap the share icon next to the URL."]),
+    el("li", {}, ["Tap “Add to Home Screen”, then Add."]),
+  ]));
+  root.append(install);
+
+  // ─── Offline ─────────────────────────────────────────────────────────
+  const offline = el("section", { class: "info-section" });
+  offline.append(el("h2", { class: "section" }, ["Offline"]));
+  offline.append(el("p", { class: "info-body" }, [
+    "Once you've installed it, the whole timetable lives on your phone. Cell signal at the festival is what you'd expect. The app doesn't care.",
+  ]));
+  root.append(offline);
+
+  // ─── Contact ─────────────────────────────────────────────────────────
+  const contact = el("section", { class: "info-section" });
+  contact.append(el("h2", { class: "section" }, ["Get in touch"]));
+  const p = el("p", { class: "info-body" });
+  p.append(
+    "Bugs, ideas, an act I'm missing — drop me a line at ",
+    el("a", { href: "mailto:robin@robinhanna.de", class: "info-link" }, ["robin@robinhanna.de"]),
+    ".",
+  );
+  contact.append(p);
+  root.append(contact);
+
+  // ─── Update ──────────────────────────────────────────────────────────
+  const update = el("section", { class: "info-section info-section-divider" });
   update.append(el("h2", { class: "section" }, ["Update"]));
-  update.append(el("p", { style: { color: "var(--fg-mute)", fontSize: 13, margin: "0 0 10px" } },
-    ["Force a fresh fetch if the app looks out of date."]));
+  update.append(el("p", { class: "info-body" }, [
+    "Tap “Update app now” if anything looks out of date. If you opened this in a regular browser tab rather than the installed app, a normal page refresh works too.",
+  ]));
   const updateBtn = el("button", {
     type: "button",
-    style: { padding: "10px 14px", borderRadius: 10, background: "var(--accent)", color: "var(--gold-ink)", fontWeight: 600, fontSize: 14 },
+    class: "info-btn-primary",
   }, ["Update app now"]);
   updateBtn.addEventListener("click", async () => {
     updateBtn.disabled = true;
@@ -47,13 +95,12 @@ export function renderInfo(data) {
   update.append(updateBtn);
   root.append(update);
 
-  // Reset section
-  const reset = el("div", { style: { marginTop: 32, borderTop: "1px solid var(--border)", paddingTop: 18 } });
+  // ─── Reset ───────────────────────────────────────────────────────────
+  const reset = el("section", { class: "info-section info-section-divider" });
   reset.append(el("h2", { class: "section" }, ["Reset"]));
-
   const clearBtn = el("button", {
     type: "button",
-    style: { padding: "10px 14px", borderRadius: 10, background: "transparent", color: "var(--heart)", fontSize: 14 },
+    class: "info-btn-danger",
   }, ["Clear all favourites"]);
   clearBtn.addEventListener("click", () => {
     if (confirm("Clear all favourites and notes?")) {
@@ -62,8 +109,12 @@ export function renderInfo(data) {
     }
   });
   reset.append(clearBtn);
-
   root.append(reset);
+
+  // ─── Version footer ──────────────────────────────────────────────────
+  root.append(el("p", { class: "info-version" }, [
+    `${VERSION} · ${data.events.length} events · ${Object.keys(data.stages).length} stages`,
+  ]));
 
   return root;
 }

@@ -521,6 +521,76 @@ h3.group {
 }
 .add-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
+/* ───── Info page ───── */
+.info-section { margin-top: 22px; }
+.info-section-divider {
+  margin-top: 28px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+.info-body {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--fg);
+  margin: 6px 0 4px;
+}
+.info-section .info-body { color: var(--fg-mute); }
+.info-section .info-body strong { color: var(--fg); }
+.info-subhead {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+  margin: 14px 0 4px;
+}
+.info-steps {
+  margin: 4px 0 12px;
+  padding-left: 22px;
+  color: var(--fg-mute);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.info-steps li { margin-bottom: 2px; }
+.info-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-dim);
+}
+.info-btn-primary {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--gold-ink);
+  font-weight: 600;
+  font-size: 14px;
+}
+.info-btn-danger {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--heart);
+  font-size: 14px;
+}
+.info-version {
+  margin-top: 28px;
+  color: var(--fg-dim);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ───── Calendar export button (Favourites top) ───── */
+.cal-top-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 4px 0 14px;
+  border-radius: 10px;
+  background: var(--bg-elev);
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 600;
+}
+.cal-top-btn:active { background: var(--bg-elev-2); }
+
 /* ───── Lineup accordion ───── */
 .accordion-row {
   display: flex; align-items: center; gap: 10px;

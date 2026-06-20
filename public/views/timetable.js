@@ -123,6 +123,28 @@ export function renderTimetable(data) {
 
   for (const [d, btn] of dayBtns) btn.addEventListener("click", () => scrollToDay(d));
 
+  // Scroll-spy: as the user scrolls horizontally, light up the pill of the
+  // day under the viewport centre. Falls back to "Now" if the centre is
+  // within 30 minutes of the live red line.
+  let pendingFrame = false;
+  scroller.addEventListener("scroll", () => {
+    if (pendingFrame) return;
+    pendingFrame = true;
+    requestAnimationFrame(() => {
+      pendingFrame = false;
+      const labelW = 88;        // matches --label-w
+      const centreMins = (scroller.scrollLeft + scroller.clientWidth / 2 - labelW) / MINUTE_W;
+      const clamped = Math.max(0, Math.min(totalMin, centreMins));
+      const now = nowMinutesFromEpoch(data);
+      if (now != null && now >= 0 && now <= totalMin && Math.abs(clamped - now) < 30) {
+        markActive(null);
+        return;
+      }
+      const dayIdx = Math.min(data.days.length - 1, Math.max(0, Math.floor(clamped / 1440)));
+      markActive(data.days[dayIdx]);
+    });
+  });
+
   const scrollToNow = () => {
     const now = nowMinutesFromEpoch(data);
     if (now == null || now < 0 || now > totalMin) {

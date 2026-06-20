@@ -37,20 +37,6 @@ function toMin(hhmm) { const [h, m] = hhmm.split(":").map(Number); return h * 60
 
 function stageLabel(data, slug) { return data.stages[slug]?.label ?? slug; }
 
-export function googleCalendarUrl(data, event) {
-  const dt = startEndDt(data, event);
-  if (!dt) return "#";
-  const params = new URLSearchParams({
-    action: "TEMPLATE",
-    text: event.artist,
-    dates: `${dt.start}/${dt.end}`,
-    details: (event.description || "") + (event.genres?.length ? `\n\nGenres: ${event.genres.join(", ")}` : ""),
-    location: `${stageLabel(data, event.stage)}, Waking Life`,
-    ctz: data.timezone || "Europe/Lisbon",
-  });
-  return `https://calendar.google.com/calendar/render?${params}`;
-}
-
 // ICS escaping per RFC 5545: backslash, semicolon, comma, newline.
 function ics(s = "") {
   return String(s)

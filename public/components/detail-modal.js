@@ -4,7 +4,7 @@ import {
   isFavourite, toggleFavourite, setFavourite,
   getNote, setNote, deleteUserEvent,
 } from "../store.js";
-import { googleCalendarUrl, downloadIcs } from "../calendar.js";
+import { downloadIcs } from "../calendar.js";
 
 const root = () => document.getElementById("modal-root");
 
@@ -90,17 +90,11 @@ export function openDetail(data, event) {
     el("div", { class: "row" }, [saveBtn, savedFlag]),
   ]));
 
-  // Calendar buttons (only for timed events)
+  // Calendar button (only for timed events)
   if (event.start && event.end) {
-    const gcal = el("a", {
-      class: "cal-btn",
-      href: googleCalendarUrl(data, event),
-      target: "_blank",
-      rel: "noopener noreferrer",
-    }, ["📅 Google Calendar"]);
-    const ics = el("button", { class: "cal-btn", type: "button" }, ["⬇ .ics file"]);
+    const ics = el("button", { class: "cal-btn", type: "button" }, ["Add to your calendar"]);
     ics.addEventListener("click", () => downloadIcs(data, [event], `${event.artist}.ics`));
-    modal.append(el("div", { class: "cal-row" }, [gcal, ics]));
+    modal.append(el("div", { class: "cal-row" }, [ics]));
   }
 
   const closeBtn = el("button", { class: "close-btn", type: "button" }, ["Close"]);
