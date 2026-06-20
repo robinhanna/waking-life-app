@@ -1,6 +1,6 @@
 // Reusable event row for list views (Lineup, Favourites, Search results).
 import { el, DAY_SHORT_LABEL, stageMeta, fmtTime } from "../helpers.js";
-import { isFavourite, getNote } from "../store.js";
+import { isFavourite, toggleFavourite, getNote } from "../store.js";
 import { openDetail } from "./detail-modal.js";
 
 export function renderEventRow(data, event, { showNote = false } = {}) {
@@ -14,7 +14,16 @@ export function renderEventRow(data, event, { showNote = false } = {}) {
     tabindex: "0",
   });
 
-  const heart = el("div", { class: "heart-mini" }, [fav ? "♥" : "♡"]);
+  const heart = el("button", {
+    class: "heart-mini",
+    type: "button",
+    "aria-label": fav ? "Remove favourite" : "Add favourite",
+  }, [fav ? "♥" : "♡"]);
+  heart.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleFavourite(event.id);
+    document.dispatchEvent(new CustomEvent("favs:changed", { detail: { id: event.id } }));
+  });
 
   const body = el("div", { class: "row-body" });
 
@@ -47,9 +56,13 @@ export function renderEventRow(data, event, { showNote = false } = {}) {
 
   row.append(heart, body);
 
-  const open = () => openDetail(data, event);
+  const open = (e) => {
+    if (e?.target && e.target.closest(".heart-mini")) return;
+    openDetail(data, event);
+  };
   row.addEventListener("click", open);
   row.addEventListener("keydown", (e) => {
+    if (e.target.closest(".heart-mini")) return;
     if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
   });
 
