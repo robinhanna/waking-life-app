@@ -850,20 +850,6 @@
       "countryCode": null
     },
     {
-      "id": "thu-0030-moonscreen-well-well-well",
-      "artist": "Well Well Well",
-      "stage": "moonscreen",
-      "day": "thu",
-      "start": "00:30",
-      "end": "01:00",
-      "description": "Horta & Meerwein",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "thu-0045-cochilo-nkisi",
       "artist": "Nkisi",
       "stage": "cochilo",
@@ -918,20 +904,6 @@
       "circled": true
     },
     {
-      "id": "thu-0100-moonscreen-rawy-presents",
-      "artist": "Rawy Presents",
-      "stage": "moonscreen",
-      "day": "thu",
-      "start": "01:00",
-      "end": "02:00",
-      "description": "SWANA cinema shorts",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "thu-0200-cochilo-hhy-and-the-kampala-unit",
       "artist": "HHY & The Kampala Unit",
       "stage": "cochilo",
@@ -947,34 +919,6 @@
       ],
       "country": "Portugal / Uganda",
       "countryCode": "PT/UG"
-    },
-    {
-      "id": "thu-0200-moonscreen-tiny-man-festival-experimental-animated-shots",
-      "artist": "Tiny Man Festival: Experimental Animated Shots",
-      "stage": "moonscreen",
-      "day": "thu",
-      "start": "02:00",
-      "end": "03:00",
-      "description": "",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "thu-0300-moonscreen-mountains-that-weep",
-      "artist": "Mountains That Weep",
-      "stage": "moonscreen",
-      "day": "thu",
-      "start": "03:00",
-      "end": "04:00",
-      "description": "Aurora Solá",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
     },
     {
       "id": "thu-0400-praia-kiss-nuka",
@@ -1592,27 +1536,13 @@
       "countryCode": null
     },
     {
-      "id": "fri-0000-moonscreen-unheld-iii",
-      "artist": "Unheld III",
+      "id": "fri-0030-moonscreen-well-well-well",
+      "artist": "Well Well Well",
       "stage": "moonscreen",
       "day": "fri",
-      "start": "00:00",
+      "start": "00:30",
       "end": "01:00",
-      "description": "Ehteshamzadeh & Koochakzadeh-Yazdi",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "fri-0100-moonscreen-curated-by-curtas-maryam-tafakory",
-      "artist": "Curated by Curtas: Maryam Tafakory",
-      "stage": "moonscreen",
-      "day": "fri",
-      "start": "01:00",
-      "end": "02:00",
-      "description": "Portuguese shorts",
+      "description": "Horta & Meerwein",
       "genres": [
         "Cinema"
       ],
@@ -1635,6 +1565,20 @@
       "country": "UK",
       "countryCode": "GB",
       "circled": true
+    },
+    {
+      "id": "fri-0100-moonscreen-rawy-presents",
+      "artist": "Rawy Presents",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "SWANA cinema shorts",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "fri-0100-cochilo-takkak-takkak",
@@ -1670,20 +1614,6 @@
       "countryCode": "GB"
     },
     {
-      "id": "fri-0200-moonscreen-curated-by-suna-and-erotic-film-festival-barcelona",
-      "artist": "Curated by SUNA & Erotic Film Festival Barcelona",
-      "stage": "moonscreen",
-      "day": "fri",
-      "start": "02:00",
-      "end": "04:00",
-      "description": "sexy shorts & shadowplay",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "fri-0200-praia-mala",
       "artist": "Mala",
       "stage": "praia",
@@ -1699,15 +1629,29 @@
       "countryCode": "GB"
     },
     {
-      "id": "fri-0200-suna-moonsuna",
-      "artist": "Moonsuna",
-      "stage": "suna",
+      "id": "fri-0200-moonscreen-tiny-man-festival-experimental-animated-shots",
+      "artist": "Tiny Man Festival: Experimental Animated Shots",
+      "stage": "moonscreen",
       "day": "fri",
       "start": "02:00",
-      "end": "04:00",
-      "description": "w/ Moonscreen — EFF Barcelona",
+      "end": "03:00",
+      "description": "",
       "genres": [
-        "Workshop"
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "fri-0300-moonscreen-mountains-that-weep",
+      "artist": "Mountains That Weep",
+      "stage": "moonscreen",
+      "day": "fri",
+      "start": "03:00",
+      "end": "04:00",
+      "description": "Aurora Solá",
+      "genres": [
+        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -2401,20 +2345,6 @@
       "countryCode": null
     },
     {
-      "id": "sat-0000-moonscreen-modular-youth",
-      "artist": "Modular Youth",
-      "stage": "moonscreen",
-      "day": "sat",
-      "start": "00:00",
-      "end": "00:15",
-      "description": "Luisa Lukas",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "sat-0000-praia-niknak",
       "artist": "NikNak",
       "stage": "praia",
@@ -2433,13 +2363,13 @@
       "countryCode": "GB"
     },
     {
-      "id": "sat-0015-moonscreen-phase-space-field",
-      "artist": "Phase Space: Field",
+      "id": "sat-0000-moonscreen-unheld-iii",
+      "artist": "Unheld III",
       "stage": "moonscreen",
       "day": "sat",
-      "start": "00:15",
-      "end": "01:15",
-      "description": "Gwenan & Danimation",
+      "start": "00:00",
+      "end": "01:00",
+      "description": "Ehteshamzadeh & Koochakzadeh-Yazdi",
       "genres": [
         "Cinema"
       ],
@@ -2464,6 +2394,20 @@
       "countryCode": "KR"
     },
     {
+      "id": "sat-0100-moonscreen-curated-by-curtas-maryam-tafakory",
+      "artist": "Curated by Curtas: Maryam Tafakory",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "01:00",
+      "end": "02:00",
+      "description": "Portuguese shorts",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "sat-0100-praia-nosedrip",
       "artist": "Nosedrip",
       "stage": "praia",
@@ -2483,20 +2427,6 @@
       "circled": true
     },
     {
-      "id": "sat-0115-moonscreen-who-owns-you",
-      "artist": "Who Owns You?",
-      "stage": "moonscreen",
-      "day": "sat",
-      "start": "01:15",
-      "end": "04:00",
-      "description": "notbinarycode — livecoding jam",
-      "genres": [
-        "Cinema"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
       "id": "sat-0200-apuro-a-sonic-seance",
       "artist": "A Sonic Séance",
       "stage": "apuro",
@@ -2511,13 +2441,27 @@
       "countryCode": null
     },
     {
-      "id": "sat-0200-suna-the-rabbit-and-the-magic-man",
-      "artist": "The Rabbit and the Magic Man",
+      "id": "sat-0200-moonscreen-curated-by-suna-and-erotic-film-festival-barcelona",
+      "artist": "Curated by SUNA & Erotic Film Festival Barcelona",
+      "stage": "moonscreen",
+      "day": "sat",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "sexy shorts & shadowplay",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "sat-0200-suna-moonsuna",
+      "artist": "Moonsuna",
       "stage": "suna",
       "day": "sat",
       "start": "02:00",
       "end": "04:00",
-      "description": "bondage, joy, brute force",
+      "description": "w/ Moonscreen — EFF Barcelona",
       "genres": [
         "Workshop"
       ],
@@ -3217,6 +3161,20 @@
       "countryCode": "DE"
     },
     {
+      "id": "sun-0000-moonscreen-modular-youth",
+      "artist": "Modular Youth",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "00:00",
+      "end": "00:15",
+      "description": "Luisa Lukas",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "sun-0000-praia-shackleton",
       "artist": "Shackleton",
       "stage": "praia",
@@ -3234,6 +3192,20 @@
       "countryCode": "GB"
     },
     {
+      "id": "sun-0015-moonscreen-phase-space-field",
+      "artist": "Phase Space: Field",
+      "stage": "moonscreen",
+      "day": "sun",
+      "start": "00:15",
+      "end": "01:15",
+      "description": "Gwenan & Danimation",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "sun-0030-apuro-shibari-x-gong",
       "artist": "Shibari x Gong",
       "stage": "apuro",
@@ -3243,20 +3215,6 @@
       "description": "Tension. Limits. Release. Rope and resonance in the space-in-between. Witness what's possible when edges become portals and the skin the primary organ of sense-making.",
       "genres": [
         "performance"
-      ],
-      "country": null,
-      "countryCode": null
-    },
-    {
-      "id": "sun-0040-moonscreen-resonance",
-      "artist": "Resonance",
-      "stage": "moonscreen",
-      "day": "sun",
-      "start": "00:40",
-      "end": "01:10",
-      "description": "Gizem Öz & Lova Ranung",
-      "genres": [
-        "Cinema"
       ],
       "country": null,
       "countryCode": null
@@ -3295,15 +3253,29 @@
       "countryCode": "RS"
     },
     {
-      "id": "sun-0120-moonscreen-morada-aberta-onde-o-gesto-cura",
-      "artist": "Morada Aberta: Onde o Gesto Cura",
+      "id": "sun-0115-moonscreen-who-owns-you",
+      "artist": "Who Owns You?",
       "stage": "moonscreen",
       "day": "sun",
-      "start": "01:20",
-      "end": "02:00",
-      "description": "Tânia Dinis — closing",
+      "start": "01:15",
+      "end": "04:00",
+      "description": "notbinarycode — livecoding jam",
       "genres": [
         "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
+      "id": "sun-0200-suna-the-rabbit-and-the-magic-man",
+      "artist": "The Rabbit and the Magic Man",
+      "stage": "suna",
+      "day": "sun",
+      "start": "02:00",
+      "end": "04:00",
+      "description": "bondage, joy, brute force",
+      "genres": [
+        "Workshop"
       ],
       "country": null,
       "countryCode": null
@@ -4208,6 +4180,20 @@
       "countryCode": "PT"
     },
     {
+      "id": "mon-0040-moonscreen-resonance",
+      "artist": "Resonance",
+      "stage": "moonscreen",
+      "day": "mon",
+      "start": "00:40",
+      "end": "01:10",
+      "description": "Gizem Öz & Lova Ranung",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
+    },
+    {
       "id": "mon-0100-outro-lado-jane-fitz",
       "artist": "Jane Fitz",
       "stage": "outro-lado",
@@ -4238,6 +4224,20 @@
       ],
       "country": "France",
       "countryCode": "FR"
+    },
+    {
+      "id": "mon-0120-moonscreen-morada-aberta-onde-o-gesto-cura",
+      "artist": "Morada Aberta: Onde o Gesto Cura",
+      "stage": "moonscreen",
+      "day": "mon",
+      "start": "01:20",
+      "end": "02:00",
+      "description": "Tânia Dinis — closing",
+      "genres": [
+        "Cinema"
+      ],
+      "country": null,
+      "countryCode": null
     },
     {
       "id": "mon-0230-floresta-rene-wise",

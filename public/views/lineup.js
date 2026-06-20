@@ -46,7 +46,7 @@ export function renderLineup(data) {
     b.addEventListener("click", () => { mode = m; rerender(); });
     return b;
   };
-  modeBtns.append(mk("alpha", "A–Z"), mk("stage", "By stage"), mk("untimed", "Untimed"));
+  modeBtns.append(mk("alpha", "A–Z"), mk("stage", "By stage"), mk("untimed", "Timeless"));
   root.append(el("div", { style: { margin: "0 0 12px" } }, [modeBtns]));
 
   // ─── Build the working event set ─────────────────────────────────────

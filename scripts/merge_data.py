@@ -386,11 +386,20 @@ def extract_slay_stage(slay_html: str, stage_id: str, *, default_genres=None) ->
         rf'E\("{re.escape(stage_id)}","(\w+)",([\d.]+),([\d.]+),"((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"'
         r'(?:,\{[^}]*\})?\)',
     )
+    day_order = list(DAY_DATES.keys())
     for m in pattern.finditer(slay_html):
         day_full, start_h, end_h, title, desc = m.groups()
         day_s = DAY_SHORT.get(day_full.lower())
         if not day_s:
             continue
+        # Slay uses festival-day attribution with decimal hours >= 24 for
+        # after-midnight sets (e.g. Saturday 24 = Sunday 00:00 clock).
+        # The rest of the app expects clock-day attribution, so shift the day
+        # forward when start crosses the 24h boundary.
+        day_offset = int(float(start_h) // 24)
+        if day_offset > 0 and day_s in day_order:
+            idx = min(day_order.index(day_s) + day_offset, len(day_order) - 1)
+            day_s = day_order[idx]
         start = hours_to_hhmm(float(start_h))
         end = hours_to_hhmm(float(end_h))
         # Genre defaulting: suna = Workshop/Play party by duration; moonscreen = Cinema.
