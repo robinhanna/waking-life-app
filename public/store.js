@@ -32,14 +32,6 @@ function favs() {
   return favCache;
 }
 
-export function seedFromCircled(events) {
-  if (localStorage.getItem(FAV_KEY) !== null) return;
-  const seed = {};
-  for (const e of events) if (e.circled) seed[e.id] = { note: "" };
-  favCache = seed;
-  writeFavs(favCache);
-}
-
 export function clearFavourites() {
   favCache = {};
   writeFavs(favCache);

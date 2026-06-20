@@ -1,5 +1,4 @@
 // Entry: router, data load, top-bar buttons, service worker registration.
-import { seedFromCircled } from "./store.js";
 import { renderTimetable } from "./views/timetable.js";
 import { renderLineup }    from "./views/lineup.js";
 import { renderFavourites } from "./views/favourites.js";
@@ -60,7 +59,6 @@ document.getElementById("btn-add").addEventListener("click", () => DATA && openA
 (async () => {
   try {
     DATA = await loadData();
-    seedFromCircled(DATA.events);
     mount(currentTab());
   } catch (err) {
     $view.innerHTML = `<p class="empty">Couldn't load line-up: ${err.message}</p>`;
