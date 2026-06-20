@@ -78,12 +78,19 @@ export function renderFavourites(data) {
   // Render
   if (sortMode === "time") {
     favs.sort(byDayTime(data));
-    const byDay = groupBy(favs, e => e.day);
+    const timed = favs.filter(e => e.start);
+    const timeless = favs.filter(e => !e.start);
+    const byDay = groupBy(timed, e => e.day);
     for (const day of data.days) {
       const list = byDay.get(day);
       if (!list) continue;
       root.append(el("h3", { class: "group" }, [DAY_LABEL[day] ?? day]));
       for (const e of list) root.append(renderEventRow(data, e, { showNote: true }));
+    }
+    if (timeless.length) {
+      timeless.sort((a, b) => a.artist.localeCompare(b.artist));
+      root.append(el("h3", { class: "group" }, ["Timeless"]));
+      for (const e of timeless) root.append(renderEventRow(data, e, { showNote: true }));
     }
   } else if (sortMode === "stage") {
     const grouped = groupBy(favs, e => e.stage);
