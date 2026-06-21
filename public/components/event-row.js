@@ -43,12 +43,6 @@ export function renderEventRow(data, event, { showNote = false } = {}) {
     body.append(el("div", { class: "desc" }, [event.description]));
   }
 
-  if (event.genres?.length) {
-    const chips = el("div", { class: "genres" },
-      event.genres.slice(0, 4).map(g => el("span", { class: "chip subtle" }, [g])));
-    body.append(chips);
-  }
-
   if (showNote) {
     const note = getNote(event.id);
     if (note) body.append(el("div", { class: "note" }, [note]));

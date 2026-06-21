@@ -44,11 +44,6 @@ export function openDetail(data, event) {
   const head = el("div", { class: "modal-head" }, [heart, titleWrap]);
   modal.append(head);
 
-  if (event.genres?.length) {
-    modal.append(el("div", { class: "genres" },
-      event.genres.map(g => el("span", { class: "chip subtle" }, [g]))));
-  }
-
   if (event.description) {
     modal.append(el("p", { class: "description" }, [event.description]));
   }

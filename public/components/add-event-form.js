@@ -65,7 +65,6 @@ export function openAddEventForm(data) {
       start: start.value || null,
       end: end.value || null,
       description: note.value.trim() || undefined,
-      genres: [],
       country: null,
       countryCode: null,
     });

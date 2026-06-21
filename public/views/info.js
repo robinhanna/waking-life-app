@@ -2,7 +2,7 @@
 import { el } from "../helpers.js";
 import { clearFavourites } from "../store.js";
 
-const VERSION = "v2.4.1";
+const VERSION = "v2.4.2";
 
 export function renderInfo(data) {
   const root = el("section", { class: "info-view" });
@@ -12,7 +12,7 @@ export function renderInfo(data) {
   const why = el("section", { class: "info-section" });
   why.append(el("h2", { class: "section" }, ["Why this exists"]));
   why.append(el("p", { class: "info-body" }, [
-    "I wanted an app for Waking Life. Started building one. Then found out two people already had — the unofficial wakinglife.app and the slay timetable — and they're both good. So this one is the sum of what theirs taught me, plus the bits I missed: notes you can scribble next to any act, favourites that actually change colour on the timeline, an option to add the impromptu sets you only stumble across on site, and a calendar export so your Apple Watch nudges you on the way to the next one.",
+    "I wanted an app for Waking Life. Started building one. Then found out two people already had — the unofficial wakinglife.app and the slay timetable — and they're both good. So this one is the sum of what theirs taught me, plus the bits I missed: notes you can scribble next to any act, favourites that actually change colour on the timeline, an option to add the impromptu sets you only stumble across on site, and a calendar export so your watch nudges you on the way to the next one.",
   ]));
   root.append(why);
 
@@ -20,7 +20,7 @@ export function renderInfo(data) {
   const thanks = el("section", { class: "info-section" });
   thanks.append(el("h2", { class: "section" }, ["Thanks"]));
   thanks.append(el("p", { class: "info-body" }, [
-    "Big nod to the people behind the unofficial wakinglife.app and the slay timetable. They got me started.",
+    "Big nod to the people behind the unofficial wakinglife.app and the slay timetable. Nice to know there's kindred spirits out there.",
   ]));
   root.append(thanks);
 

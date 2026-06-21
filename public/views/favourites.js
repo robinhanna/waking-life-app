@@ -1,13 +1,12 @@
-// Favourites — filter by genre, sort by time/stage/genre/artists, calendar export.
+// Favourites — sort by time/stage/artists, calendar export.
 import {
-  el, stageMeta, dayIndex, groupBy, uniq, DAY_LABEL,
+  el, stageMeta, dayIndex, groupBy, DAY_LABEL,
 } from "../helpers.js";
 import { favouriteIds, getUserEvents } from "../store.js";
 import { renderEventRow } from "../components/event-row.js";
 import { downloadIcs } from "../calendar.js";
 
-let sortMode = "time";              // "time" | "stage" | "genre" | "artists"
-let activeGenres = new Set();       // multi-select filter
+let sortMode = "time";              // "time" | "stage" | "artists"
 const expandedFavStages = new Set(); // accordion state for "stage" mode
 
 export function renderFavourites(data) {
@@ -36,32 +35,6 @@ export function renderFavourites(data) {
     root.append(calBtn);
   }
 
-  // Filter chip row
-  const genres = uniq(favs.flatMap(e => e.genres ?? [])).sort();
-  if (genres.length) {
-    const chips = el("div", { class: "chips" });
-    for (const g of genres) {
-      const chip = el("button", {
-        class: "chip",
-        type: "button",
-        "aria-pressed": activeGenres.has(g) ? "true" : "false",
-      }, [g]);
-      chip.addEventListener("click", () => {
-        if (activeGenres.has(g)) activeGenres.delete(g);
-        else activeGenres.add(g);
-        const fresh = renderFavourites(data);
-        root.replaceWith(fresh);
-      });
-      chips.append(chip);
-    }
-    root.append(chips);
-  }
-
-  if (activeGenres.size) {
-    favs = favs.filter(e =>
-      (e.genres ?? []).some(g => activeGenres.has(g)));
-  }
-
   // Sort segmented
   const sortBtns = el("div", { class: "segmented" });
   const mkSort = (mode, label) => {
@@ -79,7 +52,6 @@ export function renderFavourites(data) {
   sortBtns.append(
     mkSort("time", "Time"),
     mkSort("stage", "Stage"),
-    mkSort("genre", "Genre"),
     mkSort("artists", "Artists"),
   );
   root.append(el("div", { style: {
@@ -141,20 +113,6 @@ export function renderFavourites(data) {
         for (const e of list) body.append(renderEventRow(data, e, { showNote: true }));
         root.append(body);
       }
-    }
-  } else if (sortMode === "genre") {
-    const grouped = new Map();
-    for (const e of favs) {
-      for (const g of (e.genres?.length ? e.genres : ["—"])) {
-        if (!grouped.has(g)) grouped.set(g, []);
-        grouped.get(g).push(e);
-      }
-    }
-    const orderedGenres = Array.from(grouped.keys()).sort();
-    for (const g of orderedGenres) {
-      grouped.get(g).sort(byDayTime(data));
-      root.append(el("h3", { class: "group" }, [g]));
-      for (const e of grouped.get(g)) root.append(renderEventRow(data, e, { showNote: true }));
     }
   } else { // artists
     favs.sort((a, b) =>

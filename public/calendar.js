@@ -59,8 +59,7 @@ function vevent(data, event) {
     `DTEND;TZID=${tzid}:${dt.end}`,
     `SUMMARY:${ics(event.artist)}`,
     `LOCATION:${ics(stageLabel(data, event.stage) + ", Waking Life")}`,
-    event.description ? `DESCRIPTION:${ics(event.description + (event.genres?.length ? `\n\nGenres: ${event.genres.join(", ")}` : ""))}` : null,
-    event.genres?.length ? `CATEGORIES:${event.genres.map(ics).join(",")}` : null,
+    event.description ? `DESCRIPTION:${ics(event.description)}` : null,
     "END:VEVENT",
   ].filter(Boolean);
   return lines.join("\r\n");

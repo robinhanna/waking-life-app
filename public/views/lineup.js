@@ -1,5 +1,5 @@
-// Lineup — three modes: A–Z, By stage (accordion), Untimed.
-// Plus: live search with "Did you mean" Levenshtein suggestion and a genre chip filter.
+// Lineup — three modes: A–Z, By stage (accordion), Timeless.
+// Plus: live search with "Did you mean" Levenshtein suggestion.
 import {
   el, stageMeta, dayIndex, groupBy, uniq, DAY_LABEL, levenshtein,
 } from "../helpers.js";
@@ -8,7 +8,6 @@ import { getUserEvents } from "../store.js";
 
 let mode = "alpha";              // "alpha" | "stage" | "untimed"
 let searchQuery = "";
-const activeGenres = new Set();
 const expandedStages = new Set(); // accordion state for "stage" mode
 
 export function renderLineup(data) {
@@ -52,33 +51,12 @@ export function renderLineup(data) {
   // ─── Build the working event set ─────────────────────────────────────
   const all = [...data.events, ...getUserEvents()];
 
-  // Genre chip filter — chips populated from the current mode's relevant set.
   let pool = all;
   if (mode === "untimed") pool = all.filter(e => !e.start);
   else pool = all.filter(e => e.start);   // timed-only for alpha + stage
 
-  const genres = uniq(pool.flatMap(e => e.genres ?? [])).sort();
-  if (genres.length) {
-    const chips = el("div", { class: "chips" });
-    for (const g of genres) {
-      const chip = el("button", {
-        class: "chip",
-        type: "button",
-        "aria-pressed": activeGenres.has(g) ? "true" : "false",
-      }, [g]);
-      chip.addEventListener("click", () => {
-        if (activeGenres.has(g)) activeGenres.delete(g);
-        else activeGenres.add(g);
-        rerender();
-      });
-      chips.append(chip);
-    }
-    root.append(chips);
-  }
-
-  // Apply search + genre filter
-  const matches = pool.filter(e => matchesQuery(e, data, searchQuery))
-                      .filter(e => matchesGenres(e, activeGenres));
+  // Apply search filter
+  const matches = pool.filter(e => matchesQuery(e, data, searchQuery));
 
   // "Did you mean" only when query non-empty and no matches
   if (searchQuery.trim() && !matches.length) {
@@ -182,14 +160,8 @@ function matchesQuery(event, data, query) {
     event.artist,
     event.description ?? "",
     stageLabel,
-    (event.genres ?? []).join(" "),
   ].join(" ").toLowerCase();
   return hay.includes(q);
-}
-
-function matchesGenres(event, set) {
-  if (!set.size) return true;
-  return (event.genres ?? []).some(g => set.has(g));
 }
 
 function suggestArtist(query, events) {
