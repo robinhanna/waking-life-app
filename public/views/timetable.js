@@ -116,9 +116,31 @@ export function renderTimetable(data) {
     scrollToMinute(di * 24 * 60 + DAY_ANCHOR_HOUR * 60);
     markActive(day);
   };
+  const NOW_RESERVED = 78;  // px of pill-bar real estate reserved for the sticky Now pill
+
+  const scrollPillIntoView = (btn) => {
+    if (!btn) return;
+    const barW = dayBar.clientWidth;
+    const barScroll = dayBar.scrollLeft;
+    const btnLeft = btn.offsetLeft;
+    const btnRight = btnLeft + btn.offsetWidth;
+    const margin = 12;
+    if (btnLeft < barScroll + NOW_RESERVED + margin) {
+      dayBar.scrollTo({ left: Math.max(0, btnLeft - NOW_RESERVED - margin), behavior: "smooth" });
+    } else if (btnRight > barScroll + barW - margin) {
+      dayBar.scrollTo({ left: btnRight - barW + margin, behavior: "smooth" });
+    }
+  };
+
   const markActive = (day) => {
-    for (const [slug, btn] of dayBtns) btn.setAttribute("aria-pressed", slug === day ? "true" : "false");
+    let activeBtn = null;
+    for (const [slug, btn] of dayBtns) {
+      const isOn = slug === day;
+      btn.setAttribute("aria-pressed", isOn ? "true" : "false");
+      if (isOn) activeBtn = btn;
+    }
     nowBtn.setAttribute("aria-pressed", day === null ? "true" : "false");
+    if (activeBtn) scrollPillIntoView(activeBtn);
   };
 
   for (const [d, btn] of dayBtns) btn.addEventListener("click", () => scrollToDay(d));

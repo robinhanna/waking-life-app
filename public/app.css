@@ -143,6 +143,7 @@ h3.group {
   position: relative;
 }
 .tt-day-bar {
+  position: relative;
   display: flex; gap: 6px;
   padding: 4px 14px 12px;
   overflow-x: auto;
@@ -160,6 +161,13 @@ h3.group {
 }
 .tt-day[aria-pressed="true"] {
   background: var(--accent); color: #1b1320;
+}
+/* Now pill stays anchored to the left edge so it's always reachable. */
+.tt-day[data-anchor="now"] {
+  position: sticky;
+  left: 14px;
+  z-index: 2;
+  box-shadow: 8px 0 12px -6px var(--bg);
 }
 
 .tt-scroller {
