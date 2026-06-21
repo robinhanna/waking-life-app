@@ -133,9 +133,19 @@ export function renderTimetable(data) {
   };
 
   const markActive = (day) => {
+    // 'day' is null when the centre is within ~30 min of the live now line.
+    // Even then, light up the chronologically relevant day pill so the user
+    // sees which festival day they're on. Now pill stays lit too.
+    let lightDay = day;
+    if (lightDay == null) {
+      const now = nowMinutesFromEpoch(data);
+      if (now != null && now >= 0 && now <= totalMin) {
+        lightDay = data.days[Math.min(data.days.length - 1, Math.max(0, Math.floor(now / 1440)))];
+      }
+    }
     let activeBtn = null;
     for (const [slug, btn] of dayBtns) {
-      const isOn = slug === day;
+      const isOn = slug === lightDay;
       btn.setAttribute("aria-pressed", isOn ? "true" : "false");
       if (isOn) activeBtn = btn;
     }
